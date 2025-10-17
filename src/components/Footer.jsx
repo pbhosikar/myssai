@@ -6,7 +6,7 @@ export default function Footer() {
           <div className="footer-col ssai-footer-logo ">
             <figure>
               <a href="https://www.ssaihq.com/">
-                <img src="/img/ssai_logo_white.svg+xml" alt="SSAI Logo" />
+                <img src="/img/ssai_logo_white.svg" alt="SSAI Logo" />
               </a>
             </figure>
           </div>

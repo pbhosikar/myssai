@@ -1,9 +1,11 @@
 'use client';
+
+import HrBenefits from "../hrbenefits/HrBenefits";
+
 export default function HRBenefitsView() {
   return (
-    <main className="container mx-auto max-w-5xl px-4 py-12">
-      <h1 className="text-3xl font-semibold text-gray-900">Benefits</h1>
-      <p className="mt-3 text-gray-600">This page is under development.</p>
-    </main>
+   <>
+    <HrBenefits/>
+   </>
   );
 }

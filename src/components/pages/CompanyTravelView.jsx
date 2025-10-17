@@ -291,7 +291,7 @@ export default function CompanyTravelView() {
               {/* Travel Links */}
               <section>
                 <h2 className="text-2xl font-semibold text-gray-900">Travel Links</h2>
-                <ul className="mt-4 divide-y divide-gray-200 border border-gray-200 rounded-md">
+                <ul className="mt-4 divide-y divide-gray-200 rounded-md">
                   <li className="p-3">
                     <a
                       className="text-blue-600 hover:underline"

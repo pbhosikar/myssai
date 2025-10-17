@@ -242,51 +242,41 @@ const HRBenefits = () => {
             <div className="lg:col-span-2">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
     {benefitsCards.map((card, index) => (
-      <div key={index} className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
-        {/* Logo Section with Background Image/Pattern */}
-        <div className="relative h-48 bg-gradient-to-br from-gray-50 via-white to-gray-100 flex items-center justify-center p-8 border-b border-gray-200">
-          {/* Background decoration/pattern area */}
-          <div className="absolute inset-0 opacity-30">
-            <div className="absolute right-0 top-0 w-32 h-32 rounded-full bg-blue-100 -mr-16 -mt-16"></div>
-            <div className="absolute left-0 bottom-0 w-24 h-24 rounded-full bg-gray-200 -ml-12 -mb-12"></div>
-          </div>
-          
-          {/* Logo */}
-          <div className="relative z-10 w-full h-full flex items-center justify-center">
-            {card.logo ? (
-              <div className="relative w-full h-full">
-                <Image
-                  src={card.logo}
-                  alt={card.alt}
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            ) : (
-              <div className="flex items-center justify-center h-full">
-                <span className="text-sm text-gray-400">{card.alt} Logo</span>
-              </div>
-            )}
-          </div>
+      <div
+        key={index}
+        className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden transition hover:shadow-lg"
+      >
+        {/* Logo Section */}
+        <div className="relative h-32 flex items-center justify-center bg-gray-50 border-b border-gray-100">
+          {card.logo ? (
+            <Image
+              src={card.logo}
+              alt={card.alt}
+              fill
+              className="object-contain p-4"
+            />
+          ) : (
+            <div className="bg-gray-100 rounded flex items-center justify-center h-full w-full">
+              <span className="text-sm text-gray-400">{card.alt} Logo</span>
+            </div>
+          )}
         </div>
 
         {/* Content Section */}
-        <div className="p-6 bg-white">
-          <h3 className="text-lg font-bold text-gray-900 mb-4 border-b border-gray-100 pb-2">
-            {card.title}
-          </h3>
-          <div className="space-y-2 mb-4">
-            {card.details.map((detail, idx) => (
-              <p key={idx} className="text-sm text-gray-700 leading-relaxed">
-                {detail}
-              </p>
-            ))}
-          </div>
-          <a 
-            href={card.link} 
-            target='_blank' 
+        <div className="p-5">
+          <h3 className="text-base font-bold text-gray-900 mb-2">{card.title}</h3>
+
+          {card.details.map((detail, idx) => (
+            <p key={idx} className="text-sm text-gray-700 mb-1">
+              {detail}
+            </p>
+          ))}
+
+          <a
+            href={card.link}
+            target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-blue-600 hover:text-blue-800 hover:underline break-all inline-block font-medium"
+            className="text-sm text-blue-600 hover:underline break-all mt-3 inline-block"
           >
             {card.linkText}
           </a>
@@ -295,7 +285,6 @@ const HRBenefits = () => {
     ))}
   </div>
 </div>
-
 
             {/* Right: Sidebar */}
             <div className="lg:col-span-1 space-y-6">

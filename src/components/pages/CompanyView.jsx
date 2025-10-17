@@ -66,34 +66,6 @@ export default function CompanyView() {
                   </div>
                 </div>
 
-                <div>
-                  <h2 className="text-2xl font-semibold text-gray-900">Our Values</h2>
-                  <ul className="mt-4 space-y-3 text-gray-700 list-disc pl-5">
-                    <li>
-                      <strong>Trust:</strong> Instill trust through honesty and transparency in our
-                      communication and decision-making.
-                    </li>
-                    <li>
-                      <strong>Integrity:</strong> Exercise scientific integrity and uncompromising
-                      engineering as the foundation of our professional ethics.
-                    </li>
-                    <li>
-                      <strong>Teamwork:</strong> Build strong teams to execute our business
-                      practices and support our customers and partners through clear, effective,
-                      deliberate, and comprehensive communication.
-                    </li>
-                    <li>
-                      <strong>Passion:</strong> Innovate and evolve our organization by engaging our
-                      collective sense of wonder and enthusiasm.
-                    </li>
-                    <li>
-                      <strong>Accountability:</strong> We take ownership of our decisions and
-                      everything we do, upholding our commitments to our customers and our
-                      community.
-                    </li>
-                  </ul>
-                </div>
-              </div>
 
               <aside className="lg:col-span-1">
                 <div className="rounded-lg border border-gray-200 bg-gray-50 p-6">

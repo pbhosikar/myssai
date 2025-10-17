@@ -1,9 +1,106 @@
 'use client';
+
+const roundupViewImages = [
+  '/img/roundupviewimages/image_1.0&t=1760545472372',
+  '/img/roundupviewimages/image_2.0&t=1759718656767',
+  '/img/roundupviewimages/image_3.0&t=1759158243111',
+  '/img/roundupviewimages/image_4.0&t=1759158243111',
+  '/img/roundupviewimages/image_5.0&t=1759025283799',
+  '/img/roundupviewimages/image_6.0&t=1759023547880',
+  '/img/roundupviewimages/image_7.0&t=1758301395481',
+  '/img/roundupviewimages/image_8.0&t=1758208475589',
+  '/img/roundupviewimages/image_9.0&t=1758125864635',
+  '/img/roundupviewimages/image_10.0&t=1756152436783',
+  '/img/roundupviewimages/image_11.0&t=1756134008012',
+  '/img/roundupviewimages/image_12.0&t=1754912113558',
+  '/img/roundupviewimages/image_13.0&t=1754577884393',
+  '/img/roundupviewimages/image_14.0&t=1754599541650',
+  '/img/roundupviewimages/image_15.0&t=1754077876982',
+  '/img/roundupviewimages/image_16.0&t=1753809179720',
+  '/img/roundupviewimages/image_17.0&t=1752505846711',
+  '/img/roundupviewimages/image_18.0&t=1751316276739',
+  '/img/roundupviewimages/image_19.0&t=1751293802039',
+  '/img/roundupviewimages/image_20.0&t=1749347694757',
+  '/img/roundupviewimages/image_21.0&t=1749225187983',
+  '/img/roundupviewimages/image_22.0&t=1749155960084',
+  '/img/roundupviewimages/image_23.0&t=1748010925859',
+  '/img/roundupviewimages/image_24.0&t=1747686206759',
+  '/img/roundupviewimages/image_25.0&t=1747074816219',
+  '/img/roundupviewimages/image_26.0&t=1746729065566',
+  '/img/roundupviewimages/image_27.0&t=1745259003728',
+  '/img/roundupviewimages/image_28.0&t=1746454984126',
+  '/img/roundupviewimages/image_29.0&t=1746211579693',
+  '/img/roundupviewimages/image_30.0&t=1745870241227',
+  '/img/roundupviewimages/image_31.0&t=1744826819561',
+  '/img/roundupviewimages/image_32.0&t=1744731314769',
+  '/img/roundupviewimages/image_33.0&t=1742500582469',
+  '/img/roundupviewimages/image_34.0&t=1742827011794',
+  '/img/roundupviewimages/image_35.0&t=1742826690724',
+  '/img/roundupviewimages/image_36.0&t=1742573505833',
+  '/img/roundupviewimages/image_37.0&t=1742487250864',
+  '/img/roundupviewimages/image_38.0&t=1742237855595',
+  '/img/roundupviewimages/image_39.0&t=1741960286213',
+  '/img/roundupviewimages/image_40.0&t=1741788967399',
+  '/img/roundupviewimages/image_41.0&t=1741034111476',
+  '/img/roundupviewimages/image_42.0&t=1741035918165',
+  '/img/roundupviewimages/image_43.0&t=1760027646712',
+  '/img/roundupviewimages/image_45.0&t=1759434552718',
+  '/img/roundupviewimages/image_46.0&t=1758813038321',
+  '/img/roundupviewimages/image_47.0&t=1757947810825',
+  '/img/roundupviewimages/image_48.0&t=1757947534279',
+  '/img/roundupviewimages/image_49.0&t=1756124897738',
+  '/img/roundupviewimages/image_50.0&t=1755203350242',
+  '/img/roundupviewimages/image_51.0&t=1754937264711',
+  '/img/roundupviewimages/image_52.0&t=1754663691269',
+  '/img/roundupviewimages/image_53.0&t=1754599273492',
+  '/img/roundupviewimages/image_54.0&t=1754581845067',
+  '/img/roundupviewimages/image_55.0&t=1753989314774',
+  '/img/roundupviewimages/image_56.0&t=1753471878683',
+  '/img/roundupviewimages/image_57.0&t=1753455750658',
+  '/img/roundupviewimages/image_58.0&t=1753107664594',
+  '/img/roundupviewimages/image_59.0&t=1752255671225',
+  '/img/roundupviewimages/image_60.0&t=1752159891121',
+  '/img/roundupviewimages/image_61.0&t=1752163279192',
+  '/img/roundupviewimages/image_62.0&t=1752160290238',
+  '/img/roundupviewimages/image_63.0&t=1751911751159',
+  '/img/roundupviewimages/image_64.0&t=1751489647570',
+  '/img/roundupviewimages/image_65.0&t=1751392567278',
+  '/img/roundupviewimages/image_66.0&t=1751293221800',
+  '/img/roundupviewimages/image_67.0&t=1751293522268',
+  '/img/roundupviewimages/image_68.0&t=1748874241481',
+  '/img/roundupviewimages/image_69.0&t=1749474919670',
+  '/img/roundupviewimages/image_70.0&t=1748874287732',
+  '/img/roundupviewimages/image_71.0&t=1748029018207',
+  '/img/roundupviewimages/image_72.0&t=1747240977546',
+  '/img/roundupviewimages/image_73.0&t=1747059986244',
+  '/img/roundupviewimages/image_74.0&t=1747059597413',
+  '/img/roundupviewimages/image_75.0&t=1745248416758',
+  '/img/roundupviewimages/image_76.0&t=1745005787128',
+  '/img/roundupviewimages/image_77.0&t=1744138670159',
+  '/img/roundupviewimages/image_78.0&t=1743786180540',
+  '/img/roundupviewimages/image_79.0&t=1744038989077',
+  '/img/roundupviewimages/image_80.0&t=1743626103889',
+  '/img/roundupviewimages/image_81.0&t=1743790058897',
+  '/img/roundupviewimages/image_82.0&t=1743430374761',
+  '/img/roundupviewimages/image_83.0&t=1742841075213',
+  '/img/roundupviewimages/image_84.0&t=1740066925590',
+  '/img/roundupviewimages/image_85.0&t=1740067596102',
+  '/img/roundupviewimages/image_86.0&t=1741274381837',
+  '/img/roundupviewimages/image_87.0&t=1740067123611',
+  '/img/roundupviewimages/image_88.0&t=1759550655291',
+  '/img/roundupviewimages/image_89.0&t=1746821306346',
+];
+
 export default function CompanySsaiRoundupView() {
   return (
-    <main className="container mx-auto max-w-5xl px-4 py-12">
-      <h1 className="text-3xl font-semibold text-gray-900">SSAI Roundup</h1>
-      <p className="mt-3 text-gray-600">This page is under development.</p>
+    <main className="mx-auto max-w-7xl px-4 py-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {roundupViewImages.map((src, idx) => (
+          <div key={idx} className="bg-white rounded shadow overflow-hidden">
+            <img src={src} alt={`Roundup image ${idx + 1}`} className="w-full h-auto" />
+          </div>
+        ))}
+      </div>
     </main>
   );
 }

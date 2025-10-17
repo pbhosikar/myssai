@@ -6,11 +6,7 @@ export default function Header() {
       <div className="container d-flex align-items-center justify-content-between text-break">
         <div className="align-items-center d-flex flex-column flex-lg-row mt-3 mt-lg-0">
           <picture>
-            <img
-              alt="SSAI Logo"
-              className="section-header-logo"
-              src="/img/ssai_logo.svg"
-            />
+            <img alt="SSAI Logo" className="section-header-logo" src="/img/ssai_logo.png" />
           </picture>
           <div className="section-header-title">mySSAI</div>
         </div>
@@ -22,20 +18,12 @@ export default function Header() {
               role="menubar"
             >
               <li className="lfr-nav-item nav-item selected active" role="presentation">
-                <ClientLink
-                  className="nav-link text-truncate"
-                  to="/home"
-                  role="menuitem"
-                >
+                <ClientLink className="nav-link text-truncate" to="/home" role="menuitem">
                   <span className="text-truncate"> Home </span>
                 </ClientLink>
               </li>
               <li className="lfr-nav-item nav-item" role="presentation">
-                <ClientLink
-                  className="nav-link text-truncate"
-                  to="/my-workspace"
-                  role="menuitem"
-                >
+                <ClientLink className="nav-link text-truncate" to="/my-workspace" role="menuitem">
                   <span className="text-truncate"> My Workspace </span>
                 </ClientLink>
               </li>
@@ -108,7 +96,10 @@ export default function Header() {
                   </li>
                   <ul className="list-unstyled pl-3">
                     <li role="presentation">
-                      <ClientLink className="dropdown-item" to="/company/communications-survey-results">
+                      <ClientLink
+                        className="dropdown-item"
+                        to="/company/communications-survey-results"
+                      >
                         Communications Survey Results
                       </ClientLink>
                     </li>
@@ -120,7 +111,10 @@ export default function Header() {
                   </li>
                   <ul className="list-unstyled pl-3">
                     <li role="presentation">
-                      <ClientLink className="dropdown-item" to="/company/updated-pto-policy-frequently-asked-questions">
+                      <ClientLink
+                        className="dropdown-item"
+                        to="/company/updated-pto-policy-frequently-asked-questions"
+                      >
                         Updated PTO Policy FAQs
                       </ClientLink>
                     </li>
@@ -165,29 +159,17 @@ export default function Header() {
                 </ul>
               </li>
               <li className="lfr-nav-item nav-item" role="presentation">
-                <ClientLink
-                  className="nav-link text-truncate"
-                  to="/search"
-                  role="menuitem"
-                >
+                <ClientLink className="nav-link text-truncate" to="/search" role="menuitem">
                   <span className="text-truncate"> Search </span>
                 </ClientLink>
               </li>
               <li className="lfr-nav-item nav-item" role="presentation">
-                <ClientLink
-                  className="nav-link text-truncate"
-                  to="/om-bahethi"
-                  role="menuitem"
-                >
+                <ClientLink className="nav-link text-truncate" to="/om-bahethi" role="menuitem">
                   <span className="text-truncate"> Om Bahethi </span>
                 </ClientLink>
               </li>
               <li className="lfr-nav-item nav-item" role="presentation">
-                <ClientLink
-                  className="nav-link text-truncate"
-                  to="/login"
-                  role="menuitem"
-                >
+                <ClientLink className="nav-link text-truncate" to="/login" role="menuitem">
                   <span className="text-truncate"> Login </span>
                 </ClientLink>
               </li>

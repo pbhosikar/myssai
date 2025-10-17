@@ -1,9 +1,5 @@
-export const metadata = {
-  title: 'My HR - MySSAI',
-  description: 'HR contacts, resources, and wellness information for SSAI employees.',
-};
-
-export default function MyHRPage() {
+'use client';
+export default function MyHRView() {
   return (
     <section className="container mx-auto max-w-6xl px-4 py-8">
       <header className="mb-8">

@@ -1,3 +1,5 @@
+'use client';
+import ClientLink from '@/components/ClientLink';
 export default function Header() {
   return (
     <header className="bg-white border-bottom border-light navbar navbar-light py-4 section-header">
@@ -5,9 +7,9 @@ export default function Header() {
         <div className="align-items-center d-flex flex-column flex-lg-row mt-3 mt-lg-0">
           <picture>
             <img
-              alt="Logo Image"
+              alt="SSAI Logo"
               className="section-header-logo"
-              src="http://localhost:4040/documents/32054/0/ssai_logo.png/b5d2d137-b0e3-6708-d9d1-4f01c795b986?version=1.0&t=1712849313894"
+              src="/img/ssai_logo.svg"
             />
           </picture>
           <div className="section-header-title">mySSAI</div>
@@ -20,13 +22,13 @@ export default function Header() {
               role="menubar"
             >
               <li className="lfr-nav-item nav-item selected active" role="presentation">
-                <a
+                <ClientLink
                   className="nav-link text-truncate"
-                  href="http://localhost:4040/home"
+                  to="/home"
                   role="menuitem"
                 >
-                  x<span className="text-truncate"> Home </span>
-                </a>
+                  <span className="text-truncate"> Home </span>
+                </ClientLink>
               </li>
               <li className="lfr-nav-item nav-item" role="presentation">
                 <a
@@ -38,9 +40,9 @@ export default function Header() {
                 </a>
               </li>
               <li className="lfr-nav-item nav-item dropdown" role="presentation">
-                <a
+                <ClientLink
                   className="nav-link text-truncate dropdown-toggle"
-                  href="http://localhost:4040/my-hr"
+                  to="/my-hr"
                   role="menuitem"
                   aria-haspopup="true"
                 >
@@ -50,7 +52,7 @@ export default function Header() {
                       <i className="fa-solid fa-angle-down" aria-hidden="true"></i>
                     </span>
                   </span>
-                </a>
+                </ClientLink>
                 <ul aria-expanded="false" className="child-menu dropdown-menu" role="menu">
                   <li role="presentation">
                     <a className="dropdown-item" href="http://localhost:4040/h-r/benefits">
@@ -78,9 +80,9 @@ export default function Header() {
                 </ul>
               </li>
               <li className="lfr-nav-item nav-item dropdown" role="presentation">
-                <a
+                <ClientLink
                   className="nav-link text-truncate dropdown-toggle"
-                  href="http://localhost:4040/company"
+                  to="/company"
                   role="menuitem"
                   aria-haspopup="true"
                 >
@@ -90,7 +92,7 @@ export default function Header() {
                       <i className="fa-solid fa-angle-down" aria-hidden="true"></i>
                     </span>
                   </span>
-                </a>
+                </ClientLink>
                 <ul aria-expanded="false" className="child-menu dropdown-menu" role="menu">
                   <li role="presentation">
                     <a className="dropdown-item" href="http://localhost:4040/accounting-payroll">
@@ -187,13 +189,13 @@ export default function Header() {
                 </a>
               </li>
               <li className="lfr-nav-item nav-item" role="presentation">
-                <a
+                <ClientLink
                   className="nav-link text-truncate"
-                  href="http://localhost:4040/om-bahethi"
+                  to="/om-bahethi"
                   role="menuitem"
                 >
                   <span className="text-truncate"> Om Bahethi </span>
-                </a>
+                </ClientLink>
               </li>
               <li className="lfr-nav-item nav-item" role="presentation">
                 <a

@@ -1,9 +1,5 @@
-export const metadata = {
-  title: 'Om Bahethi - MySSAI',
-  description: 'Honoring Dr. Om P. Bahethi and his impact on SSAI and STEM.',
-};
-
-export default function OmBahethiPage() {
+'use client';
+export default function OmBahethiView() {
   return (
     <section className="container mx-auto max-w-5xl px-4 py-8">
       <header className="mb-6">

@@ -195,7 +195,7 @@ export default function OmBahethiView() {
           </div>
           <div className="md:col-span-9">
             <h2 className="text-2xl font-semibold text-gray-900">Celebrating Om</h2>
-            <div className="mt-4 rounded-lg border border-gray-200 p-4">
+            <div className="mt-4  p-4">
               <div className="flex items-center gap-3 text-gray-700">
                 <div className="h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center">
                   <svg

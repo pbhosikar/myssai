@@ -1,4 +1,5 @@
-export default function Home() {
+'use client';
+export default function HomeView() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Welcome Header Section */}

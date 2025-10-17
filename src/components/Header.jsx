@@ -1,3 +1,5 @@
+'use client';
+import ClientLink from '@/components/ClientLink';
 export default function Header() {
   return (
     <header className="bg-white border-bottom border-light navbar navbar-light py-4 section-header">
@@ -5,9 +7,9 @@ export default function Header() {
         <div className="align-items-center d-flex flex-column flex-lg-row mt-3 mt-lg-0">
           <picture>
             <img
-              alt="Logo Image"
+              alt="SSAI Logo"
               className="section-header-logo"
-              src="http://localhost:4040/documents/32054/0/ssai_logo.png/b5d2d137-b0e3-6708-d9d1-4f01c795b986?version=1.0&t=1712849313894"
+              src="/img/ssai_logo.svg"
             />
           </picture>
           <div className="section-header-title">mySSAI</div>
@@ -20,27 +22,27 @@ export default function Header() {
               role="menubar"
             >
               <li className="lfr-nav-item nav-item selected active" role="presentation">
-                <a
+                <ClientLink
                   className="nav-link text-truncate"
-                  href="http://localhost:4040/home"
+                  to="/home"
                   role="menuitem"
                 >
-                  x<span className="text-truncate"> Home </span>
-                </a>
+                  <span className="text-truncate"> Home </span>
+                </ClientLink>
               </li>
               <li className="lfr-nav-item nav-item" role="presentation">
-                <a
+                <ClientLink
                   className="nav-link text-truncate"
-                  href="http://localhost:4040/my-workspace"
+                  to="/my-workspace"
                   role="menuitem"
                 >
                   <span className="text-truncate"> My Workspace </span>
-                </a>
+                </ClientLink>
               </li>
               <li className="lfr-nav-item nav-item dropdown" role="presentation">
-                <a
+                <ClientLink
                   className="nav-link text-truncate dropdown-toggle"
-                  href="http://localhost:4040/my-hr"
+                  to="/my-hr"
                   role="menuitem"
                   aria-haspopup="true"
                 >
@@ -50,37 +52,34 @@ export default function Header() {
                       <i className="fa-solid fa-angle-down" aria-hidden="true"></i>
                     </span>
                   </span>
-                </a>
+                </ClientLink>
                 <ul aria-expanded="false" className="child-menu dropdown-menu" role="menu">
                   <li role="presentation">
-                    <a className="dropdown-item" href="http://localhost:4040/h-r/benefits">
+                    <ClientLink className="dropdown-item" to="/my-hr/benefits">
                       Benefits
-                    </a>
+                    </ClientLink>
                   </li>
                   <li role="presentation">
-                    <a className="dropdown-item" href="http://localhost:4040/h-r/health-safety">
+                    <ClientLink className="dropdown-item" to="/my-hr/health-safety">
                       Safety Corner
-                    </a>
+                    </ClientLink>
                   </li>
                   <li role="presentation">
-                    <a
-                      className="dropdown-item"
-                      href="http://localhost:4040/h-r/knowledge-training"
-                    >
+                    <ClientLink className="dropdown-item" to="/my-hr/knowledge-training">
                       Knowledge &amp; Training
-                    </a>
+                    </ClientLink>
                   </li>
                   <li role="presentation">
-                    <a className="dropdown-item" href="http://localhost:4040/h-r/employee-rights">
+                    <ClientLink className="dropdown-item" to="/my-hr/employee-rights">
                       Employee-rights
-                    </a>
+                    </ClientLink>
                   </li>
                 </ul>
               </li>
               <li className="lfr-nav-item nav-item dropdown" role="presentation">
-                <a
+                <ClientLink
                   className="nav-link text-truncate dropdown-toggle"
-                  href="http://localhost:4040/company"
+                  to="/company"
                   role="menuitem"
                   aria-haspopup="true"
                 >
@@ -90,124 +89,112 @@ export default function Header() {
                       <i className="fa-solid fa-angle-down" aria-hidden="true"></i>
                     </span>
                   </span>
-                </a>
+                </ClientLink>
                 <ul aria-expanded="false" className="child-menu dropdown-menu" role="menu">
                   <li role="presentation">
-                    <a className="dropdown-item" href="http://localhost:4040/accounting-payroll">
+                    <ClientLink className="dropdown-item" to="/company/accounting-payroll">
                       Accounting &amp; Payroll
-                    </a>
+                    </ClientLink>
                   </li>
                   <li role="presentation">
-                    <a className="dropdown-item" href="http://localhost:4040/business-development">
+                    <ClientLink className="dropdown-item" to="/company/business-development">
                       Business Development
-                    </a>
+                    </ClientLink>
                   </li>
                   <li role="presentation">
-                    <a className="dropdown-item" href="http://localhost:4040/communications">
+                    <ClientLink className="dropdown-item" to="/company/communications">
                       Communications
-                    </a>
+                    </ClientLink>
                   </li>
                   <ul className="list-unstyled pl-3">
                     <li role="presentation">
-                      <a
-                        className="dropdown-item"
-                        href="http://localhost:4040/communications-survey-results"
-                      >
+                      <ClientLink className="dropdown-item" to="/company/communications-survey-results">
                         Communications Survey Results
-                      </a>
+                      </ClientLink>
                     </li>
                   </ul>
                   <li role="presentation">
-                    <a className="dropdown-item" href="http://localhost:4040/employee-faqs">
+                    <ClientLink className="dropdown-item" to="/company/employee-faqs">
                       Employee FAQs
-                    </a>
+                    </ClientLink>
                   </li>
                   <ul className="list-unstyled pl-3">
                     <li role="presentation">
-                      <a
-                        className="dropdown-item"
-                        href="http://localhost:4040/updated-pto-policy-frequently-asked-questions"
-                      >
+                      <ClientLink className="dropdown-item" to="/company/updated-pto-policy-frequently-asked-questions">
                         Updated PTO Policy FAQs
-                      </a>
+                      </ClientLink>
                     </li>
                   </ul>
                   <li role="presentation">
-                    <a
-                      className="dropdown-item"
-                      href="http://localhost:4040/information-technology"
-                    >
+                    <ClientLink className="dropdown-item" to="/company/information-technology">
                       Information Technology
-                    </a>
+                    </ClientLink>
                   </li>
                   <li role="presentation">
-                    <a className="dropdown-item" href="http://localhost:4040/opportunities">
+                    <ClientLink className="dropdown-item" to="/company/opportunities">
                       Opportunities
-                    </a>
+                    </ClientLink>
                   </li>
                   <li role="presentation">
-                    <a
-                      className="dropdown-item"
-                      href="http://localhost:4040/quality-management-system"
-                    >
+                    <ClientLink className="dropdown-item" to="/company/quality-management-system">
                       Quality Management System
-                    </a>
+                    </ClientLink>
                   </li>
                   <ul className="list-unstyled pl-3">
                     <li role="presentation">
-                      <a className="dropdown-item" href="http://localhost:4040/company-forms">
+                      <ClientLink className="dropdown-item" to="/company/company-forms">
                         Company Forms
-                      </a>
+                      </ClientLink>
                     </li>
                   </ul>
                   <li role="presentation">
-                    <a className="dropdown-item" href="http://localhost:4040/strategy">
+                    <ClientLink className="dropdown-item" to="/company/strategy">
                       Strategy
-                    </a>
+                    </ClientLink>
                   </li>
                   <li role="presentation">
-                    <a className="dropdown-item" href="http://localhost:4040/travel">
+                    <ClientLink className="dropdown-item" to="/company/travel">
                       Travel
-                    </a>
+                    </ClientLink>
                   </li>
                   <li role="presentation">
-                    <a className="dropdown-item" href="http://localhost:4040/ssai-roundup">
+                    <ClientLink className="dropdown-item" to="/company/ssai-roundup">
                       SSAI Roundup
-                    </a>
+                    </ClientLink>
                   </li>
                 </ul>
               </li>
               <li className="lfr-nav-item nav-item" role="presentation">
-                <a
+                <ClientLink
                   className="nav-link text-truncate"
-                  href="http://localhost:4040/search"
+                  to="/search"
                   role="menuitem"
                 >
                   <span className="text-truncate"> Search </span>
-                </a>
+                </ClientLink>
               </li>
               <li className="lfr-nav-item nav-item" role="presentation">
-                <a
+                <ClientLink
                   className="nav-link text-truncate"
-                  href="http://localhost:4040/om-bahethi"
+                  to="/om-bahethi"
                   role="menuitem"
                 >
                   <span className="text-truncate"> Om Bahethi </span>
-                </a>
+                </ClientLink>
               </li>
               <li className="lfr-nav-item nav-item" role="presentation">
-                <a
+                <ClientLink
                   className="nav-link text-truncate"
-                  href="http://localhost:4040/openid/-/login/openid_connect_request?p_p_state=maximized&_com_liferay_login_web_portlet_LoginPortlet_saveLastPath=false&_com_liferay_login_web_portlet_LoginPortlet_redirect=/&_com_liferay_login_web_portlet_LoginPortlet_OPEN_ID_CONNECT_PROVIDER_NAME=Azure%20OIDC"
+                  to="/login"
                   role="menuitem"
                 >
                   <span className="text-truncate"> Login </span>
-                </a>
+                </ClientLink>
               </li>
             </ul>
           </nav>
           {/* Search bar matching legacy structure */}
-          <form action="http://localhost:4040/search" method="get" className="ml-lg-3 mt-4 mt-lg-0">
+          <form action="/search" method="get" className="ml-lg-3 mt-4 mt-lg-0">
             <div className="input-group search-bar-suggestions">
               <div className="input-group-item">
                 <div className="input-group">

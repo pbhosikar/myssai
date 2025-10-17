@@ -2,38 +2,35 @@
 export default function CompanyView() {
   return (
     <main className="min-h-screen bg-white">
-      <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        <h1 className="text-3xl font-semibold tracking-tight text-gray-900">Company</h1>
-        <p className="mt-2 text-gray-600">
-          Learn about SSAI’s story, purpose, mission, vision, values, and culture.
-        </p>
-
+      <section className="">
         <div className="mt-10 space-y-12">
           {/* About Us */}
-          <section>
-            <h2 className="text-2xl font-semibold text-gray-900">About Us</h2>
-            <div className="mt-4 space-y-4 text-gray-700">
-              <p>
-                From our humble beginning, SSAI has grown organically to the 700+ person
-                organization it is today. SSAI founders Om and Sara Bahethi worked over the past
-                four decades to create and maintain a company culture that supports a spirit of
-                scientific exploration and innovation, respect for our planet and environment, and a
-                desire to make things better for humanity.
-              </p>
-              <p>
-                The family centered values that were so important at our company's beginning remain
-                a central part of SSAI's current company culture. These values are reflected in the
-                way SSAI leadership treats its employees and how employees are expected to treat
-                each other and our customers. This enduring culture allows SSAI to attract and
-                retain highly qualified scientists, engineers, programmers, experienced
-                professionals, and support staff to help our customers accomplish their most
-                challenging missions and achieve their loftiest goals.
-              </p>
+          <div className="relative bg-[url('/img/Picture1.jpg')] bg-cover bg-center bg-no-repeat mx-auto px-4 sm:px-6 lg:px-8 py-10 p-10 text-white min-h-[320px]">
+            <div className="relative max-w-7xl mx-auto">
+              <h1 className="text-2xl font-semibold">About Us</h1>
+              <div className="mt-10 space-y-4">
+                <p style={{ fontSize: '1.125rem', lineHeight: '1.6' }}>
+                  From our humble beginning, SSAI has grown organically to the 700+ person
+                  organization it is today. SSAI founders Om and Sara Bahethi worked over the past
+                  four decades to create and maintain a company culture that supports a spirit of
+                  scientific exploration and innovation, respect for our planet and environment,
+                  and a desire to make things better for humanity.
+                </p>
+                <p className="mt-15" style={{ fontSize: '1.125rem', lineHeight: '1.6' }}>
+                  The family centered values that were so important at our company's beginning
+                  remain a central part of SSAI's current company culture. These values are
+                  reflected in the way SSAI leadership treats its employees and how employees are
+                  expected to treat each other and our customers. This enduring culture allows
+                  SSAI to attract and retain highly qualified scientists, engineers, programmers,
+                  experienced professionals, and support staff to help our customers accomplish
+                  their most challenging missions and achieve their loftiest goals.
+                </p>
+              </div>
             </div>
-          </section>
+          </div>
 
           {/* Purpose, Mission, Vision + Values */}
-          <section>
+          <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="lg:col-span-2 space-y-8">
                 <div>

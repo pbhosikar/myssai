@@ -3,9 +3,13 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import Image from 'next/image';
 import useEmblaCarousel from 'embla-carousel-react';
+import Autoplay from 'embla-carousel-autoplay'; 
+
 
 const KnowledgeTraining = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, );
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 3000, stopOnInteraction: false })
+  ]);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   // Carousel slides data

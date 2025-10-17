@@ -14,13 +14,13 @@ export default function Footer() {
             <h4>company</h4>
             <ul>
               <li>
-                <a href="https://www.ssaihq.com/" target="_blank" rel="noopener noreferrer">Science Systems and Applications, Inc.</a>
+                <a href="/web/ssaihq/home">Science Systems and Applications, Inc.</a>
               </li>
               <li>
-                <a href="/home">MySSAI Home</a>
+                <a href="https://my.ssai.app/home">MySSAI Home</a>
               </li>
               <li>
-                <a href="/my-hr">My HR</a>
+                <a href="https://my.ssai.app/my-hr">My HR</a>
               </li>
             </ul>
           </div>
@@ -28,13 +28,13 @@ export default function Footer() {
             <h4>&nbsp;</h4>
             <ul>
               <li>
-                <a href="/my-workspace">My Workspace</a>
+                <a href="https://my.ssai.app/my-workspace">My Workspace</a>
               </li>
               <li>
-                <a href="/company">Company</a>
+                <a href="https://my.ssai.app/company">Company</a>
               </li>
               <li>
-                <a href="/search">Search</a>
+                <a href="https://my.ssai.app/search">Search</a>
               </li>
             </ul>
           </div>

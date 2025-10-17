@@ -1,27 +1,4 @@
-'use client';
-import { usePathname } from 'next/navigation';
-
 export default function Header() {
-  const pathname = usePathname();
-  const isHome = pathname === '/' || pathname.startsWith('/home');
-  const isWorkspace = pathname.startsWith('/my-workspace');
-  const isMyHR = pathname.startsWith('/my-hr') || pathname.startsWith('/h-r');
-  const isCompany =
-    pathname.startsWith('/company') ||
-    pathname.startsWith('/accounting-payroll') ||
-    pathname.startsWith('/business-development') ||
-    pathname.startsWith('/communications') ||
-    pathname.startsWith('/employee-faqs') ||
-    pathname.startsWith('/updated-pto-policy-frequently-asked-questions') ||
-    pathname.startsWith('/information-technology') ||
-    pathname.startsWith('/opportunities') ||
-    pathname.startsWith('/quality-management-system') ||
-    pathname.startsWith('/company-forms') ||
-    pathname.startsWith('/strategy') ||
-    pathname.startsWith('/travel') ||
-    pathname.startsWith('/ssai-roundup');
-  const isSearch = pathname.startsWith('/search');
-  const isOmBahethi = pathname.startsWith('/om-bahethi');
   return (
     <header className="bg-white border-bottom border-light navbar navbar-light py-4 section-header">
       <div className="container d-flex align-items-center justify-content-between text-break">
@@ -30,7 +7,7 @@ export default function Header() {
             <img
               alt="Logo Image"
               className="section-header-logo"
-              src="/img/b5d2d137-b0e3-6708-d9d1-4f01c795b986_3f766572.png"
+              src="http://localhost:4040/documents/32054/0/ssai_logo.png/b5d2d137-b0e3-6708-d9d1-4f01c795b986?version=1.0&t=1712849313894"
             />
           </picture>
           <div className="section-header-title">mySSAI</div>
@@ -42,28 +19,28 @@ export default function Header() {
               className="navbar-blank navbar-nav navbar-site"
               role="menubar"
             >
-              <li className={`lfr-nav-item nav-item ${isHome ? 'selected active' : ''}`} role="presentation">
+              <li className="lfr-nav-item nav-item selected active" role="presentation">
                 <a
                   className="nav-link text-truncate"
-                  href="/home"
+                  href="http://localhost:4040/home"
                   role="menuitem"
                 >
-                  <span className="text-truncate"> Home </span>
+                  x<span className="text-truncate"> Home </span>
                 </a>
               </li>
-              <li className={`lfr-nav-item nav-item ${isWorkspace ? 'selected active' : ''}`} role="presentation">
+              <li className="lfr-nav-item nav-item" role="presentation">
                 <a
                   className="nav-link text-truncate"
-                  href="/my-workspace"
+                  href="http://localhost:4040/my-workspace"
                   role="menuitem"
                 >
                   <span className="text-truncate"> My Workspace </span>
                 </a>
               </li>
-              <li className={`lfr-nav-item nav-item dropdown ${isMyHR ? 'selected active' : ''}`} role="presentation">
+              <li className="lfr-nav-item nav-item dropdown" role="presentation">
                 <a
                   className="nav-link text-truncate dropdown-toggle"
-                  href="/my-hr"
+                  href="http://localhost:4040/my-hr"
                   role="menuitem"
                   aria-haspopup="true"
                 >
@@ -76,34 +53,34 @@ export default function Header() {
                 </a>
                 <ul aria-expanded="false" className="child-menu dropdown-menu" role="menu">
                   <li role="presentation">
-                    <a className="dropdown-item" href="/h-r/benefits">
+                    <a className="dropdown-item" href="http://localhost:4040/h-r/benefits">
                       Benefits
                     </a>
                   </li>
                   <li role="presentation">
-                    <a className="dropdown-item" href="/h-r/health-safety">
+                    <a className="dropdown-item" href="http://localhost:4040/h-r/health-safety">
                       Safety Corner
                     </a>
                   </li>
                   <li role="presentation">
                     <a
                       className="dropdown-item"
-                      href="/h-r/knowledge-training"
+                      href="http://localhost:4040/h-r/knowledge-training"
                     >
                       Knowledge &amp; Training
                     </a>
                   </li>
                   <li role="presentation">
-                    <a className="dropdown-item" href="/h-r/employee-rights">
+                    <a className="dropdown-item" href="http://localhost:4040/h-r/employee-rights">
                       Employee-rights
                     </a>
                   </li>
                 </ul>
               </li>
-              <li className={`lfr-nav-item nav-item dropdown ${isCompany ? 'selected active' : ''}`} role="presentation">
+              <li className="lfr-nav-item nav-item dropdown" role="presentation">
                 <a
                   className="nav-link text-truncate dropdown-toggle"
-                  href="/company"
+                  href="http://localhost:4040/company"
                   role="menuitem"
                   aria-haspopup="true"
                 >
@@ -116,17 +93,17 @@ export default function Header() {
                 </a>
                 <ul aria-expanded="false" className="child-menu dropdown-menu" role="menu">
                   <li role="presentation">
-                    <a className="dropdown-item" href="/accounting-payroll">
+                    <a className="dropdown-item" href="http://localhost:4040/accounting-payroll">
                       Accounting &amp; Payroll
                     </a>
                   </li>
                   <li role="presentation">
-                    <a className="dropdown-item" href="/business-development">
+                    <a className="dropdown-item" href="http://localhost:4040/business-development">
                       Business Development
                     </a>
                   </li>
                   <li role="presentation">
-                    <a className="dropdown-item" href="/communications">
+                    <a className="dropdown-item" href="http://localhost:4040/communications">
                       Communications
                     </a>
                   </li>
@@ -134,14 +111,14 @@ export default function Header() {
                     <li role="presentation">
                       <a
                         className="dropdown-item"
-                        href="/communications-survey-results"
+                        href="http://localhost:4040/communications-survey-results"
                       >
                         Communications Survey Results
                       </a>
                     </li>
                   </ul>
                   <li role="presentation">
-                    <a className="dropdown-item" href="/employee-faqs">
+                    <a className="dropdown-item" href="http://localhost:4040/employee-faqs">
                       Employee FAQs
                     </a>
                   </li>
@@ -149,7 +126,7 @@ export default function Header() {
                     <li role="presentation">
                       <a
                         className="dropdown-item"
-                        href="/updated-pto-policy-frequently-asked-questions"
+                        href="http://localhost:4040/updated-pto-policy-frequently-asked-questions"
                       >
                         Updated PTO Policy FAQs
                       </a>
@@ -158,61 +135,61 @@ export default function Header() {
                   <li role="presentation">
                     <a
                       className="dropdown-item"
-                      href="/information-technology"
+                      href="http://localhost:4040/information-technology"
                     >
                       Information Technology
                     </a>
                   </li>
                   <li role="presentation">
-                    <a className="dropdown-item" href="/opportunities">
+                    <a className="dropdown-item" href="http://localhost:4040/opportunities">
                       Opportunities
                     </a>
                   </li>
                   <li role="presentation">
                     <a
                       className="dropdown-item"
-                      href="/quality-management-system"
+                      href="http://localhost:4040/quality-management-system"
                     >
                       Quality Management System
                     </a>
                   </li>
                   <ul className="list-unstyled pl-3">
                     <li role="presentation">
-                      <a className="dropdown-item" href="/company-forms">
+                      <a className="dropdown-item" href="http://localhost:4040/company-forms">
                         Company Forms
                       </a>
                     </li>
                   </ul>
                   <li role="presentation">
-                    <a className="dropdown-item" href="/strategy">
+                    <a className="dropdown-item" href="http://localhost:4040/strategy">
                       Strategy
                     </a>
                   </li>
                   <li role="presentation">
-                    <a className="dropdown-item" href="/travel">
+                    <a className="dropdown-item" href="http://localhost:4040/travel">
                       Travel
                     </a>
                   </li>
                   <li role="presentation">
-                    <a className="dropdown-item" href="/ssai-roundup">
+                    <a className="dropdown-item" href="http://localhost:4040/ssai-roundup">
                       SSAI Roundup
                     </a>
                   </li>
                 </ul>
               </li>
-              <li className={`lfr-nav-item nav-item ${isSearch ? 'selected active' : ''}`} role="presentation">
+              <li className="lfr-nav-item nav-item" role="presentation">
                 <a
                   className="nav-link text-truncate"
-                  href="/search"
+                  href="http://localhost:4040/search"
                   role="menuitem"
                 >
                   <span className="text-truncate"> Search </span>
                 </a>
               </li>
-              <li className={`lfr-nav-item nav-item ${isOmBahethi ? 'selected active' : ''}`} role="presentation">
+              <li className="lfr-nav-item nav-item" role="presentation">
                 <a
                   className="nav-link text-truncate"
-                  href="/om-bahethi"
+                  href="http://localhost:4040/om-bahethi"
                   role="menuitem"
                 >
                   <span className="text-truncate"> Om Bahethi </span>
@@ -230,21 +207,21 @@ export default function Header() {
             </ul>
           </nav>
           {/* Search bar matching legacy structure */}
-          <form action="/search" method="get" className="ml-lg-3 mt-4 mt-lg-0">
+          <form action="http://localhost:4040/search" method="get" className="ml-lg-3 mt-4 mt-lg-0">
             <div className="input-group search-bar-suggestions">
               <div className="input-group-item">
                 <div className="input-group">
-                  <div className="search-input-wrapper w-full">
-                    <input
-                      aria-label="Search"
-                      autoComplete="off"
-                      name="q"
-                      placeholder="Search..."
-                      title="Search"
-                      className="form-control input-group-inset input-group-inset-after search-bar-keywords-input search-input"
-                      type="text"
-                    />
-                    <button className="btn btn-unstyled search-submit" type="submit" aria-label="Search">
+                  <input
+                    aria-label="Search"
+                    autoComplete="off"
+                    name="q"
+                    placeholder="Search..."
+                    title="Search"
+                    className="form-control input-group-inset input-group-inset-after search-bar-keywords-input"
+                    type="text"
+                  />
+                  <div className="input-group-inset-item input-group-inset-item-after">
+                    <button className="btn btn-unstyled" type="submit" aria-label="Search">
                       <i className="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                     </button>
                   </div>

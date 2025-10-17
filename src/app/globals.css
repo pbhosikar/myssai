@@ -168,15 +168,14 @@ p {
   left: 0;
   min-width: 14rem;
   padding: 0.5rem 0;
-  margin-top: 0; /* remove hover gap that hides submenu */
+  margin-top: 0.25rem;
   background-color: #fff;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
   z-index: 1000;
 }
-.navbar-site .dropdown:hover > .dropdown-menu,
-.navbar-site .dropdown:focus-within > .dropdown-menu {
+.navbar-site .dropdown:hover > .dropdown-menu {
   display: block;
 }
 .navbar-site .dropdown-menu .dropdown-item {

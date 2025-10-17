@@ -2,7 +2,7 @@
 
 import CompanyPage from "../company/CompanyPage";
 
-export default function CompanyPage() {
+export default function CompanyView() {
   return (
     <div>
       <CompanyPage/>

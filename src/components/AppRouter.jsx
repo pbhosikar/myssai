@@ -23,6 +23,7 @@ import CompanyFormsView from '@/components/pages/CompanyFormsView';
 import CompanyStrategyView from '@/components/pages/CompanyStrategyView';
 import CompanyTravelView from '@/components/pages/CompanyTravelView';
 import CompanySsaiRoundupView from '@/components/pages/CompanySsaiRoundupView';
+import MyWorkspaceView from '@/components/pages/MyWorkspaceView';
 
 export default function AppRouter() {
   return (
@@ -49,7 +50,7 @@ export default function AppRouter() {
       <Route path="/company/ssai-roundup" element={<CompanySsaiRoundupView />} />
       <Route path="/company" element={<CompanyView />} />
       <Route path="/om-bahethi" element={<OmBahethiView />} />
-      <Route path="/my-workspace" element={<UnderDevelopmentView />} />
+      <Route path="/my-workspace" element={<MyWorkspaceView />} />
       <Route path="/search" element={<UnderDevelopmentView />} />
       <Route path="/login" element={<UnderDevelopmentView />} />
       <Route path="/under-development" element={<UnderDevelopmentView />} />

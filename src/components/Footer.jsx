@@ -1,3 +1,5 @@
+'use client';
+import ClientLink from '@/components/ClientLink';
 export default function Footer() {
   return (
     <footer className="footer">
@@ -17,10 +19,10 @@ export default function Footer() {
                 <a href="/web/ssaihq/home">Science Systems and Applications, Inc.</a>
               </li>
               <li>
-                <a href="https://my.ssai.app/home">MySSAI Home</a>
+                <ClientLink to="/home">MySSAI Home</ClientLink>
               </li>
               <li>
-                <a href="https://my.ssai.app/my-hr">My HR</a>
+                <ClientLink to="/my-hr">My HR</ClientLink>
               </li>
             </ul>
           </div>
@@ -28,13 +30,13 @@ export default function Footer() {
             <h4>&nbsp;</h4>
             <ul>
               <li>
-                <a href="https://my.ssai.app/my-workspace">My Workspace</a>
+                <ClientLink to="/my-workspace">My Workspace</ClientLink>
               </li>
               <li>
-                <a href="https://my.ssai.app/company">Company</a>
+                <ClientLink to="/company">Company</ClientLink>
               </li>
               <li>
-                <a href="https://my.ssai.app/search">Search</a>
+                <ClientLink to="/search">Search</ClientLink>
               </li>
             </ul>
           </div>

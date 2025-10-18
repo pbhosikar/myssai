@@ -293,14 +293,18 @@ Excellence</h3>
                 
                 {/* SSAI University Logo */}
                 <div className=" rounded  mb-6">
-                  <div className="relative h-16">
-                    <Image
-                      src="/img/knowladgetraining/SSAIUniversityLogo.png"
-                      alt="SSAI University"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+                 <a 
+  href="https://workforcenow.adp.com/"  target='_blank'
+  className="block relative h-16 cursor-pointer hover:opacity-80 transition-opacity"
+>
+  <Image
+    src="/img/knowladgetraining/SSAIUniversityLogo.png"
+    alt="SSAI University"
+    fill
+    className="object-contain"
+  />
+</a>
+
                 </div>
 
                 {/* Education Reimbursement */}

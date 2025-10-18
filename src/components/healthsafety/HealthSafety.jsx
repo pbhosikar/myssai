@@ -121,12 +121,12 @@ Safety Committee Meeting Schedule for 2025
           </div>
 
           {/* Report Accidents Section */}
-          <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden mb-8">
-            <div className="bg-orange-600 text-white p-4">
+          <div className="bg-white rounded-lg shadow-sm border border-[#b95000] overflow-hidden mb-8">
+            <div className="bg-[#b95000] text-white p-4">
               <h2 className="text-xl font-bold">Report all Accidents and Hazards immediately to:
 </h2>
             </div>
-            <div className="p-6 bg-orange-50">
+            <div className="p-6">
               <ol className="list-decimal list-inside space-y-2 text-sm text-gray-800 mb-4">
                 <li>Your SSAI Manager</li>
                 <li>SSAI & Customer Safety Representative, if appropriate*
@@ -166,7 +166,7 @@ ensure proper corporate emphasis on safety.
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
             <div className="flex items-center justify-between mb-4">
               <p className="text-sm text-gray-600">Showing 1 to 1 of 1 entries.</p>
-              <button className="px-3 py-1 text-sm border border-blue-600 text-blue-600 rounded hover:bg-blue-50">
+              <button className="px-3 py-1 text-sm border border-[#6b9eff] text-[#6b9eff] rounded hover:bg-blue-50">
                 1
               </button>
             </div>
@@ -183,7 +183,7 @@ ensure proper corporate emphasis on safety.
 
             {/* Maryland Section */}
             <div className="mb-6">
-              <h4 className="text-base font-bold text-gray-900 mb-3 pb-2 border-b-2 border-blue-600 inline-block">
+              <h4 className="text-base font-bold text-gray-900 mb-3 pb-2 border-b-2 border-[#6b9eff] inline-block">
                 Maryland
               </h4>
               <div className="mt-4 space-y-3">
@@ -192,7 +192,7 @@ ensure proper corporate emphasis on safety.
 </h5>
                   <p className="text-sm text-gray-700">Josie Pearson (757) 951-1607
 </p>
-                  <p className="text-sm text-blue-600">SSAI Building Emergency Plan - Lanham
+                  <p className="text-sm text-gray-700">SSAI Building Emergency Plan - Lanham
 
 </p>
                 </div>

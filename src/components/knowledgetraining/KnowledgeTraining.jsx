@@ -93,7 +93,7 @@ const KnowledgeTraining = () => {
               <div className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden mb-8">
                 <div className="relative">
                   {/* Embla Carousel Container */}
-                  <div className="overflow-hidden" ref={emblaRef}>
+                  {/* <div className="overflow-hidden" ref={emblaRef}>
                     <div className="flex">
                       {carouselSlides.map((slide, index) => (
                         <div key={index} className="flex-[0_0_100%] min-w-0">
@@ -109,7 +109,29 @@ const KnowledgeTraining = () => {
                         </div>
                       ))}
                     </div>
-                  </div>
+                  </div> */}
+
+                  <div className="overflow-hidden" ref={emblaRef}>
+  <div className="flex">
+    {carouselSlides.map((slide, index) => (
+      <div key={index} className="flex-[0_0_100%] min-w-0">
+        <a 
+          href="mailto:mailto:SSAIUhelp@SSAIHQ.com" 
+          className="block relative aspect-video bg-gray-900 cursor-pointer"
+        >
+          <Image
+            src={slide.image}
+            alt={slide.alt}
+            fill
+            className="object-contain"
+            priority={index === 0}
+          />
+        </a>
+      </div>
+    ))}
+  </div>
+</div>
+
 
                   {/* Previous Button */}
                   <button
@@ -271,14 +293,18 @@ Excellence</h3>
                 
                 {/* SSAI University Logo */}
                 <div className=" rounded  mb-6">
-                  <div className="relative h-16">
-                    <Image
-                      src="/img/knowladgetraining/SSAIUniversityLogo.png"
-                      alt="SSAI University"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+                 <a 
+  href="https://workforcenow.adp.com/"  target='_blank'
+  className="block relative h-16 cursor-pointer hover:opacity-80 transition-opacity"
+>
+  <Image
+    src="/img/knowladgetraining/SSAIUniversityLogo.png"
+    alt="SSAI University"
+    fill
+    className="object-contain"
+  />
+</a>
+
                 </div>
 
                 {/* Education Reimbursement */}
@@ -300,7 +326,7 @@ Excellence</h3>
 
                   </p>
                   <a href="https://ssaihq.app.box.com/file/1506333433849" target='_blank' className="text-xs text-blue-600 hover:underline">
-To learn more                  </a>
+To learn more HRM-003                 </a>
                 </div>
 
                 {/* Professional Publications */}

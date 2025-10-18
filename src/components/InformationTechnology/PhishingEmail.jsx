@@ -42,11 +42,15 @@ export default function PhishingEmail() {
                   Video. Stay vigilant to keep your data safe!
                 </p>
   
-                <div className="pt-4 flex justify-center">
-                  <button className=" text-blue-600 px-6 py-2 rounded font-semibold transition-colors border border-blue-600">
-                    Phishing Awareness Video
-                  </button>
-                </div>
+  <div className="w-full flex items-center justify-center">
+                 <a href="https://www.youtube.com/watch?si=_vF_vXV2TczZ8h1h&v=o0btqyGWIQw&feature=youtu.be" target="_blank" className="text-center text-blue-600 px-6 py-2 rounded font-semibold transition-colors border border-blue-600">
+                    
+                  Phishing Awareness Video
+                 
+                    </a>
+               </div>
+
+
                 
               </section>
   
@@ -87,11 +91,17 @@ export default function PhishingEmail() {
                     for support!
                   </p>
                 </div>
-                <div className="max-w-4xl mx-auto">
-          {/* Gear Icon */} <div className="pt-4 flex justify-center">
-                  <button className=" text-blue-600 px-6 py-2 rounded font-semibold transition-colors border border-blue-600">
+               <div className="w-full flex items-center justify-center">
+                 <a href="https://ssaihq.app.box.com/s/hocwhthpys1gwwmlha8nywlkd6lfhqz8" target="_blank" className="text-center text-blue-600 px-6 py-2 rounded font-semibold transition-colors border border-blue-600">
+                    
                   Concur Registration Help
-                  </button>
+                 
+                    </a>
+               </div>
+                <div className="max-w-4xl mx-auto">
+                
+          {/* Gear Icon */} <div className="pt-4 flex justify-center">
+                  
                 </div>
                 <div className="flex justify-center">
   <div className="bg-blue-600 rounded-lg w-40 h-40 flex items-center justify-center overflow-hidden">
@@ -175,11 +185,14 @@ export default function PhishingEmail() {
         </div>
 
         <div className="max-w-4xl mx-auto">
-        <div className="pt-4 flex justify-center">
-                  <button className=" text-blue-600 px-6 py-2 rounded font-semibold transition-colors border border-blue-600">
-                  Voucher E-Form Submission Guide
-                  </button>
-                </div>
+        <div className="w-full flex items-center justify-center">
+                 <a href="https://my.ssai.app/%7B%22en_US%22:%22%22%7D" target="_blank" className="text-center text-blue-600 px-6 py-2 rounded font-semibold transition-colors border border-blue-600">
+                    
+                 Voucher E-Form Submission Guide
+                 
+                    </a>
+               </div>
+       
           {/* Gear Icon */}
           <div className="flex justify-center">
   <div className="rounded-lg w-full h-40 flex items-center justify-center overflow-hidden">
@@ -202,8 +215,8 @@ export default function PhishingEmail() {
           {/* Section 1: Accessing the Voucher eForm */}
           <div className="mb-12">
             <h2 className="text-center text-lg font-bold text-gray-900 underline">Step 1:</h2>
-            <p className="text-center text-gray-700 ">Use https://ky.ssai.app  to access Kyocera’s login page. Alternatively, you can use
-            https://science-systems-and-applications.cps-us.kyocera.biz/login </p>
+            <p className="text-center text-gray-700 "> Use <a href="https://ky.ssai.app/" target="_blank" className="text-blue-600">https://ky.ssai.app</a> to access Kyocera’s login page. Alternatively, you can use
+           <a href="https://science-systems-and-applications.cps-us.kyocera.biz/login" target="_blank" className="text-blue-600"> https://science-systems-and-applications.cps-us.kyocera.biz/login </a></p>
             <h2 className="text-center text-lg font-bold text-gray-900  underline">Step 2:</h2>
             <p className="text-center text-gray-700 ">Log in from the homepage using the Microsoft login option and your SSAI credentials.</p>
             <h2 className="text-center text-lg font-bold text-gray-900 underline">Step 3:</h2>
@@ -242,7 +255,7 @@ the Credentials tab to view your printer PIN.</p>
 Select print then select your document which should have first been uploaded at Step 5.
 After you select it, you will be given the option to customize print settings and then print
 it.</p>
-<p className="text-center text-gray-700 mb-4">Note: For more information on Box Scanner Documentation and scanning a document, click here.</p>
+<p className="text-center text-gray-700 mb-4">Note: For more information on Box Scanner Documentation and scanning a document, click <a href="https://ssaihq.box.com/s/i0y9kjt3uvzz5v68sjs94yzaf6l7jxl9" target="_blank" className="text-blue-600">here.</a></p>
           {/* Section 2: Steps for Voucher Submission */}
          </div>
 

@@ -63,7 +63,7 @@ export default function ITHelpDesk() {
 
             {/* Update Card 1 - Trip Report eForm */}
             <div className=" p-6 border border-gray-200 ">
-              <h3 className="text-blue-600  text-[0.875rem] mb-1">Trip Report eForm Now Live!</h3>
+              <h3 className="text-blue-600  text-[0.875rem] mb-1"><a href="https://fr.ssai.app/" target="_blank" className="text-blue-600">Trip Report eForm Now Live! </a></h3>
 
               <p className="text-gray-700 text-[0.875rem] leading-relaxed">
                 We are excited to announce the launch of the new{" "}
@@ -91,7 +91,7 @@ export default function ITHelpDesk() {
 
             {/* Update Card 2 - SSAI Network Status */}
             <div className="p-3 border border-gray-200">
-              <h3 className="text-blue-600 text-[0.875rem] mb-1">SSAI Network Status July 2024</h3>
+              <h3 className="text-blue-600 text-[0.875rem] mb-1"><a href="https://ssaihq.account.box.com/login?redirect_url=%2Ffile%2F1405042689195" target="_blank" className="text-blue-600">SSAI Network Status July 2024</a></h3>
 
               <p className="text-gray-700 text-[0.875rem] leading-relaxed">
                 Here is an important communication to read in SSAI Box regarding the Weekly IT Update.

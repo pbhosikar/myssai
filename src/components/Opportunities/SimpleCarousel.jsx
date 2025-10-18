@@ -13,11 +13,32 @@ const SimpleCarousel = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const images = [
-    '/img/sample/image1.jpg',
-    '/img/sample/image2.jpg',
-    '/img/sample/image3.jpg',
-    '/img/sample/image4.jpg',
-    '/img/sample/image5.jpg',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide2.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide3.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide4.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide5.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide6.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide7.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide8.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide9.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide10.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide11.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide12.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide13.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide14.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide15.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide16.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide17.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide18.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide19.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide20.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide21.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide22.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide23.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide24.png',
+    '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide25.png',
+ 
+
   ];
 
   const onSelect = useCallback(() => {
@@ -33,7 +54,7 @@ const SimpleCarousel = () => {
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="w-[30rem] overflow-hidden rounded-lg shadow-lg mt-4">
+    <div className="w-[30rem] overflow-hidden mt-4">
       <div className="embla" ref={emblaRef}>
         <div className="embla__container flex">
           {images.map((src, index) => (
@@ -45,7 +66,7 @@ const SimpleCarousel = () => {
                 src={src}
                 alt={`Slide ${index + 1}`}
                 fill
-                className="object-cover rounded-lg"
+                className="object-cover"
                 priority={index === 0}
               />
             </div>

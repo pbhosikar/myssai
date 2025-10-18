@@ -127,6 +127,7 @@ export default function CompanyView() {
                 </div>
               </aside>
             </div>
+            
           </section>
         </div>
       </section>

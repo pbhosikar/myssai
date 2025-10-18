@@ -2,19 +2,41 @@
 export default function HomeView() {
   return (
     <div className="min-h-screen bg-gray-50">
+      <div
+        id="msdd"
+        className="lfr-layout-structure-item-f6b4bf1f-ee8c-a188-2240-3294afc15429 lfr-layout-structure-item-container h-64 md:h-96 lg:h-[420px] bg-cover bg-center bg-no-repeat"
+        style={{
+          ['--background-image-file-entry-id']: 81320,
+          ['--lfr-background-image-f6b4bf1f-ee8c-a188-2240-3294afc15429']: "url('/img/website-banner-v6.png')",
+          backgroundImage: "url('/img/website-banner-v6.png')",
+        }}
+      >
+        <style>{`
+          @media (max-width: 300px) {
+            #msdd {
+              background-image: url('/img/website-banner-v6.png') !important;
+            }
+          }
+          @media (max-width: 1000px) and (min-width: 300px) {
+            #msdd {
+              background-image: url('/img/website-banner-v6.png') !important;
+            }
+          }
+        `}</style>
+      </div>
       {/* Welcome Header Section */}
       <div className="bg-white border-b border-gray-200">
         <div className="container mx-auto px-4 py-8">
-          <div className="text-center welcome-header">
-            <h1>Welcome Gopal Thakur!!</h1>
+          <div className="welcome-header">
             <div className="max-w-4xl mx-auto space-y-4">
-              <p>
+              <h1>Welcome Gopal Thakur!!</h1>
+              <p style={{ lineHeight: '1.6' }}>
                 <span className="text-blue-600 font-semibold">mySSAI</span> is our new, company-wide
                 internal-access platform for employees. You can use mySSAI to access resources,
                 learn more about who we are as a company, and stay up-to-date with the latest
                 company news.
               </p>
-              <p>
+              <p className="mt-4" style={{ lineHeight: '1.6' }}>
                 SSAI promotes an open-door policy and values transparency with all employees. We
                 recognize that employees may encounter issues and may want a trusted person to
                 discuss them with. Employees are encouraged to reach out directly to{' '}

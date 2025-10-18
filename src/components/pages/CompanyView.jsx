@@ -99,6 +99,7 @@ export default function CompanyView() {
                 </div>
               </aside>
             </div>
+            </div>
           </section>
         </div>
       </section>

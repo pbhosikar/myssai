@@ -5,7 +5,8 @@ export default function InfoDashboard() {
       title: "Box",
       description: "SSAI's primary document repository. Click here to log in!",
       link: "www.box.com",
-      bgColor: "bg-blue-600",
+      image: "/img/company/information_technology/box.png",
+      bgColor:"",
       isLogo: true,
     },
     {
@@ -13,7 +14,7 @@ export default function InfoDashboard() {
       title: "IT Help Desk",
       description: "Click here to submit IT ticket to the help desk.",
       link: "it_help@ssaihq.com",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=200&fit=crop",
+      image: "/img/company/information_technology/HelpDeskimage.jpeg",
       bgColor: "bg-white",
       isLogo: false,
     },
@@ -23,7 +24,7 @@ export default function InfoDashboard() {
       description:
         "View IT Quick Tips for details on identifying phishing emails. If you are still unsure, contact it_help@ssaihq.com.",
       link: "it_help@ssaihq.com",
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&h=200&fit=crop",
+      image: "/img/company/information_technology/itHElpdesk.jpg",
       bgColor: "bg-indigo-950",
       isLogo: false,
     },
@@ -36,7 +37,7 @@ export default function InfoDashboard() {
       title: "IT Manager",
       mobile: "301-867-6320",
       email: "gerard.alleyne@ssaihq.com",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
+      image: "/img/company/information_technology/itManager.jpg",
     },
     {
       id: 2,
@@ -44,7 +45,7 @@ export default function InfoDashboard() {
       title: "Windows Architect",
       mobile: "301-867-6284",
       email: "vikas.mishra@ssaihq.com",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
+      image: "/img/company/information_technology/windowsArchitect.jpeg",
     },
   ]
 
@@ -60,11 +61,10 @@ export default function InfoDashboard() {
           >
             {/* Image/Logo Section */}
             <div className={`${card.bgColor} h-32 flex items-center justify-center`}>
-              {card.isLogo ? (
-                <span className="text-white text-6xl font-bold">box</span>
-              ) : (
+             
+             
                 <img src={card.image || "/placeholder.svg"} alt={card.title} className="w-full h-full object-cover" />
-              )}
+             
             </div>
 
             {/* Content Section */}

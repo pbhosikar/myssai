@@ -13,15 +13,15 @@ export default function CompanyView() {
                   From our humble beginning, SSAI has grown organically to the 700+ person
                   organization it is today. SSAI founders Om and Sara Bahethi worked over the past
                   four decades to create and maintain a company culture that supports a spirit of
-                  scientific exploration and innovation, respect for our planet and environment,
-                  and a desire to make things better for humanity.
+                  scientific exploration and innovation, respect for our planet and environment, and
+                  a desire to make things better for humanity.
                 </p>
                 <p className="mt-15" style={{ fontSize: '1.125rem', lineHeight: '1.6' }}>
                   The family centered values that were so important at our company's beginning
                   remain a central part of SSAI's current company culture. These values are
                   reflected in the way SSAI leadership treats its employees and how employees are
-                  expected to treat each other and our customers. This enduring culture allows
-                  SSAI to attract and retain highly qualified scientists, engineers, programmers,
+                  expected to treat each other and our customers. This enduring culture allows SSAI
+                  to attract and retain highly qualified scientists, engineers, programmers,
                   experienced professionals, and support staff to help our customers accomplish
                   their most challenging missions and achieve their loftiest goals.
                 </p>
@@ -66,9 +66,37 @@ export default function CompanyView() {
                   </div>
                 </div>
 
+                <div>
+                  <h2 className="text-2xl font-semibold text-gray-900">Our Values</h2>
+                  <ul className="mt-4 space-y-3 text-gray-700 list-disc pl-5">
+                    <li>
+                      <strong>Trust:</strong> Instill trust through honesty and transparency in our
+                      communication and decision-making.
+                    </li>
+                    <li>
+                      <strong>Integrity:</strong> Exercise scientific integrity and uncompromising
+                      engineering as the foundation of our professional ethics.
+                    </li>
+                    <li>
+                      <strong>Teamwork:</strong> Build strong teams to execute our business
+                      practices and support our customers and partners through clear, effective,
+                      deliberate, and comprehensive communication.
+                    </li>
+                    <li>
+                      <strong>Passion:</strong> Innovate and evolve our organization by engaging our
+                      collective sense of wonder and enthusiasm.
+                    </li>
+                    <li>
+                      <strong>Accountability:</strong> We take ownership of our decisions and
+                      everything we do, upholding our commitments to our customers and our
+                      community.
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
               <aside className="lg:col-span-1">
-                <div className="rounded-lg border border-gray-200 bg-gray-50 p-6">
+                <div className="rounded-lg p-6">
                   <h3 className="text-xl font-semibold text-gray-900">Company Culture</h3>
                   <div className="mt-3 space-y-3 text-gray-700">
                     <p>

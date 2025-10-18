@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
+import Link from "next/link";
 
 const MyHr = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -379,9 +380,9 @@ Director of Organizational Development                    </p>
                             />
                             {/* Caption Overlay */}
                             <div className="absolute bottom-0 left-0 right-0 bg-blue-600 text-white p-2.5 text-center">
-                              <p className="text-sm font-medium">
+                              <Link href="/my-hr" className="text-sm font-medium">
                                 {photo.caption}
-                              </p>
+                              </Link>
                             </div>
                           </div>
                         </div>

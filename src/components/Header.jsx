@@ -175,27 +175,26 @@ export default function Header() {
               </li>
             </ul>
           </nav>
-          {/* Search bar matching legacy structure */}
+          {/* Search bar styled to match screenshot */}
           <form action="/search" method="get" className="ml-lg-3 mt-4 mt-lg-0">
-            <div className="input-group search-bar-suggestions">
-              <div className="input-group-item">
-                <div className="input-group">
-                  <input
-                    aria-label="Search"
-                    autoComplete="off"
-                    name="q"
-                    placeholder="Search..."
-                    title="Search"
-                    className="form-control input-group-inset input-group-inset-after search-bar-keywords-input"
-                    type="text"
-                  />
-                  <div className="input-group-inset-item input-group-inset-item-after">
-                    <button className="btn btn-unstyled" type="submit" aria-label="Search">
-                      <i className="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
+            <div className="relative">
+              <input
+                aria-label="Search"
+                autoComplete="off"
+                name="q"
+                placeholder="Search..."
+                title="Search"
+                type="text"
+                className="w-[200px] max-w-full bg-gray-100 text-gray-700 placeholder-gray-500 rounded-2xl border border-gray-200 py-3 pl-6 pr-12 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600"
+              />
+              <button
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700"
+                type="submit"
+                aria-label="Search"
+                title="Search"
+              >
+                <i className="fa-solid fa-magnifying-glass text-xl" aria-hidden="true"></i>
+              </button>
             </div>
           </form>
           {/* Personal menu button to mirror legacy */}

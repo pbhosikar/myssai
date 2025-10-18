@@ -24,6 +24,7 @@ import CompanyStrategyView from '@/components/pages/CompanyStrategyView';
 import CompanyTravelView from '@/components/pages/CompanyTravelView';
 import SsaiRoundView from '@/components/pages/SsaiRoundView';
 import MyWorkspaceView from '@/components/pages/MyWorkspaceView';
+import SearchView from '@/components/pages/SearchView';
 
 export default function AppRouter() {
   return (
@@ -51,7 +52,7 @@ export default function AppRouter() {
       <Route path="/company" element={<CompanyView />} />
       <Route path="/om-bahethi" element={<OmBahethiView />} />
       <Route path="/my-workspace" element={<MyWorkspaceView />} />
-      <Route path="/search" element={<UnderDevelopmentView />} />
+      <Route path="/search" element={<SearchView />} />
       <Route path="/login" element={<UnderDevelopmentView />} />
       <Route path="/under-development" element={<UnderDevelopmentView />} />
       {/* Fallback to NotFound for unmatched routes */}

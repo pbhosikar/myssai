@@ -751,7 +751,7 @@ export default function CompanyFormsView() {
                 <h3 className="text-2xl sm:text-3xl font-semibold text-gray-900">Josie Pearson</h3>
                 <p className="text-gray-700">Office: 757-951-1607</p>
                 <p className="text-gray-700">
-                  Email: {" "}
+                  Email:{' '}
                   <a
                     className="text-blue-600 hover:underline"
                     href="mailto:josie.pearson@ssaihq.com"
@@ -783,12 +783,12 @@ export default function CompanyFormsView() {
               <p>
                 <strong>Disclaimer:</strong> If “eForm” is listed by the form title, please use this
                 digital version instead of the paper form. By clicking on forms marked with “eForm,”
-                you will be redirected to the eForm subpage which will have a link redirecting to the
-                eForm platform to complete your submission.
+                you will be redirected to the eForm subpage which will have a link redirecting to
+                the eForm platform to complete your submission.
               </p>
               <p>
-                Note that most of these forms will soon be removed from the company-wide forms subpage
-                and will be accessible solely on the eForm platform.
+                Note that most of these forms will soon be removed from the company-wide forms
+                subpage and will be accessible solely on the eForm platform.
               </p>
               <p>Thank you for helping us streamline processing and improve accuracy.</p>
 

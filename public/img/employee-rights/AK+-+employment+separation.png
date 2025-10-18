@@ -1,0 +1,5621 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="ltr" dir="ltr" lang="en-US">
+
+<head>
+	<title>Sign-In - MySSAI</title>
+
+	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="importmap">{"imports":{"react-dom":"/o/frontend-js-react-web/__liferay__/exports/react-dom.js","@clayui/breadcrumb":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$breadcrumb.js","@clayui/charts":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$charts.js","@clayui/empty-state":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$empty-state.js","react":"/o/frontend-js-react-web/__liferay__/exports/react.js","react-dom-16":"/o/frontend-js-react-web/__liferay__/exports/react-dom-16.js","@clayui/navigation-bar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$navigation-bar.js","@clayui/icon":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$icon.js","@clayui/table":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$table.js","@clayui/slider":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$slider.js","@clayui/multi-select":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$multi-select.js","@clayui/nav":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$nav.js","@clayui/provider":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$provider.js","@clayui/panel":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$panel.js","@clayui/list":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$list.js","@clayui/date-picker":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$date-picker.js","@clayui/label":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$label.js","@liferay/frontend-js-api/data-set":"/o/frontend-js-dependencies-web/__liferay__/exports/@liferay$js-api$data-set.js","@clayui/core":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$core.js","@clayui/pagination-bar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$pagination-bar.js","@clayui/layout":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$layout.js","@clayui/multi-step-nav":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$multi-step-nav.js","@liferay/frontend-js-api":"/o/frontend-js-dependencies-web/__liferay__/exports/@liferay$js-api.js","@clayui/toolbar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$toolbar.js","@clayui/badge":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$badge.js","react-dom-18":"/o/frontend-js-react-web/__liferay__/exports/react-dom-18.js","@clayui/link":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$link.js","@clayui/card":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$card.js","@clayui/tooltip":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$tooltip.js","@clayui/button":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$button.js","@clayui/tabs":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$tabs.js","@clayui/sticker":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$sticker.js","@clayui/form":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$form.js","@clayui/popover":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$popover.js","@clayui/shared":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$shared.js","@clayui/localized-input":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$localized-input.js","@clayui/modal":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$modal.js","@clayui/color-picker":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$color-picker.js","@clayui/pagination":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$pagination.js","@clayui/autocomplete":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$autocomplete.js","@clayui/management-toolbar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$management-toolbar.js","@clayui/time-picker":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$time-picker.js","@clayui/upper-toolbar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$upper-toolbar.js","@clayui/loading-indicator":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$loading-indicator.js","@clayui/drop-down":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$drop-down.js","@clayui/data-provider":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$data-provider.js","@liferay/language/":"/o/js/language/","@clayui/css":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$css.js","@clayui/alert":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$alert.js","@clayui/progress-bar":"/o/frontend-taglib-clay/__liferay__/exports/@clayui$progress-bar.js","react-16":"/o/frontend-js-react-web/__liferay__/exports/react-16.js","react-18":"/o/frontend-js-react-web/__liferay__/exports/react-18.js"},"scopes":{}}</script><script data-senna-track="temporary">var Liferay = window.Liferay || {};Liferay.Icons = Liferay.Icons || {};Liferay.Icons.controlPanelSpritemap = 'https://my.ssai.app/o/admin-theme/images/clay/icons.svg'; Liferay.Icons.spritemap = 'https://my.ssai.app/o/classic-theme/images/clay/icons.svg';</script>
+<script data-senna-track="permanent" type="text/javascript">window.Liferay = window.Liferay || {}; window.Liferay.CSP = {nonce: ''};</script>
+<link data-senna-track="temporary" href="https://my.ssai.app/sign-in" rel="canonical" />
+<link data-senna-track="temporary" href="https://my.ssai.app/hr/sign-in" hreflang="hr-HR" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/ko/sign-in" hreflang="ko-KR" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/es-MX/sign-in" hreflang="es-MX" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/kk/sign-in" hreflang="kk-KZ" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/ru/sign-in" hreflang="ru-RU" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/zh-TW/sign-in" hreflang="zh-TW" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/hu/sign-in" hreflang="hu-HU" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/th/sign-in" hreflang="th-TH" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/sr-RS-latin/sign-in" hreflang="sr-RS-latin" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/nb/sign-in" hreflang="nb-NO" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/da/sign-in" hreflang="da-DK" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/tr/sign-in" hreflang="tr-TR" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/et/sign-in" hreflang="et-EE" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/fa/sign-in" hreflang="fa-IR" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/pt-PT/sign-in" hreflang="pt-PT" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/vi/sign-in" hreflang="vi-VN" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/sign-in" hreflang="en-US" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/sv/sign-in" hreflang="sv-SE" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/eu/sign-in" hreflang="eu-ES" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/sr/sign-in" hreflang="sr-RS" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/ar/sign-in" hreflang="ar-SA" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/el/sign-in" hreflang="el-GR" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/hi/sign-in" hreflang="hi-IN" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/fi/sign-in" hreflang="fi-FI" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/km/sign-in" hreflang="km-KH" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/fr-FR/sign-in" hreflang="fr-FR" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/id-ID/sign-in" hreflang="id-ID" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/uk/sign-in" hreflang="uk-UA" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/ca-ES-VALENCIA/sign-in" hreflang="ca-ES-VALENCIA" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/ca/sign-in" hreflang="ca-AD" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/en-AU/sign-in" hreflang="en-AU" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/nl-NL/sign-in" hreflang="nl-NL" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/fr/sign-in" hreflang="fr-CA" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/es/sign-in" hreflang="es-AR" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/he-IL/sign-in" hreflang="he-IL" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/pt/sign-in" hreflang="pt-BR" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/de/sign-in" hreflang="de-DE" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/gl/sign-in" hreflang="gl-ES" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/cs/sign-in" hreflang="cs-CZ" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/ca-ES/sign-in" hreflang="ca-ES" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/pl/sign-in" hreflang="pl-PL" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/sk/sign-in" hreflang="sk-SK" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/it/sign-in" hreflang="it-IT" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/lt/sign-in" hreflang="lt-LT" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/en-CA/sign-in" hreflang="en-CA" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/ms/sign-in" hreflang="ms-MY" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/nl/sign-in" hreflang="nl-BE" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/zh/sign-in" hreflang="zh-CN" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/es-ES/sign-in" hreflang="es-ES" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/ja/sign-in" hreflang="ja-JP" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/ta/sign-in" hreflang="ta-IN" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/bg/sign-in" hreflang="bg-BG" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/es-CO/sign-in" hreflang="es-CO" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/lo/sign-in" hreflang="lo-LA" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/sl/sign-in" hreflang="sl-SI" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/ro/sign-in" hreflang="ro-RO" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/en-GB/sign-in" hreflang="en-GB" rel="alternate" />
+<link data-senna-track="temporary" href="https://my.ssai.app/sign-in" hreflang="x-default" rel="alternate" />
+
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ar_SA">
+<meta property="og:locale:alternate" content="eu_ES">
+<meta property="og:locale:alternate" content="bg_BG">
+<meta property="og:locale:alternate" content="ca_AD">
+<meta property="og:locale:alternate" content="ca_ES">
+<meta property="og:locale:alternate" content="ca_ES_VALENCIA">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="hr_HR">
+<meta property="og:locale:alternate" content="cs_CZ">
+<meta property="og:locale:alternate" content="da_DK">
+<meta property="og:locale:alternate" content="nl_BE">
+<meta property="og:locale:alternate" content="nl_NL">
+<meta property="og:locale:alternate" content="en_AU">
+<meta property="og:locale:alternate" content="en_CA">
+<meta property="og:locale:alternate" content="en_GB">
+<meta property="og:locale:alternate" content="et_EE">
+<meta property="og:locale:alternate" content="fi_FI">
+<meta property="og:locale:alternate" content="fr_CA">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="gl_ES">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="el_GR">
+<meta property="og:locale:alternate" content="he_IL">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="hu_HU">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="kk_KZ">
+<meta property="og:locale:alternate" content="km_KH">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="lo_LA">
+<meta property="og:locale:alternate" content="lt_LT">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta property="og:locale:alternate" content="nb_NO">
+<meta property="og:locale:alternate" content="fa_IR">
+<meta property="og:locale:alternate" content="pl_PL">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="pt_PT">
+<meta property="og:locale:alternate" content="ro_RO">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="og:locale:alternate" content="sr_RS">
+<meta property="og:locale:alternate" content="sr_RS_latin">
+<meta property="og:locale:alternate" content="sk_SK">
+<meta property="og:locale:alternate" content="sl_SI">
+<meta property="og:locale:alternate" content="es_AR">
+<meta property="og:locale:alternate" content="es_CO">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="sv_SE">
+<meta property="og:locale:alternate" content="ta_IN">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="uk_UA">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:site_name" content="MySSAI">
+<meta property="og:title" content="Sign-In - MySSAI">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://my.ssai.app/sign-in">
+
+
+<link href="https://my.ssai.app/o/classic-theme/images/favicon.ico" rel="apple-touch-icon" />
+<link href="https://my.ssai.app/o/classic-theme/images/favicon.ico" rel="icon" />
+
+
+
+<link class="lfr-css-file" data-senna-track="temporary" href="https://my.ssai.app/o/classic-theme/css/clay.css?browserId=other&amp;themeId=classic_WAR_classictheme&amp;minifierType=css&amp;languageId=en_US&amp;t=1760567762000" id="liferayAUICSS" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+	<link href="/combo?browserId=other&amp;minifierType=css&amp;themeId=classic_WAR_classictheme&amp;languageId=en_US&amp;com_liferay_product_navigation_product_menu_web_portlet_ProductMenuPortlet:%2Fo%2Fproduct-navigation-product-menu-web%2Fcss%2Fmain.css&amp;t=1760567762000" rel="stylesheet" type="text/css"
+ data-senna-track="temporary" id="35de26e4" />
+
+
+
+
+
+
+
+
+<script type="text/javascript" data-senna-track="temporary">
+	// <![CDATA[
+		var Liferay = Liferay || {};
+
+		Liferay.Browser = {
+			acceptsGzip: function () {
+				return true;
+			},
+
+			
+
+			getMajorVersion: function () {
+				return 0;
+			},
+
+			getRevision: function () {
+				return '';
+			},
+			getVersion: function () {
+				return '';
+			},
+
+			
+
+			isAir: function () {
+				return false;
+			},
+			isChrome: function () {
+				return false;
+			},
+			isEdge: function () {
+				return false;
+			},
+			isFirefox: function () {
+				return false;
+			},
+			isGecko: function () {
+				return false;
+			},
+			isIe: function () {
+				return false;
+			},
+			isIphone: function () {
+				return false;
+			},
+			isLinux: function () {
+				return false;
+			},
+			isMac: function () {
+				return false;
+			},
+			isMobile: function () {
+				return false;
+			},
+			isMozilla: function () {
+				return false;
+			},
+			isOpera: function () {
+				return false;
+			},
+			isRtf: function () {
+				return false;
+			},
+			isSafari: function () {
+				return false;
+			},
+			isSun: function () {
+				return false;
+			},
+			isWebKit: function () {
+				return false;
+			},
+			isWindows: function () {
+				return false;
+			}
+		};
+
+		Liferay.Data = Liferay.Data || {};
+
+		Liferay.Data.ICONS_INLINE_SVG = true;
+
+		Liferay.Data.NAV_SELECTOR = '#navigation';
+
+		Liferay.Data.NAV_SELECTOR_MOBILE = '#navigationCollapse';
+
+		Liferay.Data.isCustomizationView = function () {
+			return false;
+		};
+
+		Liferay.Data.notices = [
+			
+		];
+
+		(function () {
+			var available = {};
+
+			var direction = {};
+
+			
+
+				available['en_US'] = 'English\x20\x28United\x20States\x29';
+				direction['en_US'] = 'ltr';
+
+			
+
+				available['ar_SA'] = 'Arabic\x20\x28Saudi\x20Arabia\x29';
+				direction['ar_SA'] = 'rtl';
+
+			
+
+				available['eu_ES'] = 'Basque\x20\x28Spain\x29';
+				direction['eu_ES'] = 'ltr';
+
+			
+
+				available['bg_BG'] = 'Bulgarian\x20\x28Bulgaria\x29';
+				direction['bg_BG'] = 'ltr';
+
+			
+
+				available['ca_AD'] = 'Catalan\x20\x28Andorra\x29';
+				direction['ca_AD'] = 'ltr';
+
+			
+
+				available['ca_ES'] = 'Catalan\x20\x28Spain\x29';
+				direction['ca_ES'] = 'ltr';
+
+			
+
+				available['ca_ES_VALENCIA'] = 'Catalan\x20\x28Spain\x2cValencian\x29';
+				direction['ca_ES_VALENCIA'] = 'ltr';
+
+			
+
+				available['zh_CN'] = 'Chinese\x20\x28China\x29';
+				direction['zh_CN'] = 'ltr';
+
+			
+
+				available['zh_TW'] = 'Chinese\x20\x28Taiwan\x29';
+				direction['zh_TW'] = 'ltr';
+
+			
+
+				available['hr_HR'] = 'Croatian\x20\x28Croatia\x29';
+				direction['hr_HR'] = 'ltr';
+
+			
+
+				available['cs_CZ'] = 'Czech\x20\x28Czechia\x29';
+				direction['cs_CZ'] = 'ltr';
+
+			
+
+				available['da_DK'] = 'Danish\x20\x28Denmark\x29';
+				direction['da_DK'] = 'ltr';
+
+			
+
+				available['nl_BE'] = 'Dutch\x20\x28Belgium\x29';
+				direction['nl_BE'] = 'ltr';
+
+			
+
+				available['nl_NL'] = 'Dutch\x20\x28Netherlands\x29';
+				direction['nl_NL'] = 'ltr';
+
+			
+
+				available['en_AU'] = 'English\x20\x28Australia\x29';
+				direction['en_AU'] = 'ltr';
+
+			
+
+				available['en_CA'] = 'English\x20\x28Canada\x29';
+				direction['en_CA'] = 'ltr';
+
+			
+
+				available['en_GB'] = 'English\x20\x28United\x20Kingdom\x29';
+				direction['en_GB'] = 'ltr';
+
+			
+
+				available['et_EE'] = 'Estonian\x20\x28Estonia\x29';
+				direction['et_EE'] = 'ltr';
+
+			
+
+				available['fi_FI'] = 'Finnish\x20\x28Finland\x29';
+				direction['fi_FI'] = 'ltr';
+
+			
+
+				available['fr_CA'] = 'French\x20\x28Canada\x29';
+				direction['fr_CA'] = 'ltr';
+
+			
+
+				available['fr_FR'] = 'French\x20\x28France\x29';
+				direction['fr_FR'] = 'ltr';
+
+			
+
+				available['gl_ES'] = 'Galician\x20\x28Spain\x29';
+				direction['gl_ES'] = 'ltr';
+
+			
+
+				available['de_DE'] = 'German\x20\x28Germany\x29';
+				direction['de_DE'] = 'ltr';
+
+			
+
+				available['el_GR'] = 'Greek\x20\x28Greece\x29';
+				direction['el_GR'] = 'ltr';
+
+			
+
+				available['he_IL'] = 'Hebrew\x20\x28Israel\x29';
+				direction['he_IL'] = 'ltr';
+
+			
+
+				available['hi_IN'] = 'Hindi\x20\x28India\x29';
+				direction['hi_IN'] = 'ltr';
+
+			
+
+				available['hu_HU'] = 'Hungarian\x20\x28Hungary\x29';
+				direction['hu_HU'] = 'ltr';
+
+			
+
+				available['id_ID'] = 'Indonesian\x20\x28Indonesia\x29';
+				direction['id_ID'] = 'ltr';
+
+			
+
+				available['it_IT'] = 'Italian\x20\x28Italy\x29';
+				direction['it_IT'] = 'ltr';
+
+			
+
+				available['ja_JP'] = 'Japanese\x20\x28Japan\x29';
+				direction['ja_JP'] = 'ltr';
+
+			
+
+				available['kk_KZ'] = 'Kazakh\x20\x28Kazakhstan\x29';
+				direction['kk_KZ'] = 'ltr';
+
+			
+
+				available['km_KH'] = 'Khmer\x20\x28Cambodia\x29';
+				direction['km_KH'] = 'ltr';
+
+			
+
+				available['ko_KR'] = 'Korean\x20\x28South\x20Korea\x29';
+				direction['ko_KR'] = 'ltr';
+
+			
+
+				available['lo_LA'] = 'Lao\x20\x28Laos\x29';
+				direction['lo_LA'] = 'ltr';
+
+			
+
+				available['lt_LT'] = 'Lithuanian\x20\x28Lithuania\x29';
+				direction['lt_LT'] = 'ltr';
+
+			
+
+				available['ms_MY'] = 'Malay\x20\x28Malaysia\x29';
+				direction['ms_MY'] = 'ltr';
+
+			
+
+				available['nb_NO'] = 'Norwegian\x20Bokmål\x20\x28Norway\x29';
+				direction['nb_NO'] = 'ltr';
+
+			
+
+				available['fa_IR'] = 'Persian\x20\x28Iran\x29';
+				direction['fa_IR'] = 'rtl';
+
+			
+
+				available['pl_PL'] = 'Polish\x20\x28Poland\x29';
+				direction['pl_PL'] = 'ltr';
+
+			
+
+				available['pt_BR'] = 'Portuguese\x20\x28Brazil\x29';
+				direction['pt_BR'] = 'ltr';
+
+			
+
+				available['pt_PT'] = 'Portuguese\x20\x28Portugal\x29';
+				direction['pt_PT'] = 'ltr';
+
+			
+
+				available['ro_RO'] = 'Romanian\x20\x28Romania\x29';
+				direction['ro_RO'] = 'ltr';
+
+			
+
+				available['ru_RU'] = 'Russian\x20\x28Russia\x29';
+				direction['ru_RU'] = 'ltr';
+
+			
+
+				available['sr_RS'] = 'Serbian\x20\x28Serbia\x29';
+				direction['sr_RS'] = 'ltr';
+
+			
+
+				available['sr_RS_latin'] = 'Serbian\x20\x28Serbia\x2clatin\x29';
+				direction['sr_RS_latin'] = 'ltr';
+
+			
+
+				available['sk_SK'] = 'Slovak\x20\x28Slovakia\x29';
+				direction['sk_SK'] = 'ltr';
+
+			
+
+				available['sl_SI'] = 'Slovenian\x20\x28Slovenia\x29';
+				direction['sl_SI'] = 'ltr';
+
+			
+
+				available['es_AR'] = 'Spanish\x20\x28Argentina\x29';
+				direction['es_AR'] = 'ltr';
+
+			
+
+				available['es_CO'] = 'Spanish\x20\x28Colombia\x29';
+				direction['es_CO'] = 'ltr';
+
+			
+
+				available['es_MX'] = 'Spanish\x20\x28Mexico\x29';
+				direction['es_MX'] = 'ltr';
+
+			
+
+				available['es_ES'] = 'Spanish\x20\x28Spain\x29';
+				direction['es_ES'] = 'ltr';
+
+			
+
+				available['sv_SE'] = 'Swedish\x20\x28Sweden\x29';
+				direction['sv_SE'] = 'ltr';
+
+			
+
+				available['ta_IN'] = 'Tamil\x20\x28India\x29';
+				direction['ta_IN'] = 'ltr';
+
+			
+
+				available['th_TH'] = 'Thai\x20\x28Thailand\x29';
+				direction['th_TH'] = 'ltr';
+
+			
+
+				available['tr_TR'] = 'Turkish\x20\x28Türkiye\x29';
+				direction['tr_TR'] = 'ltr';
+
+			
+
+				available['uk_UA'] = 'Ukrainian\x20\x28Ukraine\x29';
+				direction['uk_UA'] = 'ltr';
+
+			
+
+				available['vi_VN'] = 'Vietnamese\x20\x28Vietnam\x29';
+				direction['vi_VN'] = 'ltr';
+
+			
+
+			let _cache = {};
+
+			if (Liferay && Liferay.Language && Liferay.Language._cache) {
+				_cache = Liferay.Language._cache;
+			}
+
+			Liferay.Language = {
+				_cache,
+				available,
+				direction,
+				get: function(key) {
+					let value = Liferay.Language._cache[key];
+
+					if (value === undefined) {
+						value = key;
+					}
+
+					return value;
+				}
+			};
+		})();
+
+		var featureFlags = {"LPD-10964":false,"LPD-37927":false,"LPD-10889":false,"LPS-193884":false,"LPD-30371":false,"LPD-36719":true,"LPD-11131":true,"LPS-178642":false,"LPS-193005":false,"LPD-31789":false,"LPD-10562":false,"LPD-11212":false,"COMMERCE-8087":false,"LPD-39304":true,"LPD-13311":true,"LRAC-10757":false,"LPD-35941":false,"LPS-180090":false,"LPS-178052":false,"LPD-21414":false,"LPS-185892":false,"LPS-186620":false,"LPD-40533":true,"LPD-40534":true,"LPS-184404":false,"LPD-40530":true,"LPD-20640":false,"LPS-198183":false,"LPD-38869":false,"LPD-35678":false,"LPD-6378":false,"LPS-153714":false,"LPD-11848":false,"LPS-170670":false,"LPD-7822":false,"LPS-169981":false,"LPD-21926":false,"LPS-177027":false,"LPD-37531":false,"LPD-11003":false,"LPD-36446":false,"LPD-39437":false,"LPS-135430":false,"LPD-20556":false,"LPS-134060":false,"LPS-164563":false,"LPD-32050":false,"LPS-122920":false,"LPS-199086":false,"LPD-35128":false,"LPD-10588":false,"LPD-13778":true,"LPD-11313":false,"LPD-6368":false,"LPD-34594":false,"LPS-202104":true,"LPD-19955":false,"LPD-35443":false,"LPD-39967":false,"LPD-11235":false,"LPD-11232":false,"LPS-196935":false,"LPD-43542":false,"LPS-176691":false,"LPS-197909":false,"LPD-29516":false,"COMMERCE-8949":false,"LPD-11228":false,"LPS-153813":false,"LPD-17809":false,"COMMERCE-13024":false,"LPS-165482":false,"LPS-193551":false,"LPS-197477":false,"LPS-174816":false,"LPS-186360":false,"LPD-30204":false,"LPD-32867":false,"LPS-153332":false,"LPD-35013":true,"LPS-179669":false,"LPS-174417":false,"LPD-44091":true,"LPD-31212":false,"LPD-18221":false,"LPS-155284":true,"LRAC-15017":false,"LPD-19870":false,"LPS-200108":false,"LPD-20131":false,"LPS-159643":false,"LPS-129412":false,"LPS-169837":false,"LPD-20379":false};
+
+		Liferay.FeatureFlags = Object.keys(featureFlags).reduce(
+			(acc, key) => ({
+				...acc, [key]: featureFlags[key] === 'true' || featureFlags[key] === true
+			}), {}
+		);
+
+		Liferay.PortletKeys = {
+			DOCUMENT_LIBRARY: 'com_liferay_document_library_web_portlet_DLPortlet',
+			DYNAMIC_DATA_MAPPING: 'com_liferay_dynamic_data_mapping_web_portlet_DDMPortlet',
+			ITEM_SELECTOR: 'com_liferay_item_selector_web_portlet_ItemSelectorPortlet'
+		};
+
+		Liferay.PropsValues = {
+			JAVASCRIPT_SINGLE_PAGE_APPLICATION_TIMEOUT: 0,
+			UPLOAD_SERVLET_REQUEST_IMPL_MAX_SIZE: 21474836480
+		};
+
+		Liferay.ThemeDisplay = {
+
+			
+
+			
+				getLayoutId: function () {
+					return '58';
+				},
+
+				
+
+				getLayoutRelativeControlPanelURL: function () {
+					return '/group/guest/~/control_panel/manage?p_p_id=com_liferay_login_web_portlet_LoginPortlet';
+				},
+
+				getLayoutRelativeURL: function () {
+					return '/sign-in';
+				},
+				getLayoutURL: function () {
+					return 'https://my.ssai.app/sign-in';
+				},
+				getParentLayoutId: function () {
+					return '0';
+				},
+				isControlPanel: function () {
+					return false;
+				},
+				isPrivateLayout: function () {
+					return 'false';
+				},
+				isVirtualLayout: function () {
+					return false;
+				},
+			
+
+			getBCP47LanguageId: function () {
+				return 'en-US';
+			},
+			getCanonicalURL: function () {
+
+				
+
+				return 'https\x3a\x2f\x2fmy\x2essai\x2eapp\x2fsign-in';
+			},
+			getCDNBaseURL: function () {
+				return 'https://my.ssai.app';
+			},
+			getCDNDynamicResourcesHost: function () {
+				return '';
+			},
+			getCDNHost: function () {
+				return '';
+			},
+			getCompanyGroupId: function () {
+				return '32056';
+			},
+			getCompanyId: function () {
+				return '32015';
+			},
+			getDefaultLanguageId: function () {
+				return 'en_US';
+			},
+			getDoAsUserIdEncoded: function () {
+				return '';
+			},
+			getLanguageId: function () {
+				return 'en_US';
+			},
+			getParentGroupId: function () {
+				return '32054';
+			},
+			getPathContext: function () {
+				return '';
+			},
+			getPathImage: function () {
+				return '/image';
+			},
+			getPathJavaScript: function () {
+				return '/o/frontend-js-web';
+			},
+			getPathMain: function () {
+				return '/c';
+			},
+			getPathThemeImages: function () {
+				return 'https://my.ssai.app/o/classic-theme/images';
+			},
+			getPathThemeRoot: function () {
+				return '/o/classic-theme';
+			},
+			getPlid: function () {
+				return '251';
+			},
+			getPortalURL: function () {
+				return 'https://my.ssai.app';
+			},
+			getRealUserId: function () {
+				return '32018';
+			},
+			getRemoteAddr: function () {
+				return '223.233.80.236';
+			},
+			getRemoteHost: function () {
+				return '223.233.80.236';
+			},
+			getScopeGroupId: function () {
+				return '32054';
+			},
+			getScopeGroupIdOrLiveGroupId: function () {
+				return '32054';
+			},
+			getSessionId: function () {
+				return '';
+			},
+			getSiteAdminURL: function () {
+				return 'https://my.ssai.app/group/guest/~/control_panel/manage?p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view';
+			},
+			getSiteGroupId: function () {
+				return '32054';
+			},
+			getTimeZone: function() {
+				return 'America/New_York';
+			},
+			getURLControlPanel: function() {
+				return '/group/control_panel?refererPlid=251';
+			},
+			getURLHome: function () {
+				return 'https\x3a\x2f\x2fmy\x2essai\x2eapphttps\x3a\x2f\x2fmy\x2essai\x2eapp\x2fguest\x2flogin';
+			},
+			getUserEmailAddress: function () {
+				return '';
+			},
+			getUserId: function () {
+				return '32018';
+			},
+			getUserName: function () {
+				return '';
+			},
+			isAddSessionIdToURL: function () {
+				return false;
+			},
+			isImpersonated: function () {
+				return false;
+			},
+			isSignedIn: function () {
+				return false;
+			},
+
+			isStagedPortlet: function () {
+				
+					
+						return true;
+					
+					
+			},
+
+			isStateExclusive: function () {
+				return false;
+			},
+			isStateMaximized: function () {
+				return true;
+			},
+			isStatePopUp: function () {
+				return false;
+			}
+		};
+
+		var themeDisplay = Liferay.ThemeDisplay;
+
+		Liferay.AUI = {
+
+			
+
+			getCombine: function () {
+				return true;
+			},
+			getComboPath: function () {
+				return '/combo/?browserId=other&minifierType=&languageId=en_US&t=1760567701980&';
+			},
+			getDateFormat: function () {
+				return '%m/%d/%Y';
+			},
+			getEditorCKEditorPath: function () {
+				return '/o/frontend-editor-ckeditor-web';
+			},
+			getFilter: function () {
+				var filter = 'raw';
+
+				
+					
+						filter = 'min';
+					
+					
+
+				return filter;
+			},
+			getFilterConfig: function () {
+				var instance = this;
+
+				var filterConfig = null;
+
+				if (!instance.getCombine()) {
+					filterConfig = {
+						replaceStr: '.js' + instance.getStaticResourceURLParams(),
+						searchExp: '\\.js$'
+					};
+				}
+
+				return filterConfig;
+			},
+			getJavaScriptRootPath: function () {
+				return '/o/frontend-js-web';
+			},
+			getPortletRootPath: function () {
+				return '/html/portlet';
+			},
+			getStaticResourceURLParams: function () {
+				return '?browserId=other&minifierType=&languageId=en_US&t=1760567701980';
+			}
+		};
+
+		Liferay.authToken = 'RZyNkTYf';
+
+		
+
+		Liferay.currentURL = '\x2fsign-in\x3fp_p_state\x3dmaximized\x26p_p_mode\x3dview\x26_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName\x3d\x252Flogin\x252Flogin\x26saveLastPath\x3dfalse\x26p_p_id\x3dcom_liferay_login_web_portlet_LoginPortlet\x26p_p_lifecycle\x3d0\x26_com_liferay_login_web_portlet_LoginPortlet_redirect\x3d\x252Fdocuments\x252F32054\x252F320645\x252FAK\x252B-\x252Bemployment\x252Bseparation\x2epng';
+		Liferay.currentURLEncoded = '\x252Fsign-in\x253Fp_p_state\x253Dmaximized\x2526p_p_mode\x253Dview\x2526_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName\x253D\x25252Flogin\x25252Flogin\x2526saveLastPath\x253Dfalse\x2526p_p_id\x253Dcom_liferay_login_web_portlet_LoginPortlet\x2526p_p_lifecycle\x253D0\x2526_com_liferay_login_web_portlet_LoginPortlet_redirect\x253D\x25252Fdocuments\x25252F32054\x25252F320645\x25252FAK\x25252B-\x25252Bemployment\x25252Bseparation\x2epng';
+	// ]]>
+</script>
+
+<script data-senna-track="temporary" type="text/javascript">window.__CONFIG__= {basePath: '',combine: true, defaultURLParams: null, explainResolutions: false, exposeGlobal: false, logLevel: 'warn', moduleType: 'module', namespace:'Liferay', nonce: '', reportMismatchedAnonymousModules: 'warn', resolvePath: '/o/js_resolve_modules', url: '/combo/?browserId=other&minifierType=js&languageId=en_US&t=1760567701980&', waitTimeout: 60000};</script><script data-senna-track="permanent" src="/o/frontend-js-loader-modules-extender/loader.js?&mac=9WaMmhziBCkScHZwrrVcOR7VZF4=&browserId=other&languageId=en_US&minifierType=js" type="text/javascript"></script><script data-senna-track="permanent" src="/combo?browserId=other&minifierType=js&languageId=en_US&t=1760567701980&/o/frontend-js-aui-web/aui/aui/aui-min.js&/o/frontend-js-aui-web/liferay/modules.js&/o/frontend-js-aui-web/liferay/aui_sandbox.js&/o/frontend-js-aui-web/aui/attribute-base/attribute-base-min.js&/o/frontend-js-aui-web/aui/attribute-complex/attribute-complex-min.js&/o/frontend-js-aui-web/aui/attribute-core/attribute-core-min.js&/o/frontend-js-aui-web/aui/attribute-observable/attribute-observable-min.js&/o/frontend-js-aui-web/aui/attribute-extras/attribute-extras-min.js&/o/frontend-js-aui-web/aui/event-custom-base/event-custom-base-min.js&/o/frontend-js-aui-web/aui/event-custom-complex/event-custom-complex-min.js&/o/frontend-js-aui-web/aui/oop/oop-min.js&/o/frontend-js-aui-web/aui/aui-base-lang/aui-base-lang-min.js&/o/frontend-js-aui-web/liferay/dependency.js&/o/frontend-js-aui-web/liferay/util.js&/o/oauth2-provider-web/js/liferay.js&/o/frontend-js-web/liferay/dom_task_runner.js&/o/frontend-js-web/liferay/events.js&/o/frontend-js-web/liferay/lazy_load.js&/o/frontend-js-web/liferay/liferay.js&/o/frontend-js-web/liferay/global.bundle.js&/o/frontend-js-web/liferay/portlet.js&/o/frontend-js-web/liferay/workflow.js" type="text/javascript"></script>
+<script data-senna-track="temporary" type="text/javascript">window.Liferay = Liferay || {}; window.Liferay.OAuth2 = {getAuthorizeURL: function() {return 'https://my.ssai.app/o/oauth2/authorize';}, getBuiltInRedirectURL: function() {return 'https://my.ssai.app/o/oauth2/redirect';}, getIntrospectURL: function() { return 'https://my.ssai.app/o/oauth2/introspect';}, getTokenURL: function() {return 'https://my.ssai.app/o/oauth2/token';}, getUserAgentApplication: function(externalReferenceCode) {return Liferay.OAuth2._userAgentApplications[externalReferenceCode];}, _userAgentApplications: {}}</script><script data-senna-track="temporary" type="text/javascript">try {var MODULE_MAIN='@liferay/document-library-web@6.0.198/index';var MODULE_PATH='/o/document-library-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			dl: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'document-library-upload-component': {
+						path: 'DocumentLibraryUpload.js',
+						requires: [
+							'aui-component',
+							'aui-data-set-deprecated',
+							'aui-overlay-manager-deprecated',
+							'aui-overlay-mask-deprecated',
+							'aui-parse-content',
+							'aui-progressbar',
+							'aui-template-deprecated',
+							'liferay-search-container',
+							'querystring-parse-simple',
+							'uploader',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='calendar-web@5.0.105/index';var MODULE_PATH='/o/calendar-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			calendar: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-calendar-a11y': {
+						path: 'calendar_a11y.js',
+						requires: ['calendar'],
+					},
+					'liferay-calendar-container': {
+						path: 'calendar_container.js',
+						requires: [
+							'aui-alert',
+							'aui-base',
+							'aui-component',
+							'liferay-portlet-base',
+						],
+					},
+					'liferay-calendar-date-picker-sanitizer': {
+						path: 'date_picker_sanitizer.js',
+						requires: ['aui-base'],
+					},
+					'liferay-calendar-interval-selector': {
+						path: 'interval_selector.js',
+						requires: ['aui-base', 'liferay-portlet-base'],
+					},
+					'liferay-calendar-interval-selector-scheduler-event-link': {
+						path: 'interval_selector_scheduler_event_link.js',
+						requires: ['aui-base', 'liferay-portlet-base'],
+					},
+					'liferay-calendar-list': {
+						path: 'calendar_list.js',
+						requires: [
+							'aui-template-deprecated',
+							'liferay-scheduler',
+						],
+					},
+					'liferay-calendar-message-util': {
+						path: 'message_util.js',
+						requires: ['liferay-util-window'],
+					},
+					'liferay-calendar-recurrence-converter': {
+						path: 'recurrence_converter.js',
+						requires: [],
+					},
+					'liferay-calendar-recurrence-dialog': {
+						path: 'recurrence.js',
+						requires: [
+							'aui-base',
+							'liferay-calendar-recurrence-util',
+						],
+					},
+					'liferay-calendar-recurrence-util': {
+						path: 'recurrence_util.js',
+						requires: ['aui-base', 'liferay-util-window'],
+					},
+					'liferay-calendar-reminders': {
+						path: 'calendar_reminders.js',
+						requires: ['aui-base'],
+					},
+					'liferay-calendar-remote-services': {
+						path: 'remote_services.js',
+						requires: [
+							'aui-base',
+							'aui-component',
+							'liferay-calendar-util',
+							'liferay-portlet-base',
+						],
+					},
+					'liferay-calendar-session-listener': {
+						path: 'session_listener.js',
+						requires: ['aui-base', 'liferay-scheduler'],
+					},
+					'liferay-calendar-simple-color-picker': {
+						path: 'simple_color_picker.js',
+						requires: ['aui-base', 'aui-template-deprecated'],
+					},
+					'liferay-calendar-simple-menu': {
+						path: 'simple_menu.js',
+						requires: [
+							'aui-base',
+							'aui-template-deprecated',
+							'event-outside',
+							'event-touch',
+							'widget-modality',
+							'widget-position',
+							'widget-position-align',
+							'widget-position-constrain',
+							'widget-stack',
+							'widget-stdmod',
+						],
+					},
+					'liferay-calendar-util': {
+						path: 'calendar_util.js',
+						requires: [
+							'aui-datatype',
+							'aui-io',
+							'aui-scheduler',
+							'aui-toolbar',
+							'autocomplete',
+							'autocomplete-highlighters',
+						],
+					},
+					'liferay-scheduler': {
+						path: 'scheduler.js',
+						requires: [
+							'async-queue',
+							'aui-datatype',
+							'aui-scheduler',
+							'dd-plugin',
+							'liferay-calendar-a11y',
+							'liferay-calendar-message-util',
+							'liferay-calendar-recurrence-converter',
+							'liferay-calendar-recurrence-util',
+							'liferay-calendar-util',
+							'liferay-scheduler-event-recorder',
+							'liferay-scheduler-models',
+							'promise',
+							'resize-plugin',
+						],
+					},
+					'liferay-scheduler-event-recorder': {
+						path: 'scheduler_event_recorder.js',
+						requires: [
+							'dd-plugin',
+							'liferay-calendar-util',
+							'resize-plugin',
+						],
+					},
+					'liferay-scheduler-models': {
+						path: 'scheduler_models.js',
+						requires: [
+							'aui-datatype',
+							'dd-plugin',
+							'liferay-calendar-util',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='dynamic-data-mapping-web@5.0.115/index';var MODULE_PATH='/o/dynamic-data-mapping-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	const LiferayAUI = Liferay.AUI;
+
+	AUI().applyConfig({
+		groups: {
+			ddm: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: LiferayAUI.getFilterConfig(),
+				modules: {
+					'liferay-ddm-form': {
+						path: 'ddm_form.js',
+						requires: [
+							'aui-base',
+							'aui-datatable',
+							'aui-datatype',
+							'aui-image-viewer',
+							'aui-parse-content',
+							'aui-set',
+							'aui-sortable-list',
+							'json',
+							'liferay-form',
+							'liferay-map-base',
+							'liferay-translation-manager',
+							'liferay-util-window',
+						],
+					},
+					'liferay-portlet-dynamic-data-mapping': {
+						condition: {
+							trigger: 'liferay-document-library',
+						},
+						path: 'main.js',
+						requires: [
+							'arraysort',
+							'aui-form-builder-deprecated',
+							'aui-form-validator',
+							'aui-map',
+							'aui-text-unicode',
+							'json',
+							'liferay-menu',
+							'liferay-translation-manager',
+							'liferay-util-window',
+							'text',
+						],
+					},
+					'liferay-portlet-dynamic-data-mapping-custom-fields': {
+						condition: {
+							trigger: 'liferay-document-library',
+						},
+						path: 'custom_fields.js',
+						requires: ['liferay-portlet-dynamic-data-mapping'],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='contacts-web@5.0.65/index';var MODULE_PATH='/o/contacts-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			contactscenter: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-contacts-center': {
+						path: 'main.js',
+						requires: [
+							'aui-io-plugin-deprecated',
+							'aui-toolbar',
+							'autocomplete-base',
+							'datasource-io',
+							'json-parse',
+							'liferay-portlet-base',
+							'liferay-util-window',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='staging-processes-web@5.0.65/index';var MODULE_PATH='/o/staging-processes-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			stagingprocessesweb: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-staging-processes-export-import': {
+						path: 'main.js',
+						requires: [
+							'aui-datatype',
+							'aui-dialog-iframe-deprecated',
+							'aui-modal',
+							'aui-parse-content',
+							'aui-toggler',
+							'liferay-portlet-base',
+							'liferay-util-window',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='frontend-editor-alloyeditor-web@5.0.56/index';var MODULE_PATH='/o/frontend-editor-alloyeditor-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			alloyeditor: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-alloy-editor': {
+						path: 'alloyeditor.js',
+						requires: [
+							'aui-component',
+							'liferay-portlet-base',
+							'timers',
+						],
+					},
+					'liferay-alloy-editor-source': {
+						path: 'alloyeditor_source.js',
+						requires: [
+							'aui-debounce',
+							'liferay-fullscreen-source-editor',
+							'liferay-source-editor',
+							'plugin',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='@liferay/frontend-js-react-web@5.0.54/index';var MODULE_PATH='/o/frontend-js-react-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			react: {
+
+				// eslint-disable-next-line
+				mainModule: MODULE_MAIN,
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='portal-search-web@6.0.148/index';var MODULE_PATH='/o/portal-search-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			search: {
+				base: MODULE_PATH + '/js/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-search-custom-range-facet': {
+						path: 'custom_range_facet.js',
+						requires: ['aui-form-validator'],
+					},
+				},
+				root: MODULE_PATH + '/js/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='frontend-js-components-web@2.0.80/index';var MODULE_PATH='/o/frontend-js-components-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			components: {
+
+				// eslint-disable-next-line
+				mainModule: MODULE_MAIN,
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='portal-workflow-kaleo-designer-web@5.0.146/index';var MODULE_PATH='/o/portal-workflow-kaleo-designer-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			'kaleo-designer': {
+				base: MODULE_PATH + '/designer/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-kaleo-designer-autocomplete-util': {
+						path: 'autocomplete_util.js',
+						requires: ['autocomplete', 'autocomplete-highlighters'],
+					},
+					'liferay-kaleo-designer-definition-diagram-controller': {
+						path: 'definition_diagram_controller.js',
+						requires: [
+							'liferay-kaleo-designer-field-normalizer',
+							'liferay-kaleo-designer-utils',
+						],
+					},
+					'liferay-kaleo-designer-dialogs': {
+						path: 'dialogs.js',
+						requires: ['liferay-util-window'],
+					},
+					'liferay-kaleo-designer-editors': {
+						path: 'editors.js',
+						requires: [
+							'aui-ace-editor',
+							'aui-ace-editor-mode-xml',
+							'aui-base',
+							'aui-datatype',
+							'aui-node',
+							'liferay-kaleo-designer-autocomplete-util',
+							'liferay-kaleo-designer-utils',
+						],
+					},
+					'liferay-kaleo-designer-field-normalizer': {
+						path: 'field_normalizer.js',
+						requires: ['liferay-kaleo-designer-remote-services'],
+					},
+					'liferay-kaleo-designer-nodes': {
+						path: 'nodes.js',
+						requires: [
+							'aui-datatable',
+							'aui-datatype',
+							'aui-diagram-builder',
+							'liferay-kaleo-designer-editors',
+							'liferay-kaleo-designer-utils',
+						],
+					},
+					'liferay-kaleo-designer-remote-services': {
+						path: 'remote_services.js',
+						requires: ['aui-io'],
+					},
+					'liferay-kaleo-designer-templates': {
+						path: 'templates.js',
+						requires: ['aui-tpl-snippets-deprecated'],
+					},
+					'liferay-kaleo-designer-utils': {
+						path: 'utils.js',
+						requires: [],
+					},
+					'liferay-kaleo-designer-xml-definition': {
+						path: 'xml_definition.js',
+						requires: [
+							'aui-base',
+							'aui-component',
+							'dataschema-xml',
+							'datatype-xml',
+						],
+					},
+					'liferay-kaleo-designer-xml-definition-serializer': {
+						path: 'xml_definition_serializer.js',
+						requires: ['escape', 'liferay-kaleo-designer-xml-util'],
+					},
+					'liferay-kaleo-designer-xml-util': {
+						path: 'xml_util.js',
+						requires: ['aui-base'],
+					},
+					'liferay-portlet-kaleo-designer': {
+						path: 'main.js',
+						requires: [
+							'aui-ace-editor',
+							'aui-ace-editor-mode-xml',
+							'aui-tpl-snippets-deprecated',
+							'dataschema-xml',
+							'datasource',
+							'datatype-xml',
+							'event-valuechange',
+							'io-form',
+							'liferay-kaleo-designer-autocomplete-util',
+							'liferay-kaleo-designer-editors',
+							'liferay-kaleo-designer-nodes',
+							'liferay-kaleo-designer-remote-services',
+							'liferay-kaleo-designer-utils',
+							'liferay-kaleo-designer-xml-util',
+							'liferay-util-window',
+						],
+					},
+				},
+				root: MODULE_PATH + '/designer/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='@liferay/frontend-js-state-web@1.0.30/index';var MODULE_PATH='/o/frontend-js-state-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			state: {
+
+				// eslint-disable-next-line
+				mainModule: MODULE_MAIN,
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}try {var MODULE_MAIN='exportimport-web@5.0.100/index';var MODULE_PATH='/o/exportimport-web';/**
+ * SPDX-FileCopyrightText: (c) 2000 Liferay, Inc. https://liferay.com
+ * SPDX-License-Identifier: LGPL-2.1-or-later OR LicenseRef-Liferay-DXP-EULA-2.0.0-2023-06
+ */
+
+(function () {
+	AUI().applyConfig({
+		groups: {
+			exportimportweb: {
+				base: MODULE_PATH + '/js/legacy/',
+				combine: Liferay.AUI.getCombine(),
+				filter: Liferay.AUI.getFilterConfig(),
+				modules: {
+					'liferay-export-import-export-import': {
+						path: 'main.js',
+						requires: [
+							'aui-datatype',
+							'aui-dialog-iframe-deprecated',
+							'aui-modal',
+							'aui-parse-content',
+							'aui-toggler',
+							'liferay-portlet-base',
+							'liferay-util-window',
+						],
+					},
+				},
+				root: MODULE_PATH + '/js/legacy/',
+			},
+		},
+	});
+})();
+} catch(error) {console.error(error);}</script>
+
+
+
+
+<script type="text/javascript" data-senna-track="temporary">
+	// <![CDATA[
+		
+			
+				
+					Liferay.Portlet.register('com_liferay_login_web_portlet_LoginPortlet');
+				
+				
+		
+
+		
+	// ]]>
+</script>
+
+
+
+
+
+	
+		
+
+			
+
+			
+				<script async src="https://www.googletagmanager.com/gtag/js?id=G-QZB2MRS696"></script>
+
+				
+			
+		
+		
+
+
+
+	
+		
+
+			
+
+			
+				<script id="googleAnalyticsScript" type="text/javascript" data-senna-track="permanent">
+					(function(i, s, o, g, r, a, m) {
+						i['GoogleAnalyticsObject'] = r;
+
+						i[r] = i[r] || function () {
+							var arrayValue = i[r].q || [];
+
+							i[r].q = arrayValue;
+
+							(i[r].q).push(arguments);
+						};
+
+						i[r].l = 1 * new Date();
+
+						a = s.createElement(o);
+						m = s.getElementsByTagName(o)[0];
+						a.async = 1;
+						a.src = g;
+						m.parentNode.insertBefore(a, m);
+					})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+					
+
+					
+						
+							ga('create', 'G-QZB2MRS696', 'auto');
+						
+					
+
+					
+
+					
+
+					ga('send', 'pageview');
+
+					
+						Liferay.on(
+							'endNavigate',
+							function(event) {
+								ga('set', 'page', Liferay.ThemeDisplay.getLayoutRelativeURL());
+								ga('send', 'pageview');
+							}
+						);
+					
+				</script>
+			
+		
+		
+
+
+
+	
+		
+
+			
+
+			
+		
+	
+
+
+
+	
+		
+
+			
+
+			
+				<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="////js.hs-scripts.com/44163538.js"></script>
+<!-- End of HubSpot Embed Code -->
+			
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link class="lfr-css-file" data-senna-track="temporary" href="https://my.ssai.app/o/classic-theme/css/main.css?browserId=other&amp;themeId=classic_WAR_classictheme&amp;minifierType=css&amp;languageId=en_US&amp;t=1760567762000" id="liferayThemeCSS" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+	<style data-senna-track="senna" type="text/css">
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+			
+
+		
+
+	</style>
+
+
+<style data-senna-track="temporary" type="text/css">
+	:root {
+		--container-max-sm: 540px;
+		--h4-font-size: 1rem;
+		--font-weight-bold: 700;
+		--rounded-pill: 50rem;
+		--display4-weight: 300;
+		--danger: #da1414;
+		--display2-size: 5.5rem;
+		--body-bg: #fff;
+		--display2-weight: 300;
+		--display1-weight: 300;
+		--display3-weight: 300;
+		--box-shadow-sm: 0 .125rem .25rem rgba(0, 0, 0, .075);
+		--font-weight-lighter: lighter;
+		--h3-font-size: 1.1875rem;
+		--btn-outline-primary-hover-border-color: #0b5fff;
+		--transition-collapse: height .35s ease;
+		--blockquote-small-color: #6b6c7e;
+		--gray-200: #f1f2f5;
+		--btn-secondary-hover-background-color: #f7f8f9;
+		--gray-600: #6b6c7e;
+		--secondary: #6b6c7e;
+		--btn-outline-primary-color: #0b5fff;
+		--btn-link-hover-color: #004ad7;
+		--hr-border-color: rgba(0, 0, 0, .1);
+		--hr-border-margin-y: 1rem;
+		--light: #f1f2f5;
+		--btn-outline-primary-hover-color: #0b5fff;
+		--btn-secondary-background-color: #fff;
+		--btn-outline-secondary-hover-border-color: transparent;
+		--display3-size: 4.5rem;
+		--primary: #0b5fff;
+		--container-max-md: 720px;
+		--border-radius-sm: 0.1875rem;
+		--display-line-height: 1.2;
+		--h6-font-size: 0.8125rem;
+		--h2-font-size: 1.375rem;
+		--aspect-ratio-4-to-3: 75%;
+		--spacer-10: 10rem;
+		--font-weight-semi-bold: 600;
+		--font-weight-normal: 400;
+		--dark: #272833;
+		--blockquote-small-font-size: 80%;
+		--h5-font-size: 0.875rem;
+		--blockquote-font-size: 1.25rem;
+		--brand-color-3: #2e5aac;
+		--brand-color-2: #6b6c7e;
+		--brand-color-1: #0b5fff;
+		--transition-fade: opacity .15s linear;
+		--display4-size: 3.5rem;
+		--border-radius-lg: 0.375rem;
+		--btn-primary-hover-color: #fff;
+		--display1-size: 6rem;
+		--brand-color-4: #30313f;
+		--black: #000;
+		--lighter: #f7f8f9;
+		--gray-300: #e7e7ed;
+		--gray-700: #495057;
+		--btn-secondary-border-color: #cdced9;
+		--btn-outline-secondary-hover-color: #272833;
+		--body-color: #1c1c24;
+		--btn-outline-secondary-hover-background-color: rgba(39, 40, 51, 0.03);
+		--btn-primary-color: #fff;
+		--btn-secondary-color: #6b6c7e;
+		--btn-secondary-hover-border-color: #cdced9;
+		--box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, .175);
+		--container-max-lg: 960px;
+		--btn-outline-primary-border-color: #0b5fff;
+		--aspect-ratio: 100%;
+		--gray-dark: #393a4a;
+		--aspect-ratio-16-to-9: 56.25%;
+		--box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+		--white: #fff;
+		--warning: #b95000;
+		--info: #2e5aac;
+		--hr-border-width: 1px;
+		--btn-link-color: #0b5fff;
+		--gray-400: #cdced9;
+		--gray-800: #393a4a;
+		--btn-outline-primary-hover-background-color: #f0f5ff;
+		--btn-primary-hover-background-color: #0053f0;
+		--btn-primary-background-color: #0b5fff;
+		--success: #287d3c;
+		--font-size-sm: 0.875rem;
+		--btn-primary-border-color: #0b5fff;
+		--font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+		--spacer-0: 0;
+		--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+		--lead-font-size: 1.25rem;
+		--border-radius: 0.25rem;
+		--spacer-9: 9rem;
+		--font-weight-light: 300;
+		--btn-secondary-hover-color: #272833;
+		--spacer-2: 0.5rem;
+		--spacer-1: 0.25rem;
+		--spacer-4: 1.5rem;
+		--spacer-3: 1rem;
+		--spacer-6: 4.5rem;
+		--spacer-5: 3rem;
+		--spacer-8: 7.5rem;
+		--border-radius-circle: 50%;
+		--spacer-7: 6rem;
+		--font-size-lg: 1.125rem;
+		--aspect-ratio-8-to-3: 37.5%;
+		--font-family-sans-serif: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+		--gray-100: #f7f8f9;
+		--font-weight-bolder: 900;
+		--container-max-xl: 1248px;
+		--btn-outline-secondary-color: #6b6c7e;
+		--gray-500: #a7a9bc;
+		--h1-font-size: 1.625rem;
+		--gray-900: #272833;
+		--text-muted: #a7a9bc;
+		--btn-primary-hover-border-color: transparent;
+		--btn-outline-secondary-border-color: #cdced9;
+		--lead-font-weight: 300;
+		--font-size-base: 0.875rem;
+	}
+</style>
+<link data-senna-track="permanent" href="/o/frontend-js-aui-web/alloy_ui.css?&mac=favIEq7hPo8AEd6k+N5OVADEEls=&browserId=other&languageId=en_US&minifierType=css&themeId=classic_WAR_classictheme" rel="stylesheet"></link>
+<script type="module">
+import {init} from '/o/frontend-js-spa-web/__liferay__/index.js';
+{
+init({"navigationExceptionSelectors":":not([target=\"_blank\"]):not([data-senna-off]):not([data-resource-href]):not([data-cke-saved-href]):not([data-cke-saved-href])","cacheExpirationTime":-1,"clearScreensCache":false,"portletsBlacklist":["com_liferay_login_web_portlet_CreateAccountPortlet","com_liferay_nested_portlets_web_portlet_NestedPortletsPortlet","com_liferay_site_navigation_directory_web_portlet_SitesDirectoryPortlet","com_liferay_questions_web_internal_portlet_QuestionsPortlet","com_liferay_account_admin_web_internal_portlet_AccountUsersRegistrationPortlet","com_liferay_login_web_portlet_ForgotPasswordPortlet","com_liferay_portal_language_override_web_internal_portlet_PLOPortlet","com_liferay_login_web_portlet_LoginPortlet","com_liferay_login_web_portlet_FastLoginPortlet"],"excludedTargetPortlets":["com_liferay_users_admin_web_portlet_UsersAdminPortlet","com_liferay_server_admin_web_portlet_ServerAdminPortlet"],"validStatusCodes":[221,490,494,499,491,496,492,493,495,220],"debugEnabled":false,"loginRedirect":"\\x2fdocuments\\x2f32054\\x2f320645\\x2fAK\\x2b-\\x2bemployment\\x2bseparation\\x2epng","excludedPaths":["/c/document_library","/documents","/image"],"preloadCSS":false,"userNotification":{"message":"It looks like this is taking longer than expected.","title":"Oops","timeout":30000},"requestTimeout":0});
+}
+
+</script><link data-senna-track="temporary" href="/o/layout-common-styles/main.css?plid=251&segmentsExperienceId=85523&t=17564078671621730752666685" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+Liferay.on(
+	'ddmFieldBlur', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldBlurred',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					focusDuration: event.focusDuration,
+					formId: event.formId,
+					formPageTitle: event.formPageTitle,
+					page: event.page,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFieldFocus', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'fieldFocused',
+				'Form',
+				{
+					fieldName: event.fieldName,
+					formId: event.formId,
+					formPageTitle: event.formPageTitle,
+					page: event.page,
+					title:event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormPageShow', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'pageViewed',
+				'Form',
+				{
+					formId: event.formId,
+					formPageTitle: event.formPageTitle,
+					page: event.page,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormSubmit', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formSubmitted',
+				'Form',
+				{
+					formId: event.formId,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+Liferay.on(
+	'ddmFormView', function(event) {
+		if (window.Analytics) {
+			Analytics.send(
+				'formViewed',
+				'Form',
+				{
+					formId: event.formId,
+					title: event.title
+				}
+			);
+		}
+	}
+);
+
+</script><script>
+
+</script>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" data-senna-track="temporary">
+	if (window.Analytics) {
+		window._com_liferay_document_library_analytics_isViewFileEntry = false;
+	}
+</script>
+
+
+
+
+
+
+
+
+
+</head>
+
+<body class="other change-tracking-enabled controls-visible  yui3-skin-sam page-maximized guest-site signed-out public-page site">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<nav aria-label="Quick Links" class="bg-dark cadmin quick-access-nav text-center text-white" id="ozok_quickAccessNav">
+		
+			
+				<ul class="list-unstyled mb-0">
+					
+						<li>
+							<a class="d-block p-2 sr-only sr-only-focusable text-reset" href="#main-content">
+		Skip to Main Content
+	</a>
+						</li>
+					
+
+					
+
+						
+
+							<li>
+								
+									
+										
+											<button class="d-block p-2 sr-only sr-only-focusable text-reset btn btn-link btn-unstyled text-nowrap" id="ozok_sfdg" onclick="Liferay.fire('openAccessibilityMenu');">
+												Open Accessibility Menu
+											</button>
+										
+									
+									
+							</li>
+
+						
+
+					
+				</ul>
+			
+		
+	</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="accessibility-menu" style="display: none;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_accessibility_menu_web_portlet_AccessibilityMenuPortlet_  portlet-static portlet-static-end portlet-borderless accessibility-menu " id="p_p_id_com_liferay_accessibility_menu_web_portlet_AccessibilityMenuPortlet_">
+		<span id="p_com_liferay_accessibility_menu_web_portlet_AccessibilityMenuPortlet"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_accessibility_menu_web_portlet_AccessibilityMenuPortlet">
+
+
+	<div class="portlet-content">
+
+			<div class="autofit-float autofit-row portlet-header">
+
+					<div class="autofit-col autofit-col-expand">
+						<h2 class="portlet-title-text">Accessibility Menu</h2>
+					</div>
+
+			</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+<div id="efqk"></div><script type="module">
+import {render} from '/o/portal-template-react-renderer-impl/__liferay__/index.js';
+import {AccessibilityMenu as componentModule} from '/o/accessibility-menu-web/__liferay__/index.js';
+{
+render(componentModule, {"portletId":"com_liferay_accessibility_menu_web_portlet_AccessibilityMenuPortlet","settings":[{"defaultValue":false,"description":"Force underline effect for all links.","className":"c-prefers-link-underline","label":"Underlined Links","key":"ACCESSIBILITY_SETTING_UNDERLINED_LINKS"},{"defaultValue":false,"description":"Increase horizontal spacing between text characters.","className":"c-prefers-letter-spacing-1","label":"Increased Text Spacing","key":"ACCESSIBILITY_SETTING_INCREASED_TEXT_SPACING"},{"defaultValue":false,"description":"Expand all truncated text.","className":"c-prefers-expanded-text","label":"Expanded Text","key":"ACCESSIBILITY_SETTING_EXPANDED_TEXT"},{"defaultValue":false,"description":"Stop all motion and animations.","className":"c-prefers-reduced-motion","label":"Reduced Motion","key":"ACCESSIBILITY_SETTING_REDUCED_MOTION"}],"componentId":null,"locale":{"unicodeLocaleKeys":[],"country":"US","ISO3Language":"eng","displayName":"English (United States)","displayVariant":"","language":"en","displayLanguage":"English","script":"","unicodeLocaleAttributes":[],"displayCountry":"United States","ISO3Country":"USA","variant":"","extensionKeys":[],"displayScript":""},"portletNamespace":"_com_liferay_accessibility_menu_web_portlet_AccessibilityMenuPortlet_"}, 'efqk');
+}
+
+</script>
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+</div>
+<div class="d-flex flex-column min-vh-100">
+
+	<div class="d-flex flex-column flex-fill position-relative" id="wrapper">
+
+		<div class=" flex-fill" id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+	.master-layout-fragment .portlet-header {
+		display: none;
+	}
+</style>
+
+
+
+<div class="lfr-layout-structure-item-header-light--copy- lfr-layout-structure-item-c42a2f8e-11fa-cf99-52d3-5bd548539ad7 " style=""><div id="fragment-71d8c98c-48d1-99cd-4171-5321fae808e3" > <header class="bg-white border-bottom border-light navbar navbar-light py-4 section-header">
+	<div class="container flex-column flex-lg-row justify-content-between text-break">
+
+		<div class="align-items-center d-flex flex-column flex-lg-row mt-3 mt-lg-0">
+		<img alt="Logo Image" class="section-header-logo" data-lfr-editable-id="01-logo" data-lfr-editable-type="image" src="/documents/32054/0/ssai_logo.png/b5d2d137-b0e3-6708-d9d1-4f01c795b986?version=1.0&amp;t=1712849313894" data-fileentryid="79269">
+      <div data-lfr-editable-id="02-header-text" data-lfr-editable-type="text">
+				mySSAI
+			</div>
+		</div>
+		
+		<div class="align-items-center d-flex flex-column flex-lg-row mt-3 mt-lg-0">
+			<div class="portlet"><link href="/combo?browserId=other&amp;minifierType=css&amp;themeId=classic_WAR_classictheme&amp;languageId=en_US&amp;com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_nhxq:%2Fo%2Fsite-navigation-menu-web%2Fcss%2Fmain.css&amp;t=1760567762000" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_  portlet-static portlet-static-end portlet-borderless portlet-navigation " id="p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_nhxq_">
+		<span id="p_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_nhxq"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_nhxq">
+
+
+	<div class="portlet-content">
+
+			<div class="autofit-float autofit-row portlet-header">
+
+					<div class="autofit-col autofit-col-expand">
+						<h2 class="portlet-title-text">Menu Display</h2>
+					</div>
+
+			</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+		
+
+		
+
+		
+
+
+	<div id="navbar_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_nhxq">
+		<ul aria-label="Site Pages" class="navbar-blank navbar-nav navbar-site" role="menubar">
+
+
+
+
+
+
+					<li class="lfr-nav-item nav-item" id="layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_nhxq_101" role="presentation">
+						<a class="nav-link text-truncate" href="https://my.ssai.app/om-bahethi" role="menuitem">
+							<span class="text-truncate">
+
+								Om Bahethi 
+							</span>
+						</a>
+
+					</li>
+
+
+
+
+
+					<li class="lfr-nav-item nav-item" id="layout_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_nhxq_296" role="presentation">
+						<a class="nav-link text-truncate" href="https://my.ssai.app/openid/-/login/openid_connect_request?p_p_state=maximized&amp;_com_liferay_login_web_portlet_LoginPortlet_saveLastPath=false&amp;_com_liferay_login_web_portlet_LoginPortlet_redirect=/&amp;_com_liferay_login_web_portlet_LoginPortlet_OPEN_ID_CONNECT_PROVIDER_NAME=Azure%20OIDC" role="menuitem">
+							<span class="text-truncate">
+
+								Login 
+							</span>
+						</a>
+
+					</li>
+		</ul>
+	</div>
+
+<script>
+AUI().use(
+  'liferay-navigation-interaction',
+function(A) {
+(function() {
+var $ = AUI.$;var _ = AUI._;		var navigation = A.one('#navbar_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_nhxq');
+
+		Liferay.Data.NAV_INTERACTION_LIST_SELECTOR = '.navbar-site';
+		Liferay.Data.NAV_LIST_SELECTOR = '.navbar-site';
+
+		if (navigation) {
+			navigation.plug(Liferay.NavigationInteraction);
+		}
+})();
+});
+
+</script>
+	
+	
+	
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+</div>
+			<div class="portlet"><link href="/combo?browserId=other&amp;minifierType=css&amp;themeId=classic_WAR_classictheme&amp;languageId=en_US&amp;com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_nhxq:%2Fo%2Fportal-search-web%2Fcss%2Fmain.css&amp;t=1760567762000" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_  portlet-static portlet-static-end portlet-borderless portlet-search-bar " id="p_p_id_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_nhxq_">
+		<span id="p_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_nhxq"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_nhxq">
+
+
+	<div class="portlet-content">
+
+			<div class="autofit-float autofit-row portlet-header">
+
+					<div class="autofit-col autofit-col-expand">
+						<h2 class="portlet-title-text">Search Bar</h2>
+					</div>
+
+			</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		<form action="https://my.ssai.app/search" id="dkrk___fm" method="get" name="dkrk___fm">
+			
+
+			
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+					
+						<div id="_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_nhxq_reactSearchBar">
+							<div id="dfqt"></div><script type="module">
+import {ReactSearchBar as componentModule} from '/o/portal-search-web/__liferay__/index.js';
+import {render} from '/o/portal-template-react-renderer-impl/__liferay__/index.js';
+{
+render(componentModule, {"isSearchExperiencesSupported":true,"letUserChooseScope":false,"componentId":null,"selectedEverythingSearchScope":false,"retainFacetSelections":false,"scopeParameterStringEverything":"everything","locale":{"unicodeLocaleKeys":[],"country":"US","ISO3Language":"eng","displayName":"English (United States)","displayVariant":"","language":"en","displayLanguage":"English","script":"","unicodeLocaleAttributes":[],"displayCountry":"United States","ISO3Country":"USA","variant":"","extensionKeys":[],"displayScript":""},"suggestionsDisplayThreshold":2,"isDXP":true,"scopeParameterStringCurrentSite":"this-site","suggestionsContributorConfiguration":"[{\"contributorName\":\"basic\",\"displayGroupName\":\"suggestions\",\"size\":5}]","destinationFriendlyURL":"\/search","emptySearchEnabled":false,"scopeParameterName":"scope","keywordsParameterName":"q","portletId":"com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_nhxq","paginationStartParameterName":"","searchURL":"https:\/\/my.ssai.app\/search","suggestionsURL":"\/o\/search\/v1.0\/suggestions","initialKeywords":"","portletNamespace":"_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_nhxq_"}, 'dfqt');
+}
+
+</script>
+						</div>
+					
+					
+				
+			
+		</form>
+
+		<script type="module">
+import {SearchBar as ComponentModule} from '/o/portal-search-web/__liferay__/index.js';
+{
+Liferay.component('__UNNAMED_COMPONENT__4bb7f7a4-9286-d4d8-f529-268915882cae', new ComponentModule({"formId":"dkrk___fm","namespace":"_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_nhxq_","spritemap":"https:\/\/my.ssai.app\/o\/classic-theme\/images\/clay\/icons.svg","initialKeywords":"","retainFacetSelections":false}), { destroyOnNavigate: true, portletId: 'com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_nhxq'});
+}
+
+</script>
+	
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+</div>
+			
+			<span class="ml-lg-3 mt-4 mt-lg-0">
+<link href="/combo?browserId=other&amp;minifierType=css&amp;themeId=classic_WAR_classictheme&amp;languageId=en_US&amp;com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet:%2Fo%2Fproduct-navigation-user-personal-bar-web%2Fcss%2Fmain.css&amp;t=1760567762000" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet_  portlet-static portlet-static-end portlet-borderless portlet-user-personal-bar " id="p_p_id_com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet_">
+		<span id="p_com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+		
+	
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+			</span>
+			
+		</div>
+	</div>
+</header></div><style >.section-header .section-header-logo {
+	height: 36px;
+}
+
+.section-header .portlet {
+	margin: 0;
+}
+
+.section-header .navbar-nav .nav-link {
+	font-weight: 600;
+	padding: 0 1rem;
+}</style></div><div class="columns-max" id="main-content" role="main">
+	<div class="portlet-layout row">
+		<div class="col-md-12 portlet-column portlet-column-only" id="column-1">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<div class="portlet-boundary portlet-boundary_com_liferay_login_web_portlet_LoginPortlet_  portlet-static portlet-static-end portlet-borderless portlet-login " id="p_p_id_com_liferay_login_web_portlet_LoginPortlet_">
+		<span id="p_com_liferay_login_web_portlet_LoginPortlet"></span>
+
+
+
+
+	
+
+	
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+<section class="portlet" id="portlet_com_liferay_login_web_portlet_LoginPortlet">
+
+	<div class="portlet-content">
+
+			<div class="autofit-float autofit-row portlet-header">
+					<div class="autofit-col">
+						<div class="autofit-section">
+							<a class="icon-monospaced portlet-icon-back text-default" href="https://my.ssai.app:443/sign-in?p_p_id=com_liferay_login_web_portlet_LoginPortlet&amp;p_p_lifecycle=1&amp;p_p_state=normal&amp;p_p_state_rcv=1&amp;p_auth=RZyNkTYf" title="Return to Full Page">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<span
+			class=""
+
+			
+
+			
+		>
+			
+				
+					
+
+
+	
+		<span class="c-inner" tabindex="-1"  id="qfkd____"><svg aria-hidden="true" class="lexicon-icon lexicon-icon-angle-left" focusable="false" ><use href="https://my.ssai.app/o/classic-theme/images/clay/icons.svg#angle-left"></use></svg></span>
+	
+	
+
+
+	
+		
+	
+
+				
+			
+		</span>
+	
+
+
+							</a>
+						</div>
+					</div>
+
+					<div class="autofit-col autofit-col-expand">
+						<h2 class="portlet-title-text">Sign In</h2>
+					</div>
+
+			</div>
+
+		
+			<div class=" portlet-content-container">
+				
+
+
+	<div class="portlet-body">
+
+
+
+	
+		
+			
+				
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+	
+
+				
+
+				
+					
+						
+
+
+	
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+		
+
+		<div class="login-container">
+			
+				
+			
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form action="https://my.ssai.app:443/sign-in?p_p_id=com_liferay_login_web_portlet_LoginPortlet&amp;p_p_lifecycle=1&amp;p_p_state=maximized&amp;p_p_mode=view&amp;_com_liferay_login_web_portlet_LoginPortlet_javax.portlet.action=%2Flogin%2Flogin&amp;_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName=%2Flogin%2Flogin&amp;p_auth=RZyNkTYf" class="form sign-in-form " data-fm-namespace="_com_liferay_login_web_portlet_LoginPortlet_" id="_com_liferay_login_web_portlet_LoginPortlet_loginForm" method="post" name="_com_liferay_login_web_portlet_LoginPortlet_loginForm" autocomplete="on" >
+	
+		<div aria-label="Sign In" class="input-container" role="group">
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+		
+			
+				
+					<input  class="field form-control"  id="_com_liferay_login_web_portlet_LoginPortlet_formDate"    name="_com_liferay_login_web_portlet_LoginPortlet_formDate"     type="hidden" value="1760730483265"   />
+				
+			
+		
+
+		
+	
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+		
+			
+				
+					<input  class="field form-control"  id="_com_liferay_login_web_portlet_LoginPortlet_saveLastPath"    name="_com_liferay_login_web_portlet_LoginPortlet_saveLastPath"     type="hidden" value="false"   />
+				
+			
+		
+
+		
+	
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+		
+			
+				
+					<input  class="field form-control"  id="_com_liferay_login_web_portlet_LoginPortlet_redirect"    name="_com_liferay_login_web_portlet_LoginPortlet_redirect"     type="hidden" value="/documents/32054/320645/AK+-+employment+separation.png"   />
+				
+			
+		
+
+		
+	
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+		
+
+		
+			
+				
+					<input  class="field form-control"  id="_com_liferay_login_web_portlet_LoginPortlet_doActionAfterLogin"    name="_com_liferay_login_web_portlet_LoginPortlet_doActionAfterLogin"     type="hidden" value="false"   />
+				
+			
+		
+
+		
+	
+
+
+
+
+
+
+
+
+
+
+				<div class="inline-alert-container lfr-alert-container"></div>
+
+				
+
+				
+					
+					
+					
+				
+
+				
+					<div class="alert alert-danger" id="_com_liferay_login_web_portlet_LoginPortlet_cookieDisabled" style="display: none;">
+						Authentication failed. Please enable browser cookies and try again.
+					</div>
+				
+
+				
+					
+					
+						
+					
+				
+
+				
+				
+				
+				
+				
+				
+
+				
+					
+					
+						
+					
+				
+
+				
+				
+
+				
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<fieldset class=""  >
+	
+		
+			<legend class="sr-only">
+				Sign In
+			</legend>
+		
+	
+
+	<div class="show  " id="Content" role="presentation">
+		<div class="panel-body">
+
+					
+
+					
+						
+							
+						
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="form-group input-text-wrapper">
+
+
+
+
+
+	<label class=" control-label" for="_com_liferay_login_web_portlet_LoginPortlet_login">
+		
+				Email Address
+			</label>
+		
+
+
+
+
+
+	
+
+		
+
+		
+			
+				
+					<input  class="field clearable form-control"  id="_com_liferay_login_web_portlet_LoginPortlet_login"    name="_com_liferay_login_web_portlet_LoginPortlet_login"     type="text" value="@ssaihq.com"   />
+				
+			
+		
+
+		
+	
+
+
+
+
+
+	
+
+
+
+	</div>
+
+
+
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="form-group input-text-wrapper">
+
+
+
+
+
+	<label class=" control-label" for="_com_liferay_login_web_portlet_LoginPortlet_password">
+		
+				Password
+			</label>
+		
+
+
+
+
+
+	
+
+		
+
+		
+			
+				
+					<input  class="field form-control"  id="_com_liferay_login_web_portlet_LoginPortlet_password"    name="_com_liferay_login_web_portlet_LoginPortlet_password"     type="password" value=""   />
+				
+			
+		
+
+		
+	
+
+
+
+
+
+	
+
+
+
+	</div>
+
+
+
+
+					<span id="_com_liferay_login_web_portlet_LoginPortlet_passwordCapsLockSpan" style="display: none;">Caps Lock is on.</span>
+
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
+</fieldset>
+
+
+
+				<div class="button-holder " >
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			<button
+				class="btn  btn-primary"
+
+				
+
+				id="_com_liferay_login_web_portlet_LoginPortlet_vbrt"
+
+				
+
+				
+					
+
+				type="submit"
+
+				
+				
+			>
+		
+	
+
+	
+
+	
+		<span class="lfr-btn-label">Sign In</span>
+	
+
+	
+
+	
+		
+			</button>
+		
+	
+
+
+
+
+
+
+
+				</div>
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+		</div>
+	
+</form>
+
+
+
+
+
+			
+
+
+
+
+
+
+	<div class="c-mt-3 navigation">
+		<span
+			class="text-4"
+
+			
+
+			
+		>
+			
+				
+					<a href="https://my.ssai.app:443/sign-in?p_p_id=com_liferay_login_web_portlet_LoginPortlet&amp;p_p_lifecycle=0&amp;p_p_state=maximized&amp;p_p_mode=view&amp;_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName=%2Flogin%2Fopenid_connect_request&amp;_com_liferay_login_web_portlet_LoginPortlet_redirect=%2Fdocuments%2F32054%2F320645%2FAK%2B-%2Bemployment%2Bseparation.png&amp;saveLastPath=false" target="_self" class=" lfr-icon-item taglib-icon" id="_com_liferay_login_web_portlet_LoginPortlet_ctvk____" >
+						
+
+
+	
+		
+			
+				
+			
+		
+	
+
+
+
+	
+		
+			<span class="taglib-text ">OpenId Connect</span>
+		
+	
+
+					</a>
+				
+				
+		</span>
+	</div>
+
+		</div>
+
+		
+	
+
+
+	
+	
+					
+				
+			
+		
+	
+	
+
+
+	</div>
+
+			</div>
+		
+	</div>
+</section>
+	
+
+		
+		
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+		</div>
+	</div>
+</div><div class="lfr-layout-structure-item-k-footer-ssai--copy- lfr-layout-structure-item-878dc30c-44b2-b51e-ec78-7774c309f9a0 " style=""><div id="fragment-36cbce6c-557c-6e9d-e265-7035f264963e" > <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ <footer class="footer">
+     <div class="container">
+      <div class="row">
+				<div class="footer-col ssai-footer-logo ">
+					<figure>
+						<a href="https://www.ssaihq.com/"><img src="https://my.ssai.app/documents/d/ssaihq/ssai_logo_white"></a>
+					</figure>
+       
+           
+					
+        </div>
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="/web/ssaihq/home">Science Systems and  Applications, Inc.</a></li>
+            <li><a href="https://my.ssai.app/home">MySSAI Home</a></li>
+						<li><a href="https://my.ssai.app/my-hr">My HR</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+					<h4>&nbsp;</h4>
+          <ul>
+            <li><a href="https://my.ssai.app/my-workspace">My Workspace</a></li>
+            <li><a href="https://my.ssai.app/company">Company</a></li>
+						<li><a href="https://my.ssai.app/search">Search</a></li>
+          </ul>
+        </div>
+       
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+						<a href="https://www.linkedin.com/company/ssai/posts/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+						<a href="https://www.instagram.com/ssaihq/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/SciSysApp" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/ssaihq" target="_blank" class="twitter-icon"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" width="15" height="20" fill="white" transition="transform 0.3s ease"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" /></svg></a>
+	
+						<a href="https://www.youtube.com/@ScienceSystemsandApplicationsI" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+     </div>
+  </footer></div><style >@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #272833 ;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffff;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #24262b;
+  background-color: #ffffff;
+}
+.twitter-icon:hover svg {
+	fill:black;
+}
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.ssai-footer-logo img {
+    width: 600px;
+	height: 150px;
+	padding-right: 5rem;
+	float: left;
+}
+img {
+    max-width: 100%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+</style></div>
+	
+	
+	
+
+
+<form action="#" aria-hidden="true" class="hide" id="hrefFm" method="post" name="hrefFm"><span></span><button hidden type="submit">Hidden</button></form>
+
+	
+		</div>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+	
+		
+
+			
+
+			
+		
+	
+
+
+</script><script>
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+<script type="text/javascript">
+
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', 'G-QZB2MRS696');
+
+					
+
+					
+				
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onDestroyPortlet = function () {
+		Liferay.detach('messagePosted', onMessagePosted);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+
+	var onMessagePosted = function (event) {
+		if (window.Analytics) {
+			const eventProperties = {
+				className: event.className,
+				classPK: event.classPK,
+				commentId: event.commentId,
+				text: event.text,
+			};
+
+			const blogNode = document.querySelector(
+				'[data-analytics-asset-id="' + event.classPK + '"]'
+			);
+
+			const dmNode = document.querySelector(
+				'[data-analytics-file-entry-id="' + event.classPK + '"]'
+			);
+
+			if (blogNode) {
+				eventProperties.title = blogNode.dataset.analyticsAssetTitle;
+			}
+			else if (dmNode) {
+				eventProperties.title = dmNode.dataset.analyticsFileEntryTitle;
+			}
+
+			Analytics.send('posted', 'Comment', eventProperties);
+		}
+	};
+
+	Liferay.on('messagePosted', onMessagePosted);
+})();
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onVote = function (event) {
+		if (window.Analytics) {
+			let title = event.contentTitle;
+
+			if (!title) {
+				const dmNode = document.querySelector(
+					'[data-analytics-file-entry-id="' + event.classPK + '"]'
+				);
+
+				if (dmNode) {
+					title = dmNode.dataset.analyticsFileEntryTitle;
+				}
+			}
+
+			Analytics.send('VOTE', 'Ratings', {
+				className: event.className,
+				classPK: event.classPK,
+				ratingType: event.ratingType,
+				score: event.score,
+				title,
+			});
+		}
+	};
+
+	var onDestroyPortlet = function () {
+		Liferay.detach('ratings:vote', onVote);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('ratings:vote', onVote);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();
+
+	function getValueByAttribute(node, attr) {
+		return (
+			node.dataset[attr] ||
+			(node.parentElement && node.parentElement.dataset[attr])
+		);
+	}
+
+	function sendDocumentDownloadedAnalyticsEvent(anchor) {
+		var fileEntryId = getValueByAttribute(
+			anchor,
+			'analyticsFileEntryId'
+		);
+		var title = getValueByAttribute(
+			anchor,
+			'analyticsFileEntryTitle'
+		);
+		var version = getValueByAttribute(
+			anchor,
+			'analyticsFileEntryVersion'
+		);
+
+		if (fileEntryId) {
+			Analytics.send('documentDownloaded', 'Document', {
+				groupId: themeDisplay.getScopeGroupId(),
+				fileEntryId,
+				preview:
+					!!window._com_liferay_document_library_analytics_isViewFileEntry,
+				title,
+				version,
+			});
+		}
+	}
+
+	function handleDownloadClick(event) {
+		if (window.Analytics) {
+			if (event.target.nodeName.toLowerCase() === 'a') {
+				sendDocumentDownloadedAnalyticsEvent(
+					event.target
+				);
+			}
+			else if (
+				event.target.parentNode &&
+				event.target.parentNode.nodeName.toLowerCase() === 'a'
+			) {
+				sendDocumentDownloadedAnalyticsEvent(
+					event.target.parentNode
+				);
+			}
+			else {
+				var target = event.target;
+				var matchTextContent =
+					target.textContent &&
+					target.textContent.toLowerCase() ===
+						'download';
+				var matchTitle =
+					target.title && target.title.toLowerCase() === 'download';
+				var matchAction = target.action === 'download';
+				var matchLexiconIcon = !!target.querySelector(
+					'.lexicon-icon-download'
+				);
+				var matchLexiconClassName = target.classList.contains(
+					'lexicon-icon-download'
+				);
+				var matchParentTitle =
+					target.parentNode &&
+					target.parentNode.title &&
+					target.parentNode.title.toLowerCase() === 'download';
+				var matchParentLexiconClassName =
+					target.parentNode &&
+					target.parentNode.classList.contains('lexicon-icon-download');
+
+				if (
+					matchTextContent ||
+					matchTitle ||
+					matchParentTitle ||
+					matchAction ||
+					matchLexiconIcon ||
+					matchLexiconClassName ||
+					matchParentLexiconClassName
+				) {
+					var selectedFiles = document.querySelectorAll(
+						'.form .custom-control-input:checked'
+					);
+
+					selectedFiles.forEach(({value}) => {
+						var selectedFile = document.querySelector(
+							'[data-analytics-file-entry-id="' + value + '"]'
+						);
+
+						sendDocumentDownloadedAnalyticsEvent(
+							selectedFile
+						);
+					});
+				}
+			}
+		}
+	}
+
+	Liferay.once('destroyPortlet', () => {
+		document.body.removeEventListener(
+			'click',
+			handleDownloadClick
+		);
+	});
+
+	Liferay.once('portletReady', () => {
+		document.body.addEventListener(
+			'click',
+			handleDownloadClick
+		);
+	});
+
+(function() {var $ = AUI.$;var _ = AUI._;
+	var onShare = function (data) {
+		if (window.Analytics) {
+			Analytics.send('shared', 'SocialBookmarks', {
+				className: data.className,
+				classPK: data.classPK,
+				type: data.type,
+				url: data.url,
+			});
+		}
+	};
+
+	var onDestroyPortlet = function () {
+		Liferay.detach('socialBookmarks:share', onShare);
+		Liferay.detach('destroyPortlet', onDestroyPortlet);
+	};
+
+	Liferay.on('socialBookmarks:share', onShare);
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+})();
+
+	if (window.svg4everybody && Liferay.Data.ICONS_INLINE_SVG) {
+		svg4everybody(
+			{
+				polyfill: true,
+				validate: function (src, svg, use) {
+					return !src || !src.startsWith('#');
+				}
+			}
+		);
+	}
+
+(function() {var $ = AUI.$;var _ = AUI._;
+	Liferay.Util.delegate(
+		document,
+		'focusin',
+		'.portlet',
+		function(event) {
+			event.delegateTarget.closest('.portlet').classList.add('open');
+		}
+	);
+
+	Liferay.Util.delegate(
+		document,
+		'focusout',
+		'.portlet',
+		function(event) {
+			event.delegateTarget.closest('.portlet').classList.remove('open');
+		}
+	);
+})();
+
+	// <![CDATA[
+
+		
+
+		Liferay.currentURL = '\x2fsign-in\x3fp_p_state\x3dmaximized\x26p_p_mode\x3dview\x26_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName\x3d\x252Flogin\x252Flogin\x26saveLastPath\x3dfalse\x26p_p_id\x3dcom_liferay_login_web_portlet_LoginPortlet\x26p_p_lifecycle\x3d0\x26_com_liferay_login_web_portlet_LoginPortlet_redirect\x3d\x252Fdocuments\x252F32054\x252F320645\x252FAK\x252B-\x252Bemployment\x252Bseparation\x2epng';
+		Liferay.currentURLEncoded = '\x252Fsign-in\x253Fp_p_state\x253Dmaximized\x2526p_p_mode\x253Dview\x2526_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName\x253D\x25252Flogin\x25252Flogin\x2526saveLastPath\x253Dfalse\x2526p_p_id\x253Dcom_liferay_login_web_portlet_LoginPortlet\x2526p_p_lifecycle\x253D0\x2526_com_liferay_login_web_portlet_LoginPortlet_redirect\x253D\x25252Fdocuments\x25252F32054\x25252F320645\x25252FAK\x25252B-\x25252Bemployment\x25252Bseparation\x2epng';
+
+	// ]]>
+
+(function() {var $ = AUI.$;var _ = AUI._;
+		import(Liferay.ThemeDisplay.getPathContext() + '/o/frontend-js-web/__liferay__/index.js').then(
+			({openToast}) => {
+				AUI().use(
+					'liferay-session',
+					function () {
+						Liferay.Session = new Liferay.SessionBase(
+							{
+								autoExtend: true,
+								redirectOnExpire: false,
+								redirectUrl: 'https\x3a\x2f\x2fmy\x2essai\x2eapphttps\x3a\x2f\x2fmy\x2essai\x2eapp\x2fguest\x2flogin',
+								sessionLength: 900,
+								sessionTimeoutOffset: 300,
+								warningLength: 60
+							}
+						);
+
+						
+					}
+				);
+			}
+		)
+	})();
+
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet_',
+			portletId: 'com_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d251\x26p_p_id\x3dcom_liferay_product_navigation_user_personal_bar_web_portlet_ProductNavigationUserPersonalBarPortlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fsign-in\x253Fp_p_state\x253Dmaximized\x2526p_p_mode\x253Dview\x2526_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName\x253D\x25252Flogin\x25252Flogin\x2526saveLastPath\x253Dfalse\x2526p_p_id\x253Dcom_liferay_login_web_portlet_LoginPortlet\x2526p_p_lifecycle\x253D0\x2526_com_liferay_login_web_portlet_LoginPortlet_redirect\x253D\x25252Fdocuments\x25252F32054\x25252F320645\x25252FAK\x25252B-\x25252Bemployment\x25252Bseparation\x2epng',
+			refreshURLData: {}
+		}
+	);
+
+(function() {var $ = AUI.$;var _ = AUI._;
+			var form = document.getElementById('_com_liferay_login_web_portlet_LoginPortlet_loginForm');
+
+			if (form) {
+				form.addEventListener('submit', (event) => {
+					
+						if (!navigator.cookieEnabled) {
+							document.getElementById(
+								'_com_liferay_login_web_portlet_LoginPortlet_cookieDisabled'
+							).style.display = '';
+
+							return;
+						}
+					
+
+					
+						var redirect = form.querySelector('#_com_liferay_login_web_portlet_LoginPortlet_redirect');
+
+						if (redirect) {
+							var redirectVal = redirect.getAttribute('value');
+
+							redirect.setAttribute('value', redirectVal + window.location.hash);
+						}
+					
+
+					submitForm(form);
+				});
+
+				var password = form.querySelector('#_com_liferay_login_web_portlet_LoginPortlet_password');
+
+				if (password) {
+					password.addEventListener('keypress', (event) => {
+						Liferay.Util.showCapsLock(
+							event,
+							'_com_liferay_login_web_portlet_LoginPortlet_passwordCapsLockSpan'
+						);
+					});
+				}
+			}
+		})();
+
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_login_web_portlet_LoginPortlet_',
+			portletId: 'com_liferay_login_web_portlet_LoginPortlet',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d251\x26p_p_id\x3dcom_liferay_login_web_portlet_LoginPortlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dmaximized\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fsign-in\x253Fp_p_state\x253Dmaximized\x2526p_p_mode\x253Dview\x2526_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName\x253D\x25252Flogin\x25252Flogin\x2526saveLastPath\x253Dfalse\x2526p_p_id\x253Dcom_liferay_login_web_portlet_LoginPortlet\x2526p_p_lifecycle\x253D0\x2526_com_liferay_login_web_portlet_LoginPortlet_redirect\x253D\x25252Fdocuments\x25252F32054\x25252F320645\x25252FAK\x25252B-\x25252Bemployment\x25252Bseparation\x2epng',
+			refreshURLData: {"_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName":["\/login\/login"],"_com_liferay_login_web_portlet_LoginPortlet_redirect":["\/documents\/32054\/320645\/AK+-+employment+separation.png"]}
+		}
+	);
+
+
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_nhxq_',
+			portletId: 'com_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_nhxq',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d251\x26p_p_id\x3dcom_liferay_site_navigation_menu_web_portlet_SiteNavigationMenuPortlet_INSTANCE_nhxq\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fsign-in\x253Fp_p_state\x253Dmaximized\x2526p_p_mode\x253Dview\x2526_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName\x253D\x25252Flogin\x25252Flogin\x2526saveLastPath\x253Dfalse\x2526p_p_id\x253Dcom_liferay_login_web_portlet_LoginPortlet\x2526p_p_lifecycle\x253D0\x2526_com_liferay_login_web_portlet_LoginPortlet_redirect\x253D\x25252Fdocuments\x25252F32054\x25252F320645\x25252FAK\x25252B-\x25252Bemployment\x25252Bseparation\x2epng',
+			refreshURLData: {}
+		}
+	);
+
+
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_accessibility_menu_web_portlet_AccessibilityMenuPortlet_',
+			portletId: 'com_liferay_accessibility_menu_web_portlet_AccessibilityMenuPortlet',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d251\x26p_p_id\x3dcom_liferay_accessibility_menu_web_portlet_AccessibilityMenuPortlet\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fsign-in\x253Fp_p_state\x253Dmaximized\x2526p_p_mode\x253Dview\x2526_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName\x253D\x25252Flogin\x25252Flogin\x2526saveLastPath\x253Dfalse\x2526p_p_id\x253Dcom_liferay_login_web_portlet_LoginPortlet\x2526p_p_lifecycle\x253D0\x2526_com_liferay_login_web_portlet_LoginPortlet_redirect\x253D\x25252Fdocuments\x25252F32054\x25252F320645\x25252FAK\x25252B-\x25252Bemployment\x25252Bseparation\x2epng',
+			refreshURLData: {}
+		}
+	);
+
+
+	
+
+	Liferay.Portlet.onLoad(
+		{
+			canEditTitle: false,
+			columnPos: 0,
+			isStatic: 'end',
+			namespacedId: 'p_p_id_com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_nhxq_',
+			portletId: 'com_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_nhxq',
+			refreshURL: '\x2fc\x2fportal\x2frender_portlet\x3fp_l_id\x3d251\x26p_p_id\x3dcom_liferay_portal_search_web_search_bar_portlet_SearchBarPortlet_INSTANCE_nhxq\x26p_p_lifecycle\x3d0\x26p_t_lifecycle\x3d0\x26p_p_state\x3dnormal\x26p_p_mode\x3dview\x26p_p_col_id\x3dnull\x26p_p_col_pos\x3dnull\x26p_p_col_count\x3dnull\x26p_p_static\x3d1\x26p_p_isolated\x3d1\x26currentURL\x3d\x252Fsign-in\x253Fp_p_state\x253Dmaximized\x2526p_p_mode\x253Dview\x2526_com_liferay_login_web_portlet_LoginPortlet_mvcRenderCommandName\x253D\x25252Flogin\x25252Flogin\x2526saveLastPath\x253Dfalse\x2526p_p_id\x253Dcom_liferay_login_web_portlet_LoginPortlet\x2526p_p_lifecycle\x253D0\x2526_com_liferay_login_web_portlet_LoginPortlet_redirect\x253D\x25252Fdocuments\x25252F32054\x25252F320645\x25252FAK\x25252B-\x25252Bemployment\x25252Bseparation\x2epng',
+			refreshURLData: {}
+		}
+	);
+
+
+</script><script type="module">
+import {InfoItemActionHandler as ComponentModule} from '/o/layout-taglib/__liferay__/index.js';
+AUI().use(
+  'liferay-menu',
+  'liferay-form',
+function(A) {
+{
+Liferay.component('infoItemActionComponent', new ComponentModule({"executeInfoItemActionURL":"https:\/\/my.ssai.app\/c\/portal\/execute_info_item_action?p_l_mode=view&plid=251","namespace":"","spritemap":"https:\/\/my.ssai.app\/o\/classic-theme\/images\/clay\/icons.svg"}), { destroyOnNavigate: true, portletId: ''});
+}
+(function() {
+var $ = AUI.$;var _ = AUI._;
+	new Liferay.Menu();
+
+	var liferayNotices = Liferay.Data.notices;
+
+	for (var i = 0; i < liferayNotices.length; i++) {
+		Liferay.Util.openToast(liferayNotices[i]);
+	}
+
+})();
+(function() {
+var $ = AUI.$;var _ = AUI._;
+	Liferay.Form.register(
+		{
+			id: '_com_liferay_login_web_portlet_LoginPortlet_loginForm'
+
+			
+				, fieldRules: [
+
+					
+
+							
+
+							{
+								body: '',
+								custom: false,
+								errorMessage: '\u0054\u0068\u0065\u0020\u0050\u0061\u0073\u0073\u0077\u006f\u0072\u0064\u0020\u0066\u0069\u0065\u006c\u0064\u0020\u0069\u0073\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064\u002e',
+								fieldName: '_com_liferay_login_web_portlet_LoginPortlet_password',
+								validatorName: 'required'
+							}
+
+					
+
+							,
+
+							{
+								body: '',
+								custom: false,
+								errorMessage: '\u0054\u0068\u0065\u0020\u0045\u006d\u0061\u0069\u006c\u0020\u0041\u0064\u0064\u0072\u0065\u0073\u0073\u0020\u0066\u0069\u0065\u006c\u0064\u0020\u0069\u0073\u0020\u0072\u0065\u0071\u0075\u0069\u0072\u0065\u0064\u002e',
+								fieldName: '_com_liferay_login_web_portlet_LoginPortlet_login',
+								validatorName: 'required'
+							}
+
+					
+
+							,
+
+							{
+								body: '',
+								custom: false,
+								errorMessage: '',
+								fieldName: '_com_liferay_login_web_portlet_LoginPortlet_login',
+								validatorName: 'email'
+							}
+
+					
+
+				]
+			
+
+			
+				, onSubmit: function(event) {
+					event.preventDefault();
+				}
+			
+
+			, validateOnBlur: false
+		}
+	);
+
+	var onDestroyPortlet = function(event) {
+		if (event.portletId === 'com_liferay_login_web_portlet_LoginPortlet') {
+			delete Liferay.Form._INSTANCES['_com_liferay_login_web_portlet_LoginPortlet_loginForm'];
+		}
+	};
+
+	Liferay.on('destroyPortlet', onDestroyPortlet);
+
+	
+		A.all('#_com_liferay_login_web_portlet_LoginPortlet_loginForm .input-container').removeAttribute('disabled');
+	
+
+	Liferay.fire(
+		'_com_liferay_login_web_portlet_LoginPortlet_formReady',
+		{
+			formName: '_com_liferay_login_web_portlet_LoginPortlet_loginForm'
+		}
+	);
+})();
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+<script src="https://my.ssai.app/o/classic-theme/js/main.js?browserId=other&amp;minifierType=js&amp;languageId=en_US&amp;t=1760567762000" type="text/javascript"></script>
+
+
+
+
+<script type="module">
+import {main} from '/o/frontend-js-dropdown-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {main} from '/o/frontend-js-collapse-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {main} from '/o/frontend-js-tooltip-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {main} from '/o/frontend-js-alert-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="module">
+import {main} from '/o/frontend-js-tabs-support-web/__liferay__/index.js';
+{
+main();
+}
+
+</script><script type="text/javascript">
+Liferay.CustomDialogs = {enabled: false};
+
+</script><script>
+
+</script><script type="module">
+import {runThirdPartyCookiesInterval} from '/o/cookies-banner-web/__liferay__/index.js';
+{
+runThirdPartyCookiesInterval();
+}
+
+</script>
+</body>
+
+</html>
+		
+	
+

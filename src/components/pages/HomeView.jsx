@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import { useSession } from 'next-auth/react'
 
 function ImageCarousel({ slides, interval = 5000 }) {
   const [current, setCurrent] = useState(0);
@@ -426,6 +427,7 @@ function CostEfficiencyForm() {
 }
 
 export default function HomeView() {
+  const { data: session } = useSession();
   // Slides sourced from legacy home_main_content.html and local /img assets
   const successSlides = [
     { src: '/img/SBAicon (1).png', alt: 'SBA Icon' },
@@ -484,7 +486,7 @@ export default function HomeView() {
         <div className="container mx-auto px-4 py-8">
           <div className="welcome-header">
             <div className="max-w-4xl mx-auto space-y-4">
-              <h1>Welcome Gopal Thakur!!</h1>
+              <h1>Welcome {session?.user?.name || 'User'}!!</h1>
               <p style={{ lineHeight: '1.6', fontSize: '0.9rem' }} className="mt-10">
                 <span className="text-blue-600 font-semibold">mySSAI</span> is our new, company-wide
                 internal-access platform for employees. You can use mySSAI to access resources,

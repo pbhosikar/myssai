@@ -1,7 +1,7 @@
 // import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import AppShell from '@/components/AppShell';
+import AuthSessionProvider from '@/components/SessionProvider';
 
 
 export const metadata = {
@@ -13,11 +13,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-white text-black">
-        <Header />
-        <main id="main-content" role="main" className="layout-content portlet-layout">
-          {children}
-        </main>
-        <Footer />
+        <AuthSessionProvider>
+          <AppShell>
+            {children}
+          </AppShell>
+        </AuthSessionProvider>
       </body>
     </html>
   );

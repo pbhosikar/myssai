@@ -1,6 +1,8 @@
 'use client';
 import ClientLink from '@/components/ClientLink';
+import { useSession, signOut } from 'next-auth/react'
 export default function Header() {
+  const { data: session } = useSession()
   return (
     <header className="bg-white border-bottom border-light navbar navbar-light py-4 section-header">
       <div className="container d-flex align-items-center justify-content-between text-break">
@@ -168,11 +170,23 @@ export default function Header() {
                   <span className="text-truncate"> Om Bahethi </span>
                 </ClientLink>
               </li>
-              <li className="lfr-nav-item nav-item" role="presentation">
-                <ClientLink className="nav-link text-truncate" to="/login" role="menuitem">
-                  <span className="text-truncate"> Login </span>
-                </ClientLink>
-              </li>
+              {session ? (
+                <li className="lfr-nav-item nav-item" role="presentation">
+                  <button
+                    className="nav-link text-truncate"
+                    role="menuitem"
+                    onClick={() => signOut({ callbackUrl: '/login' })}
+                  >
+                    <span className="text-truncate"> Logout </span>
+                  </button>
+                </li>
+              ) : (
+                <li className="lfr-nav-item nav-item" role="presentation">
+                  <ClientLink className="nav-link text-truncate" to="/login" role="menuitem">
+                    <span className="text-truncate"> Login </span>
+                  </ClientLink>
+                </li>
+              )}
             </ul>
           </nav>
           {/* Search bar styled to match screenshot */}

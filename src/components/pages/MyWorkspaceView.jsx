@@ -3,9 +3,11 @@ import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import interactionPlugin from '@fullcalendar/interaction';
+import { useSession } from 'next-auth/react'
 
 
 export default function MyWorkspaceView() {
+  const { data: session } = useSession();
   const events = [
     { title: 'Team Sync', start: '2025-10-16T09:00:00' },
     { title: 'Project Review', start: '2025-10-20T13:00:00' },
@@ -34,7 +36,7 @@ export default function MyWorkspaceView() {
                     <h2 className="text-sm font-semibold text-gray-700 mb-2">My Calendars</h2>
                     <div className="space-y-2 text-sm text-gray-700">
                       <label className="flex items-center gap-2">
-                        <input type="checkbox" defaultChecked /> Gopal Thakur
+                        <input type="checkbox" defaultChecked /> {session?.user?.name || 'My Calendar'}
                       </label>
                     </div>
                   </div>

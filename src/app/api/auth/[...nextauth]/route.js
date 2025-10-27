@@ -142,7 +142,40 @@ function logAuthRequest(req, correlationId) {
   }
 }
 
+// New: echo headers/util endpoint served within NextAuth route for /api/auth/echo-headers
+function echoHeadersResponse(req) {
+  const u = new URL(req.url);
+  const correlationId = req.headers.get('x-correlation-id') || randomUUID();
+  const headersObj = {};
+  for (const [k, v] of req.headers.entries()) headersObj[k] = v;
+  return Response.json({
+    correlationId,
+    method: req.method,
+    url: req.url,
+    path: u.pathname,
+    query: Object.fromEntries(u.searchParams.entries()),
+    headers: {
+      host: headersObj['host'] || null,
+      xForwardedHost: headersObj['x-forwarded-host'] || null,
+      xForwardedProto: headersObj['x-forwarded-proto'] || null,
+      xForwardedPort: headersObj['x-forwarded-port'] || null,
+      xRealIp: headersObj['x-real-ip'] || null,
+      userAgent: headersObj['user-agent'] || null,
+      all: headersObj,
+    },
+    env: {
+      NEXTAUTH_URL: process.env.NEXTAUTH_URL || null,
+      NODE_ENV: process.env.NODE_ENV || null,
+      PORT: process.env.PORT || null,
+    },
+  });
+}
+
 export async function GET(req, ctx) {
+  const u = new URL(req.url);
+  if (u.pathname.endsWith('/echo-headers')) {
+    return echoHeadersResponse(req);
+  }
   const correlationId = randomUUID();
   logAuthRequest(req, correlationId);
   try {
@@ -156,6 +189,10 @@ export async function GET(req, ctx) {
 }
 
 export async function POST(req, ctx) {
+  const u = new URL(req.url);
+  if (u.pathname.endsWith('/echo-headers')) {
+    return echoHeadersResponse(req);
+  }
   const correlationId = randomUUID();
   logAuthRequest(req, correlationId);
   try {

@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { useSession } from 'next-auth/react'
+import { useSession } from 'next-auth/react';
 
 function ImageCarousel({ slides, interval = 5000 }) {
   const [current, setCurrent] = useState(0);
@@ -488,7 +488,7 @@ export default function HomeView() {
             <div className="max-w-4xl mx-auto space-y-4">
               <h1>Welcome {session?.user?.name || 'User'}!!</h1>
               <p style={{ lineHeight: '1.6', fontSize: '0.9rem' }} className="mt-10">
-                <span className="text-blue-600 font-semibold">mySSAI</span> is our new, company-wide
+                <span className="text-blue-600 font-semibold">mySSAI</span> is our company-wide
                 internal-access platform for employees. You can use mySSAI to access resources,
                 learn more about who we are as a company, and stay up-to-date with the latest
                 company news.
@@ -503,8 +503,8 @@ export default function HomeView() {
                 }}
               >
                 SSAI promotes an open-door policy and values transparency with all employees. We
-                recognize that employees may encounter issues and may want a trusted person to
-                discuss them with. Employees are encouraged to reach out directly to{' '}
+                recognize that employees may encounter issues and want to speak with a trusted
+                person. Employees are encouraged to reach out directly to{' '}
                 <strong>Human Resources</strong> or to contact{' '}
                 <strong>SSAI's Ombudsman, Brij Gambhir</strong>, for support at{' '}
                 <strong>brij.gambhir@ssaihq.com</strong>.

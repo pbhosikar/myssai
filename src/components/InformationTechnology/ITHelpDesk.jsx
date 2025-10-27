@@ -1,4 +1,4 @@
-"use client"
+'use client';
 
 export default function ITHelpDesk() {
   return (
@@ -19,13 +19,15 @@ export default function ITHelpDesk() {
                 </p>
 
                 <p>
-                  Here at SSAI, our IT Help Desk is dedicated to providing you with the best possible support for all
-                  your technical needs. We encourage you to review the Quick Tips below for helpful information and
-                  solutions to common issues. These tips are designed to save you time and get you back to work faster.
+                  Here at SSAI, our IT Help Desk is dedicated to providing you with the best
+                  possible support for all your technical needs. We encourage you to review the
+                  Quick Tips below for helpful information and solutions to common issues. These
+                  tips are designed to save you time and get you back to work faster.
                 </p>
 
                 <p>
-                  If you need further assistance or have any questions, please don't hesitate to contact us at{" "}
+                  If you need further assistance or have any questions, please don't hesitate to
+                  contact us at{' '}
                   <a
                     href="mailto:it_help@ssaihq.com"
                     className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
@@ -63,21 +65,26 @@ export default function ITHelpDesk() {
 
             {/* Update Card 1 - Trip Report eForm */}
             <div className=" p-6 border border-gray-200 ">
-              <h3 className="text-blue-600  text-[0.875rem] mb-1"><a href="https://fr.ssai.app/" target="_blank" className="text-blue-600">Trip Report eForm Now Live! </a></h3>
+              <h3 className="text-blue-600  text-[0.875rem] mb-1">
+                <a href="https://fr.ssai.app/" target="_blank" className="text-blue-600">
+                  Trip Report eForm Now Live!{' '}
+                </a>
+              </h3>
 
               <p className="text-gray-700 text-[0.875rem] leading-relaxed">
-                We are excited to announce the launch of the new{" "}
-                <span className="font-semibold">Trip Report eForm</span>, designed to streamline the process of
-                reporting travel activities and outcomes. This eForm offers a user-friendly experience, allowing
-                employees to document trip details and submit reports efficiently. With enhanced workflow automation,
-                travel reports will now be routed directly to Travel Admins for review, ensuring faster processing and
-                better accuracy. The Trip Report eForm is part of our ongoing effort to modernize internal processes and
-                improve operational efficiency. Start using the Trip Report eForm today and enjoy a smoother, more
-                efficient travel reporting process!
+                We are excited to announce the launch of the new{' '}
+                <span className="font-semibold">Trip Report eForm</span>, designed to streamline the
+                process of reporting travel activities and outcomes. This eForm offers a
+                user-friendly experience, allowing employees to document trip details and submit
+                reports efficiently. With enhanced workflow automation, travel reports will now be
+                routed directly to Travel Admins for review, ensuring faster processing and better
+                accuracy. The Trip Report eForm is part of our ongoing effort to modernize internal
+                processes and improve operational efficiency. Start using the Trip Report eForm
+                today and enjoy a smoother, more efficient travel reporting process!
               </p>
 
               <p className="text-gray-700 text-[0.875rem] leading-relaxed">
-                All eForms can be access via your OKTA Dashboard or the following link:{" "}
+                All eForms can be access via your Entra ID Dashboard or the following link:{' '}
                 <a
                   href="https://fr.ssai.app"
                   target="_blank"
@@ -91,14 +98,23 @@ export default function ITHelpDesk() {
 
             {/* Update Card 2 - SSAI Network Status */}
             <div className="p-3 border border-gray-200">
-              <h3 className="text-blue-600 text-[0.875rem] mb-1"><a href="https://ssaihq.account.box.com/login?redirect_url=%2Ffile%2F1405042689195" target="_blank" className="text-blue-600">SSAI Network Status July 2024</a></h3>
+              <h3 className="text-blue-600 text-[0.875rem] mb-1">
+                <a
+                  href="https://ssaihq.account.box.com/login?redirect_url=%2Ffile%2F1405042689195"
+                  target="_blank"
+                  className="text-blue-600"
+                >
+                  SSAI Network Status July 2024
+                </a>
+              </h3>
 
               <p className="text-gray-700 text-[0.875rem] leading-relaxed">
-                Here is an important communication to read in SSAI Box regarding the Weekly IT Update.
+                Here is an important communication to read in SSAI Box regarding the Weekly IT
+                Update.
               </p>
 
               <p className="text-gray-700 text-[0.875rem] leading-relaxed mt-1">
-                If you have trouble accessing the Box document, please email IT Support at{" "}
+                If you have trouble accessing the Box document, please email IT Support at{' '}
                 <a
                   href="mailto:it_help@ssaihq.com"
                   className="text-blue-600 hover:text-blue-800 transition-colors"
@@ -108,11 +124,9 @@ export default function ITHelpDesk() {
                 .
               </p>
             </div>
-
-         
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

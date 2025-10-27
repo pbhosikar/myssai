@@ -1,11 +1,11 @@
-import { headers } from 'next/headers'
-import { randomUUID } from 'crypto'
+import { headers } from 'next/headers';
+import { randomUUID } from 'crypto';
 
-export const runtime = 'nodejs'
+export const runtime = 'nodejs';
 
 export async function GET() {
-  const id = randomUUID()
-  const hdrs = headers()
+  const id = randomUUID();
+  const hdrs = headers();
   const info = {
     ok: true,
     requestId: id,
@@ -25,13 +25,13 @@ export async function GET() {
       NEXTAUTH_TRUST_HOST: process.env.NEXTAUTH_TRUST_HOST || null,
       PORT: process.env.PORT || null,
     },
-  }
+  };
   const res = new Response(JSON.stringify(info, null, 2), {
     status: 200,
     headers: {
       'content-type': 'application/json',
       'x-request-id': id,
     },
-  })
-  return res
+  });
+  return res;
 }

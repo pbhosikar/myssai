@@ -32,17 +32,19 @@ export const authOptions = {
           provider: account.provider,
           hasAccessToken: Boolean(account.access_token),
         });
-        token.accessToken = account.access_token;
+        // IMPORTANT: Do NOT store the raw access token in the JWT cookie.
+        // Keeping only minimal metadata prevents oversized cookies that can trigger 502s at proxies.
         token.id = profile?.sub;
+        token.atp = Boolean(account.access_token); // small flag: access token present
       }
       return token;
     },
     async session({ session, token }) {
       console.log('[nextauth-callback-session]', {
-        hasAccessToken: Boolean(token.accessToken),
+        hasAccessToken: Boolean(token.atp),
         userId: token.id,
       });
-      session.accessToken = token.accessToken;
+      // Do NOT attach access token to the session (cookie). Keep session small.
       if (session.user) session.user.id = token.id;
       return session;
     },

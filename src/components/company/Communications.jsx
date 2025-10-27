@@ -14,11 +14,8 @@ const CommunicationsAnnouncement = () => (
       relationships and foster a collaborative environment. This page acts as a central hub for
       SSAI's all-company communications, including the latest updates, opportunities, and more.
       Please contact us with any questions or comments at
-      <a
-        href="mailto:connect@ssaihq.com"
-        className="font-bold text-[#1246ea] hover:underline"
-        style={{ marginLeft: '5px' }}
-      >
+      <a href="mailto:connect@ssaihq.com" className="font-bold text-[#1246ea] hover:underline">
+        {' '}
         connect@ssaihq.com.
       </a>
     </p>

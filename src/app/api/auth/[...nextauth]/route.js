@@ -1,5 +1,6 @@
 import NextAuth from 'next-auth';
 import AzureADProvider from 'next-auth/providers/azure-ad';
+import { randomUUID } from 'crypto';
 
 export const runtime = 'nodejs';
 
@@ -47,6 +48,12 @@ export const authOptions = {
     },
     async redirect({ url, baseUrl }) {
       console.log('[nextauth-callback-redirect]', { url, baseUrl });
+      // Optional diagnostics redirect to inspect environment and headers
+      if (process.env.NEXTAUTH_DEBUG_REDIRECT === 'true') {
+        const debugUrl = new URL('/login/diagnostics', baseUrl);
+        debugUrl.searchParams.set('redirectUrl', url);
+        return debugUrl.toString();
+      }
       if (url.startsWith('/')) return `${baseUrl}${url}`;
       if (url.startsWith(baseUrl)) return url;
       return baseUrl;
@@ -102,4 +109,61 @@ try {
 }
 
 const handler = NextAuth(authOptions);
-export { handler as GET, handler as POST };
+
+// Request header logging for debugging 502/proxy issues
+function logAuthRequest(req, correlationId) {
+  try {
+    const u = new URL(req.url);
+    const headers = req.headers;
+    const info = {
+      correlationId,
+      url: req.url,
+      path: u.pathname,
+      method: req.method,
+      host: headers.get('host'),
+      xForwardedHost: headers.get('x-forwarded-host'),
+      xForwardedProto: headers.get('x-forwarded-proto'),
+      xForwardedPort: headers.get('x-forwarded-port'),
+      xRealIp: headers.get('x-real-ip'),
+      referer: headers.get('referer'),
+      // Callback query params from Azure
+      code: u.searchParams.get('code'),
+      state: u.searchParams.get('state'),
+      session_state: u.searchParams.get('session_state'),
+      error: u.searchParams.get('error'),
+      error_description: u.searchParams.get('error_description'),
+      // Env snapshot
+      nextauthUrl: process.env.NEXTAUTH_URL || null,
+      trustHost: true,
+    };
+    console.log('[nextauth-request]', info);
+  } catch (e) {
+    console.warn('[nextauth-request-warn]', { correlationId, error: String(e) });
+  }
+}
+
+export async function GET(req, ctx) {
+  const correlationId = randomUUID();
+  logAuthRequest(req, correlationId);
+  try {
+    const res = await handler(req, ctx);
+    try { res.headers.set('x-request-id', correlationId); } catch {}
+    return res;
+  } catch (e) {
+    console.error('[nextauth-handler-error]', { correlationId, error: String(e) });
+    throw e;
+  }
+}
+
+export async function POST(req, ctx) {
+  const correlationId = randomUUID();
+  logAuthRequest(req, correlationId);
+  try {
+    const res = await handler(req, ctx);
+    try { res.headers.set('x-request-id', correlationId); } catch {}
+    return res;
+  } catch (e) {
+    console.error('[nextauth-handler-error]', { correlationId, error: String(e) });
+    throw e;
+  }
+}

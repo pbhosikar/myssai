@@ -5,6 +5,8 @@ export const metadata = {
   description: 'Verify NextAuth and Azure AD environment configuration without exposing secrets',
 }
 
+import { headers } from 'next/headers'
+
 async function getProviders() {
   try {
     const res = await fetch(`${process.env.NEXTAUTH_URL || ''}/api/auth/providers`, { cache: 'no-store' })
@@ -33,7 +35,7 @@ async function getAzureWellKnown() {
   }
 }
 
-export default async function AuthDiagnosticsPage() {
+export default async function AuthDiagnosticsPage({ searchParams }) {
   const nextauthUrl = process.env.NEXTAUTH_URL || null
   const redirectUri = nextauthUrl ? new URL('/api/auth/callback/azure-ad', nextauthUrl).toString() : null
   const envChecks = [
@@ -46,12 +48,37 @@ export default async function AuthDiagnosticsPage() {
 
   const [providers, wellKnown] = await Promise.all([getProviders(), getAzureWellKnown()])
 
+  const hdrs = headers()
+  const proxyHeaderInfo = {
+    host: hdrs.get('host'),
+    xForwardedHost: hdrs.get('x-forwarded-host'),
+    xForwardedProto: hdrs.get('x-forwarded-proto'),
+    xForwardedPort: hdrs.get('x-forwarded-port'),
+    xRealIp: hdrs.get('x-real-ip'),
+    referer: hdrs.get('referer'),
+  }
+
+  const callbackTarget = searchParams?.redirectUrl || null
+  let callbackTargetParts = null
+  try {
+    if (callbackTarget) {
+      const u = new URL(callbackTarget)
+      callbackTargetParts = {
+        href: u.href,
+        origin: u.origin,
+        host: u.host,
+        protocol: u.protocol,
+        pathname: u.pathname,
+      }
+    }
+  } catch {}
+
   return (
     <div className="min-h-screen bg-white text-black p-6">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-2xl font-bold mb-2">Auth Diagnostics</h1>
         <p className="text-sm text-gray-600 mb-6">
-          Environment presence, computed redirect URI, Azure OpenID discovery, and NextAuth providers.
+          Environment presence, computed redirect URI, Azure OpenID discovery, NextAuth providers, and proxy header context.
         </p>
 
         <div className="bg-gray-50 border border-gray-200 rounded-md p-4 mb-6">
@@ -93,6 +120,27 @@ export default async function AuthDiagnosticsPage() {
               <p className="text-sm text-red-700">{wellKnown.error}</p>
             ) : (
               <pre className="text-xs bg-white border border-gray-200 rounded p-2 overflow-auto">{JSON.stringify(wellKnown, null, 2)}</pre>
+            )}
+          </div>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2 mt-6">
+          <div className="bg-gray-50 border border-gray-200 rounded-md p-4">
+            <h2 className="text-lg font-semibold mb-3">Proxy Headers</h2>
+            <pre className="text-xs bg-white border border-gray-200 rounded p-2 overflow-auto">{JSON.stringify(proxyHeaderInfo, null, 2)}</pre>
+          </div>
+
+          <div className="bg-gray-50 border border-gray-200 rounded-md p-4">
+            <h2 className="text-lg font-semibold mb-3">Callback Target</h2>
+            {callbackTarget ? (
+              <>
+                <p className="text-sm mb-2">redirectUrl: <span className="font-mono break-all">{callbackTarget}</span></p>
+                {callbackTargetParts ? (
+                  <pre className="text-xs bg-white border border-gray-200 rounded p-2 overflow-auto">{JSON.stringify(callbackTargetParts, null, 2)}</pre>
+                ) : null}
+              </>
+            ) : (
+              <p className="text-sm text-gray-600">No redirectUrl provided.</p>
             )}
           </div>
         </div>

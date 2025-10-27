@@ -2,12 +2,25 @@
 
 import { useSession, signIn, signOut } from 'next-auth/react';
 import Image from 'next/image';
+import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
+
+function LoginErrorBanner() {
+  const searchParams = useSearchParams();
+  const error = searchParams.get('error');
+  if (!error) return null;
+  return (
+    <div className="rounded-md bg-red-50 p-4 border border-red-200">
+      <p className="text-sm text-red-700">
+        Sign-in error: <span className="font-mono">{error}</span>. Try clearing cookies for localhost, and
+        ensure Azure env vars and redirect URI are correct.
+      </p>
+    </div>
+  );
+}
 
 export default function LoginPage() {
   const { data: session, status } = useSession();
-  const searchParams = useSearchParams();
-  const error = searchParams.get('error');
 
   if (status === 'loading') {
     return (
@@ -44,14 +57,9 @@ export default function LoginPage() {
               : 'Use your Azure AD credentials to access the portal'}
           </p>
         </div>
-        {error && (
-          <div className="rounded-md bg-red-50 p-4 border border-red-200">
-            <p className="text-sm text-red-700">
-              Sign-in error: <span className="font-mono">{error}</span>. Try clearing cookies for localhost, and
-              ensure Azure env vars and redirect URI are correct.
-            </p>
-          </div>
-        )}
+        <Suspense fallback={null}>
+          <LoginErrorBanner />
+        </Suspense>
         <div className="mt-8 space-y-6">
           {session ? (
             <div className="space-y-4">

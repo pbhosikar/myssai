@@ -12,6 +12,7 @@ module.exports = {
         AZURE_AD_CLIENT_ID: process.env.AZURE_AD_CLIENT_ID,
         AZURE_AD_CLIENT_SECRET: process.env.AZURE_AD_CLIENT_SECRET,
         AZURE_AD_TENANT_ID: process.env.AZURE_AD_TENANT_ID,
+        NEXTAUTH_TRUST_HOST: true,
         PORT: 3031,
       },
     },

@@ -3,7 +3,8 @@ import AzureADProvider from 'next-auth/providers/azure-ad';
 
 export const runtime = 'nodejs';
 
-const handler = NextAuth({
+// Export authOptions so server components can introspect configuration if needed
+export const authOptions = {
   providers: [
     AzureADProvider({
       clientId: process.env.AZURE_AD_CLIENT_ID,
@@ -25,7 +26,6 @@ const handler = NextAuth({
   },
   callbacks: {
     async jwt({ token, account, profile }) {
-      // Persist the OAuth access_token and or the user id to the token right after signin
       if (account) {
         console.log('[nextauth-callback-jwt]', {
           provider: account.provider,
@@ -37,7 +37,6 @@ const handler = NextAuth({
       return token;
     },
     async session({ session, token }) {
-      // Send properties to the client, like an access_token and user id from a provider.
       console.log('[nextauth-callback-session]', {
         hasAccessToken: Boolean(token.accessToken),
         userId: token.id,
@@ -63,6 +62,7 @@ const handler = NextAuth({
   },
   pages: {
     signIn: '/login',
+    error: '/login',
   },
   session: {
     strategy: 'jwt',
@@ -77,10 +77,29 @@ const handler = NextAuth({
       console.log('[nextauth-event-session]', message);
     },
     async error(message) {
-      // Minimal server-side logging to help diagnose 5xx during callback
       console.error('[nextauth-error]', message);
     },
   },
-});
+};
 
+// Log env presence and computed redirect URI at init
+try {
+  const nextauthUrl = process.env.NEXTAUTH_URL || null;
+  const tenantId = process.env.AZURE_AD_TENANT_ID || null;
+  const redirectUri = nextauthUrl
+    ? new URL('/api/auth/callback/azure-ad', nextauthUrl).toString()
+    : null;
+  console.log('[nextauth-init]', {
+    NEXTAUTH_URL: nextauthUrl,
+    NEXTAUTH_SECRET_PRESENT: !!process.env.NEXTAUTH_SECRET,
+    AZURE_AD_CLIENT_ID_PRESENT: !!process.env.AZURE_AD_CLIENT_ID,
+    AZURE_AD_CLIENT_SECRET_PRESENT: !!process.env.AZURE_AD_CLIENT_SECRET,
+    AZURE_AD_TENANT_ID: tenantId,
+    computedRedirectUri: redirectUri,
+  });
+} catch (e) {
+  console.warn('[nextauth-init-warn]', 'Failed to compute redirect URI', e);
+}
+
+const handler = NextAuth(authOptions);
 export { handler as GET, handler as POST };

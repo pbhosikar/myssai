@@ -1,6 +1,8 @@
 import NextAuth from 'next-auth'
 import AzureADProvider from 'next-auth/providers/azure-ad'
 
+export const runtime = 'nodejs'
+
 const handler = NextAuth({
   providers: [
     AzureADProvider({
@@ -31,7 +33,13 @@ const handler = NextAuth({
   session: {
     strategy: 'jwt',
   },
-  debug: process.env.NODE_ENV !== 'production',
+  debug: process.env.NEXTAUTH_DEBUG === 'true' || process.env.NODE_ENV !== 'production',
+  events: {
+    async error(message) {
+      // Minimal server-side logging to help diagnose 5xx during callback
+      console.error('[nextauth-error]', message)
+    },
+  },
 })
 
 export { handler as GET, handler as POST }

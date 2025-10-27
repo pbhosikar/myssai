@@ -38,6 +38,6 @@ export default async function middleware(req) {
 export const config = {
   matcher: [
     '/',
-    '/((?!api/auth|login|_next/static|_next/image|favicon.ico|img|css|css-assets|webfonts).*)',
+    '/((?!api/auth|api/health|login|_next/static|_next/image|favicon.ico|img|css|css-assets|webfonts).*)',
   ],
 };

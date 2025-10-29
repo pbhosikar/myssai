@@ -1,7 +1,7 @@
-import React, { useCallback, useEffect, useState } from "react";
-import Image from "next/image";
-import useEmblaCarousel from "embla-carousel-react";
-import Link from "next/link";
+import React, { useCallback, useEffect, useState } from 'react';
+import Image from 'next/image';
+import useEmblaCarousel from 'embla-carousel-react';
+import Link from 'next/link';
 
 const MyHr = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -10,20 +10,27 @@ const MyHr = () => {
   // Event photos data
   const eventPhotos = [
     {
-      src: "/img/myhr/Carousel/1.jpeg",
+      src: '/img/benefits/1.JPG',
       caption: "SSAI's CEO, Dr. Shilpa Bahethi, on smoothie bike",
     },
     {
-      src: "/img/myhr/Carousel/2.jpeg",
+      src: '/img/benefits/2.JPG',
       caption: `SSAI's Lead Scientific Programmer/Analyst, Jeremy Warner, on smoothie bike`,
     },
     {
-      src: "/img/myhr/Carousel/3.jpg",
-      caption:
-        "Nancy Brambani and Josie Pearson from HR at the registration table ",
+      src: '/img/benefits/3.JPG',
+      caption: 'Nancy Brambani and Josie Pearson from HR at the registration table ',
     },
     {
-      src: "/img/myhr/Carousel/4.jpg",
+      src: '/img/benefits/4.JPG',
+      caption: "SSAI's Benefits Vendors",
+    },
+    {
+      src: '/img/benefits/5.JPG',
+      caption: "SSAI's Benefits Vendors",
+    },
+    {
+      src: '/img/benefits/6.JPG',
       caption: "SSAI's Benefits Vendors",
     },
   ];
@@ -51,9 +58,9 @@ const MyHr = () => {
   useEffect(() => {
     if (!emblaApi) return;
     onSelect();
-    emblaApi.on("select", onSelect);
+    emblaApi.on('select', onSelect);
     return () => {
-      emblaApi.off("select", onSelect);
+      emblaApi.off('select', onSelect);
     };
   }, [emblaApi, onSelect]);
 
@@ -65,9 +72,9 @@ const MyHr = () => {
           className="relative h-32 sm:h-38 md:h-38 lg:h-38"
           style={{
             backgroundImage: 'url("/img/myhr/myhr-background.jpg")',
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
           }}
         >
           {/* Human Resources Text */}
@@ -86,28 +93,22 @@ const MyHr = () => {
           <div className="mb-8">
             <p className="text-sm sm:text-base text-gray-700">
               <strong>
-                Welcome to my SSAI from the Human Resources Team. It is our
-                pleasure to support you!
+                Welcome to my SSAI from the Human Resources Team. It is our pleasure to support you!
               </strong>
             </p>
           </div>
 
           {/* Meet the Team Section */}
           <div className="mb-10">
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
-              Meet the Team
-            </h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Meet the Team</h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Left Column - Responsibilities */}
               <div className="space-y-6">
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2">
-Cassandra McIntyre
-                  </h3>
+                  <h3 className="font-bold text-gray-900 mb-2">Cassandra McIntyre</h3>
                   <ul className="text-sm text-gray-700 space-y-1">
-                    <li>Policy Management
-</li>
+                    <li>Policy Management</li>
                     <li>Employee Relations</li>
                     <li>Budget Management</li>
                     <li>Compliance</li>
@@ -115,21 +116,16 @@ Cassandra McIntyre
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2">
-                    Dacia Newsome
-                  </h3>
+                  <h3 className="font-bold text-gray-900 mb-2">Dacia Newsome</h3>
                   <ul className="text-sm text-gray-700 space-y-1">
                     <li>Benefits and Compensation</li>
                     <li>FMLA</li>
                     <li>HRIS (ADP and Costpoint)</li>
-                   
                   </ul>
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2">
-                    Jolona Davis
-                  </h3>
+                  <h3 className="font-bold text-gray-900 mb-2">Jolona Davis</h3>
                   <ul className="text-sm text-gray-700 space-y-1">
                     <li>Personnel Action Changes</li>
                     <li>Committee Management</li>
@@ -138,26 +134,21 @@ Cassandra McIntyre
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2">
-                   Josie Pearson
-                  </h3>
+                  <h3 className="font-bold text-gray-900 mb-2">Josie Pearson</h3>
                   <ul className="text-sm text-gray-700 space-y-1">
                     <li>SSAIU: Training & Development</li>
                     <li>Performance & Engagement</li>
-                      <li>Corporate Facility Security Officer (FSO)</li>
-                        <li>Quality Management</li>
-                          <li>Safety and Health</li>
+                    <li>Corporate Facility Security Officer (FSO)</li>
+                    <li>Quality Management</li>
+                    <li>Safety and Health</li>
                   </ul>
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2">Jeanne Kachris
-</h3>
+                  <h3 className="font-bold text-gray-900 mb-2">Jeanne Kachris</h3>
                   <ul className="text-sm text-gray-700 space-y-1">
                     <li>Recruiting</li>
-                    <li>Onboarding and Offboarding
-</li>
-                  
+                    <li>Onboarding and Offboarding</li>
                   </ul>
                 </div>
               </div>
@@ -181,13 +172,10 @@ Cassandra McIntyre
                     </h3>
                     <p className="text-xs sm:text-sm text-gray-600 mt-1">
                       Director of HR SSAI and Advanced Mission Partnerships
-
                     </p>
-                    <p className="text-xs sm:text-sm text-gray-700 mt-2">
-Phone: 301-867-6329
-                    </p>
+                    <p className="text-xs sm:text-sm text-gray-700 mt-2">Phone: 301-867-6329</p>
                     <p className="text-xs sm:text-sm text-gray-700">
-                      Email:{" "}
+                      Email:{' '}
                       <a
                         href="mailto:cassandra.mcintyre@ssaihq.com"
                         className="text-blue-600 hover:underline"
@@ -210,17 +198,13 @@ Phone: 301-867-6329
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-bold text-gray-900 text-base sm:text-lg">
-                     Josie Pearson
-
-                    </h3>
+                    <h3 className="font-bold text-gray-900 text-base sm:text-lg">Josie Pearson</h3>
                     <p className="text-xs sm:text-sm text-gray-600 mt-1">
-Director of Organizational Development                    </p>
-                    <p className="text-xs sm:text-sm text-gray-700 mt-2">
-                      Phone: 757-951-1607
+                      Director of Organizational Development{' '}
                     </p>
+                    <p className="text-xs sm:text-sm text-gray-700 mt-2">Phone: 757-951-1607</p>
                     <p className="text-xs sm:text-sm text-gray-700">
-                      Email:{" "}
+                      Email:{' '}
                       <a
                         href="mailto:josie.pearson@ssaihq.com"
                         className="text-blue-600 hover:underline"
@@ -243,17 +227,13 @@ Director of Organizational Development                    </p>
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-bold text-gray-900 text-base sm:text-lg">
-                      Dacia Newsome
-                    </h3>
+                    <h3 className="font-bold text-gray-900 text-base sm:text-lg">Dacia Newsome</h3>
                     <p className="text-xs sm:text-sm text-gray-600 mt-1">
                       Compensation and Benefits Manager
                     </p>
-                    <p className="text-xs sm:text-sm text-gray-700 mt-2">
-                      Phone: 301-867-2099
-                    </p>
+                    <p className="text-xs sm:text-sm text-gray-700 mt-2">Phone: 301-867-2099</p>
                     <p className="text-xs sm:text-sm text-gray-700">
-                      Email:{" "}
+                      Email:{' '}
                       <a
                         href="mailto:dacia.newsome@ssaihq.com"
                         className="text-blue-600 hover:underline"
@@ -276,22 +256,18 @@ Director of Organizational Development                    </p>
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-bold text-gray-900 text-base sm:text-lg">
-                      Jeanne Barger
-                    </h3>
+                    <h3 className="font-bold text-gray-900 text-base sm:text-lg">Jeanne Barger</h3>
                     <p className="text-xs sm:text-sm text-gray-600 mt-1">
                       Human Resources Generalist
                     </p>
-                    <p className="text-xs sm:text-sm text-gray-700 mt-2">
-                      Phone: 301-867-2135
-                    </p>
+                    <p className="text-xs sm:text-sm text-gray-700 mt-2">Phone: 301-867-2135</p>
                     <p className="text-xs sm:text-sm text-gray-700">
-                      Email:{" "}
+                      Email:{' '}
                       <a
                         href="mailto:jeanne.barger@ssaihq.com"
                         className="text-blue-600 hover:underline"
                       >
-                       jeanne.kachris@ssaihq.com
+                        jeanne.kachris@ssaihq.com
                       </a>
                     </p>
                   </div>
@@ -309,22 +285,18 @@ Director of Organizational Development                    </p>
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-bold text-gray-900 text-base sm:text-lg">
-                      Jolona Davis
-                    </h3>
+                    <h3 className="font-bold text-gray-900 text-base sm:text-lg">Jolona Davis</h3>
                     <p className="text-xs sm:text-sm text-gray-600 mt-1">
                       Senior Human Resources Generalist
                     </p>
-                    <p className="text-xs sm:text-sm text-gray-700 mt-2">
-                      Phone: (301) 867-6256
-                    </p>
+                    <p className="text-xs sm:text-sm text-gray-700 mt-2">Phone: (301) 867-6256</p>
                     <p className="text-xs sm:text-sm text-gray-700">
-                      Email:{" "}
+                      Email:{' '}
                       <a
                         href="mailto:jolona.davis@ssaihq.com"
                         className="text-blue-600 hover:underline"
                       >
-                       jolona.davis@ssaihq.com
+                        jolona.davis@ssaihq.com
                       </a>
                     </p>
                   </div>
@@ -336,26 +308,24 @@ Director of Organizational Development                    </p>
           {/* Wellness and Benefits Fair 2024 Event Recap */}
           <div className="mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-             Wellness and Benefits Fair 2024 Event Recap
-
+              Wellness and Benefits Fair 2025 Event Recap
             </h2>
             <div className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">
               <p>
-               SSAI recently hosted the annual Wellness and Benefits Fair, offering employees a mix of <strong>in-person</strong> and{" "}
-                <strong>virtual activities</strong> focused on health and well-being. Highlights included{" "}
+                SSAI recently hosted the annual Wellness and Benefits Fair, offering employees a mix
+                of <strong>in-person</strong> and <strong>virtual activities</strong> focused on
+                health and well-being. Highlights included{' '}
                 <strong>
                   biometric screenings, flu shots, and massage sessions for in-person attendees.
                 </strong>
-                Employees also had the chance to join{" "}
-                <strong>virtual benefits presentations</strong> from carriers
-                like <strong>Legal Resources, Lincoln, and MetLife</strong>,
-                covering various <strong>health and financial benefits</strong>.
-                Additionally, <strong>wellness sessions</strong> on topics such
-                as the{" "}
+                Employees also had the chance to join{' '}
+                <strong>virtual benefits presentations</strong> from carriers like{' '}
+                <strong>Legal Resources, Lincoln, and MetLife</strong>, covering various{' '}
+                <strong>health and financial benefits</strong>. Additionally,{' '}
+                <strong>wellness sessions</strong> on topics such as the{' '}
                 <strong>
-                  impact of food on mental health, quick healthy recipes, and
-                  brain games
-                </strong>{" "}
+                  impact of food on mental health, quick healthy recipes, and brain games
+                </strong>{' '}
                 rounded out the day's activities.
               </p>
             </div>
@@ -440,8 +410,8 @@ Director of Organizational Development                    </p>
                         onClick={() => scrollTo(index)}
                         className={`w-2 h-2 rounded-full transition-all duration-200 ${
                           index === selectedIndex
-                            ? "bg-blue-600 w-6"
-                            : "bg-gray-300 hover:bg-gray-400"
+                            ? 'bg-blue-600 w-6'
+                            : 'bg-gray-300 hover:bg-gray-400'
                         }`}
                         aria-label={`Go to slide ${index + 1}`}
                       />
@@ -455,19 +425,18 @@ Director of Organizational Development                    </p>
           {/* Wellness and Benefits Fair Prize Winners */}
           <div className="mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-             Wellness and Benefits Fair Prize Winners
-
+              Wellness and Benefits Fair Prize Winners
             </h2>
             <div className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
               <p>
-               Sending many thanks to those who joined us for the Wellness and Benefits Fair! We hope you found the event worthwhile and had a chance to connect with carriers while enjoying the various fun activities.
-
+                Sending many thanks to those who joined us for the Wellness and Benefits Fair! We
+                hope you found the event worthwhile and had a chance to connect with carriers while
+                enjoying the various fun activities.
               </p>
             </div>
 
             <h3 className="text-base sm:text-lg italic text-gray-800 mb-4">
-Congratulations to the following prize winners!
-
+              Congratulations to the following prize winners!
             </h3>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1 mb-6">
@@ -496,7 +465,7 @@ Congratulations to the following prize winners!
                 <strong>Holli Kohl-</strong> Levoit Air Purifier
               </p>
               <p className="text-sm text-gray-700">
-                <strong>Erica Bradshaw- </strong>  Cuisinart Cordless Compact Blender
+                <strong>Erica Bradshaw- </strong> Cuisinart Cordless Compact Blender
               </p>
               <p className="text-sm text-gray-700">
                 <strong>Sean McCartney-</strong> 4 Piece Spa Kit
@@ -511,8 +480,7 @@ Congratulations to the following prize winners!
                 <strong>Christine Bloecker-</strong> Amazon Gift Card (Brain Games Winner)
               </p>
               <p className="text-sm text-gray-700">
-                <strong>William Muscovich- </strong> Amazon Gift Card (Break Games
-                Winner)
+                <strong>William Muscovich- </strong> Amazon Gift Card (Break Games Winner)
               </p>
               <p className="text-sm text-gray-700">
                 <strong>William Mooseeh:</strong> Upright Go 2 Premium Posture Corrector
@@ -523,7 +491,7 @@ Congratulations to the following prize winners!
               <p className="text-sm text-gray-700">
                 <strong>
                   Please stop by the HR office (10210 Greenbelt Road, Suite 600, Room #649)
-                </strong>{" "}
+                </strong>{' '}
                 to pick up your prize.
               </p>
             </div>
@@ -536,10 +504,10 @@ Congratulations to the following prize winners!
             </h2>
             <div className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">
               <p>
-               Whether or not you attended any Virtual Benefits Meetings, please explore valuable insights from each of our{" "}
-                <strong>carrier vendors</strong> by checking out their{" "}
-                <strong>presentation slides below</strong>. Learn more about the
-                benefits and services available to SSAI employees.
+                Whether or not you attended any Virtual Benefits Meetings, please explore valuable
+                insights from each of our <strong>carrier vendors</strong> by checking out their{' '}
+                <strong>presentation slides below</strong>. Learn more about the benefits and
+                services available to SSAI employees.
               </p>
             </div>
 
@@ -557,11 +525,12 @@ Congratulations to the following prize winners!
                     />
                   </div>
                   <a
-                  target="_blank"
+                    target="_blank"
                     href="https://ssaihq.box.com/s/d6gq836ph5lwra2dve8jwx4na1q8bhx6"
                     className="text-base text-blue-600 hover:underline font-semibold text-center"
                   >
-Lincoln SSAI - Benefits Overview Slides                  </a>
+                    Lincoln SSAI - Benefits Overview Slides{' '}
+                  </a>
                 </div>
               </div>
 
@@ -577,11 +546,12 @@ Lincoln SSAI - Benefits Overview Slides                  </a>
                     />
                   </div>
                   <a
-                  target="_blank"
-                   href="https://ssaihq.box.com/s/uh0xwzx4489ix9mpwtcp0z36215cjhw1"
+                    target="_blank"
+                    href="https://ssaihq.box.com/s/uh0xwzx4489ix9mpwtcp0z36215cjhw1"
                     className="text-base text-blue-600 hover:underline font-semibold text-center"
                   >
-MetLife OE Slides                  </a>
+                    MetLife OE Slides{' '}
+                  </a>
                 </div>
               </div>
 
@@ -597,11 +567,12 @@ MetLife OE Slides                  </a>
                     />
                   </div>
                   <a
-                  target="_blank"
+                    target="_blank"
                     href="https://ssaihq.box.com/s/jbs8kzi4x5vhbn9xh7zybf921my0uz04"
                     className="text-base text-blue-600 hover:underline font-semibold text-center"
                   >
-Retirement Plan Essentials - SS&A Slides                  </a>
+                    Retirement Plan Essentials - SS&A Slides{' '}
+                  </a>
                 </div>
               </div>
 
@@ -617,7 +588,7 @@ Retirement Plan Essentials - SS&A Slides                  </a>
                     />
                   </div>
                   <a
-                  target="_blank"
+                    target="_blank"
                     href="https://ssaihq.box.com/s/359a3vf7qtj1fpna4o9ztogrr3urr8mg"
                     className="text-base text-blue-600 hover:underline font-semibold text-center"
                   >
@@ -625,13 +596,12 @@ Retirement Plan Essentials - SS&A Slides                  </a>
                   </a>
                 </div>
               </div>
-
             </div>
 
             {/* Vendor Grid - Second Row */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Bank of America */}
-                           <div className="flex flex-col">
+              <div className="flex flex-col">
                 <div className="bg-white border border-gray-200 rounded-lg p-6 mb-4 flex-1 flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow">
                   <div className="relative w-full h-52 mb-4">
                     <Image
@@ -642,8 +612,8 @@ Retirement Plan Essentials - SS&A Slides                  </a>
                     />
                   </div>
                   <a
-                  target="_blank"
-                   href="https://ssaihq.box.com/s/pn6pu9jiw5z66qkwgbl4wmqufglae94k"
+                    target="_blank"
+                    href="https://ssaihq.box.com/s/pn6pu9jiw5z66qkwgbl4wmqufglae94k"
                     className="text-base text-blue-600 hover:underline font-semibold text-center"
                   >
                     Bank of America SSAI Slides
@@ -651,9 +621,8 @@ Retirement Plan Essentials - SS&A Slides                  </a>
                 </div>
               </div>
 
-
               {/* NASA Federal Credit Union */}
-                            <div className="flex flex-col">
+              <div className="flex flex-col">
                 <div className="bg-white border border-gray-200 rounded-lg p-6 mb-4 flex-1 flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow">
                   <div className="relative w-full h-52 mb-4">
                     <Image
@@ -664,7 +633,7 @@ Retirement Plan Essentials - SS&A Slides                  </a>
                     />
                   </div>
                   <a
-                  target="_blank"
+                    target="_blank"
                     href="https://ssaihq.box.com/s/e1zm6aqh6faecookymfa3sscsad6dsd3"
                     className="text-base text-blue-600 hover:underline font-semibold text-center"
                   >
@@ -673,9 +642,8 @@ Retirement Plan Essentials - SS&A Slides                  </a>
                 </div>
               </div>
 
-
               {/* BHS */}
-                           <div className="flex flex-col">
+              <div className="flex flex-col">
                 <div className="bg-white border border-gray-200 rounded-lg p-6 mb-4 flex-1 flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow">
                   <div className="relative w-full h-52 mb-4">
                     <Image
@@ -686,18 +654,17 @@ Retirement Plan Essentials - SS&A Slides                  </a>
                     />
                   </div>
                   <a
-                  target="_blank"
+                    target="_blank"
                     href="https://ssaihq.box.com/s/4s0njv62v7p125tw1sgw35lmmztefwfa"
                     className="text-base text-blue-600 hover:underline font-semibold text-center"
                   >
-                   EAP Employee Orientation Slides
+                    EAP Employee Orientation Slides
                   </a>
                 </div>
               </div>
 
-
               {/* Cigna */}
-                            <div className="flex flex-col">
+              <div className="flex flex-col">
                 <div className="bg-white border border-gray-200 rounded-lg p-6 mb-4 flex-1 flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow">
                   <div className="relative w-full h-52 mb-4">
                     <Image
@@ -708,15 +675,14 @@ Retirement Plan Essentials - SS&A Slides                  </a>
                     />
                   </div>
                   <a
-                  target="_blank"
+                    target="_blank"
                     href="https://ssaihq.app.box.com/file/1884420023839?s=fyhcmd2m1naij0xfhdib9hhjbujg1218"
                     className="text-base text-blue-600 hover:underline font-semibold text-center"
                   >
-                   Cigna Programs and Resources Presentation
+                    Cigna Programs and Resources Presentation
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

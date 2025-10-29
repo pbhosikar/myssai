@@ -236,7 +236,7 @@ export default function CompanyTravelView() {
                 {/* Teresa Peach */}
                 <div className="flex items-start gap-4">
                   <img
-                    src="/img/istockphoto-1131164548-612x612.jpg"
+                    src="/img/Teresa Peach - mySSAI Travel Page Image.jpg"
                     alt="Teresa Peach"
                     className="w-32 h-32 rounded-full object-cover"
                   />

@@ -1,8 +1,7 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function AccountingPayroll() {
   return (
@@ -12,9 +11,9 @@ export default function AccountingPayroll() {
         className="relative h-40 sm:h-48 md:h-56 lg:h-30 bg-gradient-to-r from-gray-100 to-gray-200 overflow-hidden"
         style={{
           backgroundImage: `url(/company/accountingandpayroll/accountback.webp)`,
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
         }}
       >
         <div className="container mx-auto h-full flex items-center px-4">
@@ -39,7 +38,7 @@ export default function AccountingPayroll() {
                   {/* Image at top */}
                   <div className="relative h-48 sm:h-40 w-full">
                     <Image
-                      src='/company/accountingandpayroll/payschedule.png'
+                      src="/company/accountingandpayroll/payschedule.png"
                       alt="Pay Schedule"
                       fill
                       className="object-cover"
@@ -67,7 +66,7 @@ export default function AccountingPayroll() {
                   {/* Image at top */}
                   <div className="relative h-48 sm:h-40 w-full">
                     <Image
-                      src='/company/accountingandpayroll/holidayschedule.webp'
+                      src="/company/accountingandpayroll/holidayschedule.webp"
                       alt="Holiday Schedule"
                       fill
                       className="object-cover"
@@ -114,7 +113,7 @@ export default function AccountingPayroll() {
                     {/* Profile Image */}
                     <div className="flex-shrink-0 relative w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28">
                       <Image
-                        src='/company/accountingandpayroll/holidayschedule.webp'
+                        src="/img/Saawan Bhatt - mySSAI Accounting and Payroll Image.jpg"
                         alt="Saawan Bhatt"
                         className="rounded-full object-cover"
                         fill
@@ -156,15 +155,11 @@ export default function AccountingPayroll() {
                       Time and Expense
                     </Link>
                     <p className="text-gray-600 text-xs sm:!text-sm mt-2 leading-tight">
-                      All employees need to enter their time{" "}
-                      <span className="font-semibold text-gray-800">daily</span>{" "}
-                      and submit their time cards by the{" "}
-                      <span className="font-semibold text-gray-800">15th</span>{" "}
-                      and the{" "}
-                      <span className="font-semibold text-gray-800">
-                        last day
-                      </span>{" "}
-                      of the month, unless informed otherwise.
+                      All employees need to enter their time{' '}
+                      <span className="font-semibold text-gray-800">daily</span> and submit their
+                      time cards by the <span className="font-semibold text-gray-800">15th</span>{' '}
+                      and the <span className="font-semibold text-gray-800">last day</span> of the
+                      month, unless informed otherwise.
                     </p>
                   </div>
 
@@ -177,8 +172,7 @@ export default function AccountingPayroll() {
                       ADP Workforce Now Portal
                     </Link>
                     <p className="text-gray-600 text-xs sm:text-sm mt-2 leading-relaxed">
-                      Your one stop shop to see your benefits, paychecks and
-                      employment status.
+                      Your one stop shop to see your benefits, paychecks and employment status.
                     </p>
                   </div>
                 </div>

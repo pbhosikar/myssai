@@ -113,7 +113,7 @@ export default function AccountingPayroll() {
                     {/* Profile Image */}
                     <div className="flex-shrink-0 relative w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28">
                       <Image
-                        src="/img/Saawan Bhatt - mySSAI Accounting and Payroll Image.jpg"
+                        src="/img/SaawanBhatt.png"
                         alt="Saawan Bhatt"
                         className="rounded-full object-cover"
                         fill

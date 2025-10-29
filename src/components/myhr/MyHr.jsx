@@ -10,27 +10,27 @@ const MyHr = () => {
   // Event photos data
   const eventPhotos = [
     {
-      src: '/img/benefits/1.JPG',
+      src: '/img/benefits/1.jpg',
       caption: "SSAI's CEO, Dr. Shilpa Bahethi, on smoothie bike",
     },
     {
-      src: '/img/benefits/2.JPG',
+      src: '/img/benefits/2.jpg',
       caption: `SSAI's Lead Scientific Programmer/Analyst, Jeremy Warner, on smoothie bike`,
     },
     {
-      src: '/img/benefits/3.JPG',
+      src: '/img/benefits/3.jpg',
       caption: 'Nancy Brambani and Josie Pearson from HR at the registration table ',
     },
     {
-      src: '/img/benefits/4.JPG',
+      src: '/img/benefits/4.jpg',
       caption: "SSAI's Benefits Vendors",
     },
     {
-      src: '/img/benefits/5.JPG',
+      src: '/img/benefits/5.jpg',
       caption: "SSAI's Benefits Vendors",
     },
     {
-      src: '/img/benefits/6.JPG',
+      src: '/img/benefits/6.jpg',
       caption: "SSAI's Benefits Vendors",
     },
   ];

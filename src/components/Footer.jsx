@@ -92,6 +92,22 @@ export default function Footer() {
                 </svg>
               </a>
               <a
+                href="https://bsky.app/profile/did:plc:v2y6tqzu75ibekt4bz37fcwg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Bluesky"
+                title="Bluesky"
+              >
+                <img
+                  src="/img/Bluesky_Logo_footer.png"
+                  alt="Bluesky"
+                  width="16"
+                  height="16"
+                  style={{ display: 'inline-block' }}
+                  aria-hidden="true"
+                />
+              </a>
+              <a
                 href="https://www.youtube.com/@ScienceSystemsandApplicationsI"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -18,7 +18,8 @@ function ImageCarousel({ slides, interval = 5000 }) {
 
   return (
     <div className="relative w-full overflow-hidden rounded-lg">
-      <div className="relative h-56 md:h-64 lg:h-72 bg-white">
+      {/* Responsive height tuned for large displays; keep images contained */}
+      <div className="relative h-[320px] md:h-[420px] lg:h-[520px] xl:h-[600px] bg-white">
         {slides.map((slide, idx) => (
           <img
             key={idx}
@@ -34,14 +35,14 @@ function ImageCarousel({ slides, interval = 5000 }) {
       <button
         aria-label="Previous Slide"
         onClick={prev}
-        className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-gray-800 rounded-full p-2 shadow"
+        className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-3 shadow ring-1 ring-gray-300"
       >
         ‹
       </button>
       <button
         aria-label="Next Slide"
         onClick={next}
-        className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-gray-800 rounded-full p-2 shadow"
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-3 shadow ring-1 ring-gray-300"
       >
         ›
       </button>
@@ -56,17 +57,45 @@ function ImageCarousel({ slides, interval = 5000 }) {
           />
         ))}
       </div>
-      {/* Caption link if present on current slide */}
-      {slides[current]?.linkUrl && (
-        <div className="absolute bottom-3 right-3">
-          <a
-            href={slides[current].linkUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-primary"
-          >
-            {slides[current].linkText || 'View'}
-          </a>
+      {/* Caption overlay (blue pill) */}
+      {(slides[current]?.caption || slides[current]?.linkText || slides[current]?.alt) && (
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-full flex justify-center px-4">
+          {slides[current]?.linkUrl ? (
+            <a
+              href={slides[current].linkUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={
+                slides[current]?.caption || slides[current]?.linkText || slides[current]?.alt || ''
+              }
+              className="block bg-blue-600 text-white font-semibold rounded-full p-[10px] shadow-lg hover:bg-blue-700 transition-colors text-center leading-tight max-w-[820px]"
+              style={{
+                fontSize: '12px',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                display: '-webkit-box',
+                WebkitLineClamp: 2,
+                WebkitBoxOrient: 'vertical',
+              }}
+            >
+              {slides[current]?.caption || slides[current]?.linkText || slides[current]?.alt}
+            </a>
+          ) : (
+            <div
+              title={slides[current]?.caption || slides[current]?.alt || ''}
+              className="bg-blue-600 text-white font-semibold rounded-full p-[10px] shadow-lg text-center leading-tight max-w-[820px]"
+              style={{
+                fontSize: '12px',
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                display: '-webkit-box',
+                WebkitLineClamp: 2,
+                WebkitBoxOrient: 'vertical',
+              }}
+            >
+              {slides[current]?.caption || slides[current]?.alt}
+            </div>
+          )}
         </div>
       )}
     </div>
@@ -526,11 +555,10 @@ export default function HomeView() {
 
               {/* Event Cards */}
               <div className="space-y-4">
-                {/* Bloom Meditation Event */}
                 <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow list-group-item">
                   <div className="flex flex-col md:flex-row gap-4">
                     <div className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg flex items-center justify-center">
-                      <span className="event-date">2025-10-24</span>
+                      <span className="event-date">2025-10-31</span>
                     </div>
                     <div className="flex-1 profile-content-column">
                       <h2>Bloom Meditation Session</h2>
@@ -538,7 +566,7 @@ export default function HomeView() {
                         <p>
                           There is a{' '}
                           <strong>
-                            Bloom Meditation Session occurring on Friday, October 24, 2025, from
+                            Bloom Meditation Session occurring on Friday, October 31, 2025, from
                             11:30 AM - 12 PM ET
                           </strong>
                           .
@@ -551,7 +579,7 @@ export default function HomeView() {
                             className="text-blue-600 hover:underline"
                           >
                             Need help?
-                          </a>{' '}
+                          </a>
                           <a
                             href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_YjAyOWFhYjQtZTQ2MS00OTVlLTk3MWItOGIxZDI1NGVlN2M0%40thread.v2/0?context=%7b%22Tid%22%3a%227005d458-45be-48ae-8140-d43da96dd17b%22%2c%22Oid%22%3a%2294fe4230-7dd4-4d0c-b664-2501220e336a%22%7d"
                             target="_blank"
@@ -578,47 +606,226 @@ export default function HomeView() {
                   </div>
                 </div>
 
-                {/* Open Enrollment Chat Session #2 */}
+                <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow list-group-item">
+                  <div className="flex flex-col md:flex-row gap-4">
+                    <div className="flex-shrink-0 w-24 h-24 rounded-lg flex items-center justify-center overflow-hidden">
+                      <img
+                        src="/img/Screenshot 2024-10-08 at 7.56.47 PM.png"
+                        alt="Timesheets Due"
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="flex-1 profile-content-column">
+                      <h2>Timesheets Due</h2>
+                      <div className="journal-content-article space-y-2">
+                        <p>
+                          Your next{' '}
+                          <strong>
+                            Timesheets are due on Friday, October 31, 2025, at 12 PM ET
+                          </strong>
+                          . Approvals are due by <strong>4 PM ET</strong>.
+                        </p>
+                        <p>
+                          SSAI’s new Time and Expense system can be accessed{' '}
+                          <a
+                            href="https://ocicpte-cpweb.bussvc.ssaihq.com/CPWeb/cploginform.htm?1713220391"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                          >
+                            here
+                          </a>
+                          .
+                        </p>
+                        <p>
+                          For instructions, visit the Box link{' '}
+                          <a
+                            href="https://ssaihq.app.box.com/file/1444400711260"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                          >
+                            here
+                          </a>
+                          .
+                        </p>
+                        <p>
+                          To see the 2025 schedule for due dates, check this{' '}
+                          <a
+                            href="https://ssaihq.box.com/s/meapyzhu92dq5iskill4uy8d76yhz1ey"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                          >
+                            link
+                          </a>
+                          .
+                        </p>
+                        <p>
+                          For issues, email{' '}
+                          <a
+                            href="mailto:IT_help@ssaihq.com"
+                            className="text-blue-600 hover:underline"
+                          >
+                            IT_help@ssaihq.com
+                          </a>
+                          or{' '}
+                          <a
+                            href="mailto:Payroll_help@ssaihq.com"
+                            className="text-blue-600 hover:underline"
+                          >
+                            Payroll_help@ssaihq.com
+                          </a>
+                          .
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow list-group-item">
+                  <div className="flex flex-col md:flex-row gap-4">
+                    <div className="flex-shrink-0 w-24 h-24 rounded-lg flex items-center justify-center overflow-hidden">
+                      <img
+                        src="/img/Computer image.webp"
+                        alt="IT Updates"
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="flex-1 profile-content-column">
+                      <h2>IT Updates</h2>
+                      <div className="journal-content-article space-y-2">
+                        <p>
+                          October is <strong>Cybersecurity Awareness Month</strong>, and this week’s
+                          focus is on <strong>safe web browsing</strong>.
+                        </p>
+                        <ul className="list-disc list-inside">
+                          <li>Always type website addresses yourself—avoid unknown links.</li>
+                          <li>Avoid clicking on pop-up ads or “free” downloads.</li>
+                          <li>Be cautious on public Wi-Fi—don’t sign into sensitive accounts.</li>
+                          <li>Keep your browser and plugins up to date.</li>
+                        </ul>
+                        <p>
+                          Need help? Visit the{' '}
+                          <a
+                            href="https://ssaihq.app.box.com/file/1920510637523"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                          >
+                            login guidance
+                          </a>
+                          , email{' '}
+                          <a
+                            href="mailto:it_help@ssaihq.com"
+                            className="text-blue-600 hover:underline"
+                          >
+                            {' '}
+                            it_help@ssaihq.com
+                          </a>
+                          , or visit{' '}
+                          <a
+                            href="https://my.ssai.app/home?page_number_5bbfeebd-44de-657f-2f2a-e6271182d73d=1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                          >
+                            mySSAI
+                          </a>
+                          .
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow list-group-item">
                   <div className="flex flex-col md:flex-row gap-4">
                     <div className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg flex items-center justify-center">
-                      <span className="event-date">2025-10-23</span>
+                      <span className="event-date">2025-10-01</span>
                     </div>
                     <div className="flex-1 profile-content-column">
-                      <h2>Open Enrollment Chat Session #2</h2>
+                      <h2>Performance Engagement Program (PEP) Review</h2>
                       <div className="journal-content-article space-y-2">
                         <p>
-                          There is an <strong>Open Enrollment Chat Session #2</strong> occurring on
-                          <strong> Thursday, October 23, 2025</strong>, from{' '}
-                          <strong>3 PM - 4 PM ET</strong>.
-                        </p>
-                        <p>
+                          On <strong>Wednesday, October 1, 2025</strong>, SSAI will send out this
+                          year’s <strong>Performance Review</strong> through{' '}
                           <a
-                            href="https://aka.ms/JoinTeamsMeeting?omkt=en-US"
+                            href="https://workforcenow.adp.com/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-blue-600 hover:underline"
                           >
-                            Need help?
-                          </a>{' '}
-                          <a
-                            href="https://teams.microsoft.com/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-600 hover:underline"
-                          >
-                            Join the meeting now
+                            ADP Workforce Now
                           </a>
+                          .
                         </p>
-                        <p>Meeting ID: 256 676 591 732 9</p>
-                        <p>Passcode: K7cF3tf9</p>
                         <p>
-                          For any questions, please contact <strong>Dacia Newsome</strong> (
+                          <strong>Key deadlines:</strong> Employees update goals by Sept 30,
+                          complete self-evaluations by Oct 15, supervisors finalize by Nov 1, and
+                          acknowledgments due by Nov 15.
+                        </p>
+                        <p>
+                          <strong>PEP System Guides</strong> are available{' '}
                           <a
-                            href="mailto:dacia.newsome@ssaihq.com"
+                            href="https://d5btfj04.na1.hubspotlinks.com/Ctc/ZX+113/d5btfj04/VWghb78CBTjfW7GBzJl3MQDMgW8cYYgJ5mcTKfN179mqq3m2ndW7lCdLW6lZ3kMW3wl5zs3dd0cgV5_z6g4g_kcrV5vJ935CKNY8W4krJTv6SVJ9gW6WWM9r3rjmsMW7F21Fq73SC9QW4NWRMs1k1zPPW1rDRsC4BqTDpW362T8v6_pQVbW7B_9HP5CX9j0W5mnXfR1NkflBW54BpNH78Dny2W2czbtK4jC71gW2YJfBS265sGCW2rqjb44qLpM6W4THcNH1qJpdcW1yC_4m5fkb0cW8YgFTF53M4xHW9d2tCd2R-ZdFM3mvlZjwC7cW2t28xl8TP_C8W203nlp33NX5mVfPNtF5DvlmdW15HY2-59KRZ-f44nb2d04"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-blue-600 hover:underline"
                           >
-                            dacia.newsome@ssaihq.com
+                            here
+                          </a>
+                          .
+                        </p>
+                        <p>
+                          Questions? Contact <strong>Josie Pearson</strong> (
+                          <a
+                            href="mailto:josie.pearson@ssaihq.com"
+                            className="text-blue-600 hover:underline"
+                          >
+                            josie.pearson@ssaihq.com
+                          </a>
+                          ).
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow list-group-item">
+                  <div className="flex flex-col md:flex-row gap-4">
+                    <div className="flex-shrink-0 w-24 h-24 bg-gray-100 rounded-lg flex items-center justify-center">
+                      <span className="event-date">2025-07-16</span>
+                    </div>
+                    <div className="flex-1 profile-content-column">
+                      <h2>Action you can take regarding NASA science!</h2>
+                      <div className="journal-content-article space-y-2">
+                        <p>
+                          You can contact your elected officials as an individual regarding how much
+                          NASA science matters. Even if you don’t live in key districts or states,
+                          your calls and emails still count and can make a difference. You can also
+                          request a 15-minute Zoom meeting with a legislative staffer to share your
+                          views, and encourage family and friends to reach out.
+                        </p>
+                        <p>
+                          <a
+                            href="https://ssaihq.box.com/s/7t9pn2wu3zcphwpu2gdqirsrfikw79x6"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                          >
+                            Click here{' '}
+                          </a>
+                          for detailed suggestions from the <strong>Planetary Society</strong> for
+                          interested individuals, along with potential contacts.
+                        </p>
+                        <p>
+                          If you have questions, contact <strong>Dawn Alexander</strong>(
+                          <a
+                            href="mailto:dawn.alexander@ssaihq.com"
+                            className="text-blue-600 hover:underline"
+                          >
+                            dawn.alexander@ssaihq.com
                           </a>
                           ).
                         </p>
@@ -664,7 +871,7 @@ export default function HomeView() {
                   <img
                     src="/img/linkedin-1.png"
                     alt="LinkedIn"
-                    className="h-16 md:h-10 w-auto hover:opacity-80 transition-opacity"
+                    className="h-9 md:h-9 w-auto hover:opacity-80 transition-opacity"
                   />
                 </a>
                 <a
@@ -675,7 +882,7 @@ export default function HomeView() {
                   <img
                     src="/img/Instagram-1.png"
                     alt="Instagram"
-                    className="h-16 md:h-10 w-auto hover:opacity-80 transition-opacity"
+                    className="h-9 md:h-6 w-auto hover:opacity-80 transition-opacity"
                   />
                 </a>
                 <a
@@ -686,14 +893,14 @@ export default function HomeView() {
                   <img
                     src="/img/facebook-1.png"
                     alt="Facebook"
-                    className="h-16 md:h-10 w-auto hover:opacity-80 transition-opacity"
+                    className="h-9 md:h-6 w-auto hover:opacity-80 transition-opacity"
                   />
                 </a>
                 <a href="https://twitter.com/ssaihq" target="_blank" rel="noopener noreferrer">
                   <img
                     src="/img/x-1.png"
                     alt="X"
-                    className="h-16 md:h-10 w-auto hover:opacity-80 transition-opacity"
+                    className="h-9 md:h-6 w-auto hover:opacity-80 transition-opacity"
                   />
                 </a>
                 <a
@@ -704,7 +911,18 @@ export default function HomeView() {
                   <img
                     src="/img/YouTube-1.png"
                     alt="YouTube"
-                    className="h-16 md:h-10 w-auto hover:opacity-80 transition-opacity"
+                    className="h-9 md:h-6 w-auto hover:opacity-80 transition-opacity"
+                  />
+                </a>
+                <a
+                  href="https://bsky.app/profile/did:plc:v2y6tqzu75ibekt4bz37fcwg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/img/Bluesky_Logo.png"
+                    alt="Bluesky"
+                    className="h-9 md:h-6 w-auto hover:opacity-80 transition-opacity"
                   />
                 </a>
               </div>
@@ -715,7 +933,7 @@ export default function HomeView() {
               <h2 className="section-heading">Resources</h2>
               <div className="space-y-3">
                 <a
-                  href="#"
+                  href="https://ocicpte-cpweb.bussvc.ssaihq.com/CPWeb/masterPage.htm#A0"
                   className="block p-3 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors resource-link"
                 >
                   <h3>Time and Expense</h3>
@@ -725,7 +943,7 @@ export default function HomeView() {
                   </p>
                 </a>
                 <a
-                  href="https://workforcenow.adp.com/"
+                  href="https://online.adp.com/signin/v1/?APPID=WFNPortal&productId=80e309c3-7085-bae1-e053-3505430b5495&returnURL=https://workforcenow.adp.com/&callingAppId=WFN"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block p-3 bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors resource-link"

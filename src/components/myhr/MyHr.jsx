@@ -334,10 +334,10 @@ const MyHr = () => {
             {/* Event Photo Carousel */}
             {/* Event Photo Carousel */}
             <div className="flex justify-center mb-6">
-              <div className="w-full max-w-md">
+              <div className="w-full">
                 <div className="relative">
                   {/* Embla Carousel Container */}
-                  <div className="overflow-hidden rounded-lg" ref={emblaRef}>
+                  <div className="w-full overflow-hidden rounded-lg" ref={emblaRef}>
                     <div className="flex">
                       {eventPhotos.map((photo, index) => (
                         <div key={index} className="flex-[0_0_100%] min-w-0">

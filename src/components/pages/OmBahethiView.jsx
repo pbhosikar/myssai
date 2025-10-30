@@ -292,6 +292,28 @@ export default function OmBahethiView() {
                       <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.7v2.2h.1c.7-1.3 2.3-2.6 4.7-2.6 5 0 5.9 3.3 5.9 7.6V24h-5V16.2c0-1.8-.03-4.1-2.5-4.1-2.5 0-2.9 1.9-2.9 3.9V24h-5V8z" />
                     </svg>
                   </a>
+
+                  <a
+                    className="inline-flex items-center justify-center rounded border border-gray-300 px-2 py-1 hover:bg-gray-50"
+                    href="https://www.instagram.com/ssaihq/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                    title="Instagram"
+                  >
+                    <i className="fa-brands fa-instagram" aria-hidden="true"></i>
+                  </a>
+
+                  <a
+                    className="inline-flex items-center justify-center rounded border border-gray-300 px-2 py-1 hover:bg-gray-50"
+                    href="https://www.youtube.com/@ScienceSystemsandApplicationsI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="YouTube"
+                    title="YouTube"
+                  >
+                    <i className="fa-brands fa-youtube" aria-hidden="true"></i>
+                  </a>
                 </div>
               </div>
             </div>

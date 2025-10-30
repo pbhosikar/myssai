@@ -496,6 +496,9 @@ const SidebarRight = () => (
       <a href="https://www.youtube.com/channel/UCKEH6wLPRh9di7BxiwtpjVw" aria-label="YouTube">
         <Image src="/img/youtube.png" width={46} height={46} alt="YouTube" />
       </a>
+      <a href="https://bsky.app/profile/did:plc:v2y6tqzu75ibekt4bz37fcwg" aria-label="Bluesky">
+        <Image src="/img/Bluesky_Logo.png" alt="Bluesky" width={46} height={46} />
+      </a>
     </div>
     <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-3">On Demand Information</h2>
     <div className="flex flex-col gap-3 mb-2">

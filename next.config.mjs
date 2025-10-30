@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    // Ensure Next.js serves from your app's own domain
+    // Use the default Next.js loader
+    loader: 'default',
+    path: '/_next/image',
+
+    // Allow serving optimized images from the same origin
     remotePatterns: [
       {
         protocol: 'https',
@@ -9,12 +13,8 @@ const nextConfig = {
         pathname: '/**',
       },
     ],
-    // Use the default loader and path
-    loader: 'default',
-    path: '/_next/image',
-    // Allow using images from the local /public folder
-    unoptimized: false,
   },
+  reactStrictMode: true,
 };
 
 export default nextConfig;

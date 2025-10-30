@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useSession } from 'next-auth/react';
-
+import Image from 'next/image';
 function ImageCarousel({ slides, interval = 5000 }) {
   const [current, setCurrent] = useState(0);
 

@@ -1,8 +1,8 @@
 'use client';
 import ClientLink from '@/components/ClientLink';
-import { useSession, signOut } from 'next-auth/react'
+import { useSession, signOut } from 'next-auth/react';
 export default function Header() {
-  const { data: session } = useSession()
+  const { data: session } = useSession();
   return (
     <header className="bg-white border-bottom border-light navbar navbar-light py-4 section-header">
       <div className="container d-flex align-items-center justify-content-between text-break">
@@ -106,6 +106,11 @@ export default function Header() {
                       </ClientLink>
                     </li>
                   </ul>
+                  <li role="presentation">
+                    <ClientLink className="dropdown-item" to="/facilities">
+                      Facilities
+                    </ClientLink>
+                  </li>
                   <li role="presentation">
                     <ClientLink className="dropdown-item" to="/company/employee-faqs">
                       Employee FAQs

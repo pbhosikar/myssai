@@ -459,11 +459,17 @@ export default function HomeView() {
   const { data: session } = useSession();
   // Slides sourced from legacy home_main_content.html and local /img assets
   const successSlides = [
-    { src: '/img/SBAicon (1).png', alt: 'SBA Icon' },
-    { src: '/img/2ec8a7ca-cbb5-5ff9-6748-3bc2ec3becd4_3f766572.png', alt: 'Success screenshot 1' },
-    { src: '/img/5a3ca43f-82fd-0a76-1507-5eb4b3d4c98a_3f766572.png', alt: 'Success screenshot 2' },
-    { src: '/img/TWPicon.png', alt: 'TWP Icon' },
-    { src: '/img/Screenshot 2024-10-22 at 11.55.32 AM.png', alt: 'Success screenshot 3' },
+    { src: '/img/SBAicon (1).png', alt: '' },
+    {
+      src: '/img/2ec8a7ca-cbb5-5ff9-6748-3bc2ec3becd4_3f766572.png',
+      alt: '',
+    },
+    {
+      src: '/img/5a3ca43f-82fd-0a76-1507-5eb4b3d4c98a_3f766572.png',
+      alt: '',
+    },
+    { src: '/img/TWPicon.png', alt: '' },
+    { src: '/img/Screenshot 2024-10-22 at 11.55.32 AM.png', alt: '' },
   ];
 
   const recentSlides = [
@@ -477,10 +483,13 @@ export default function HomeView() {
 
   // Company Spotlight slides (screenshots + selected images from /img)
   const spotlightSlides = [
-    { src: '/img/Screenshot 2025-03-09 at 3.08.22 PM.png', alt: 'Company Spotlight 3:08 PM' },
-    { src: '/img/Screenshot 2025-03-09 at 3.10.24 PM.png', alt: 'Company Spotlight 3:10 PM' },
-    { src: '/img/Screenshot 2025-03-09 at 3.11.47 PM.png', alt: 'Company Spotlight 3:11 PM' },
-    { src: '/img/Screenshot 2025-03-09 at 3.21.10 PM.png', alt: 'Company Spotlight 3:21 PM' },
+    { src: '/img/Screenshot 2025-03-09 at 3.08.22 PM.png', alt: 'AMS 2025: Part 2 Highlights' },
+    { src: '/img/Screenshot 2025-03-09 at 3.10.24 PM.png', alt: 'AMS 2025: Part 1 Highlights' },
+    {
+      src: '/img/Screenshot 2025-03-09 at 3.11.47 PM.png',
+      alt: 'Data Analytics in Health IT Webinar',
+    },
+    { src: '/img/Screenshot 2025-03-09 at 3.21.10 PM.png', alt: 'C2024 Semi Annual Employee Mtg.' },
   ];
 
   return (

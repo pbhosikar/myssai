@@ -11,6 +11,7 @@ const KnowledgeTraining = () => {
     Autoplay({ delay: 3000, stopOnInteraction: false })
   ]);
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [failedImages, setFailedImages] = useState(new Set());
 
   // Carousel slides data
   const carouselSlides = [
@@ -35,6 +36,10 @@ const KnowledgeTraining = () => {
       alt: 'SSAI Mentorship Program Slide 5'
     }
   ];
+
+  const handleImageError = useCallback((index) => {
+    setFailedImages(prev => new Set([...prev, index]));
+  }, []);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -120,11 +125,12 @@ const KnowledgeTraining = () => {
           className="block relative aspect-video bg-gray-900 cursor-pointer"
         >
           <Image
-            src={slide.image}
+            src={failedImages.has(index) ? '/img/carousel-placeholder.svg' : slide.image}
             alt={slide.alt}
             fill
             className="object-contain"
             priority={index === 0}
+            onError={() => handleImageError(index)}
           />
         </a>
       </div>

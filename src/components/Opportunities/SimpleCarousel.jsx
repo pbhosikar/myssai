@@ -11,6 +11,7 @@ const SimpleCarousel = () => {
     [Autoplay({ delay: 3000, stopOnInteraction: false })]
   );
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [failedImages, setFailedImages] = useState(new Set());
 
   const images = [
     '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide2.png',
@@ -37,9 +38,11 @@ const SimpleCarousel = () => {
     '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide23.png',
     '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide24.png',
     '/img/company/opportunities/OpportunitiesMySSAI_files/ProposalSlide25.png',
- 
-
   ];
+
+  const handleImageError = useCallback((index) => {
+    setFailedImages(prev => new Set([...prev, index]));
+  }, []);
 
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
@@ -63,11 +66,12 @@ const SimpleCarousel = () => {
               className="embla__slide flex-[0_0_100%] relative h-[18rem]"
             >
               <Image
-                src={src}
+                src={failedImages.has(index) ? '/img/carousel-placeholder.svg' : src}
                 alt={`Slide ${index + 1}`}
                 fill
                 className="object-cover"
                 priority={index === 0}
+                onError={() => handleImageError(index)}
               />
             </div>
           ))}

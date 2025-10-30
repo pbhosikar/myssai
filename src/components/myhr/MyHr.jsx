@@ -6,6 +6,7 @@ import Link from 'next/link';
 const MyHr = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [failedImages, setFailedImages] = useState(new Set());
 
   // Event photos data
   const eventPhotos = [
@@ -34,6 +35,10 @@ const MyHr = () => {
       caption: "SSAI's Benefits Vendors",
     },
   ];
+
+  const handleImageError = useCallback((index) => {
+    setFailedImages(prev => new Set([...prev, index]));
+  }, []);
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev();
@@ -343,10 +348,11 @@ const MyHr = () => {
                         <div key={index} className="flex-[0_0_100%] min-w-0">
                           <div className="relative h-[500px] sm:h-[550px] bg-gray-200">
                             <Image
-                              src={photo.src}
+                              src={failedImages.has(index) ? '/img/carousel-placeholder.svg' : photo.src}
                               alt={photo.caption}
                               fill
                               className="object-cover"
+                              onError={() => handleImageError(index)}
                             />
                             {/* Caption Overlay */}
                             <div className="absolute bottom-0 left-0 right-0 bg-blue-600 text-white p-2.5 text-center">

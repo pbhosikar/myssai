@@ -286,6 +286,7 @@ const CarouselBlock = ({ slides, variableHeight }) => {
   ]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [slideHeight, setSlideHeight] = useState(COMM_CAROUSEL_HEIGHT);
+  const [failedImages, setFailedImages] = useState(new Set());
   const imgRefs = React.useRef([]);
 
   const onSelect = useCallback(() => {
@@ -303,6 +304,11 @@ const CarouselBlock = ({ slides, variableHeight }) => {
   const scrollPrev = useCallback(() => emblaApi && emblaApi.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi && emblaApi.scrollNext(), [emblaApi]);
   const scrollTo = useCallback((index) => emblaApi && emblaApi.scrollTo(index), [emblaApi]);
+
+  // Handle image load errors
+  const handleImageError = useCallback((index) => {
+    setFailedImages(prev => new Set([...prev, index]));
+  }, []);
 
   // Measure height of currently visible image and update carousel height accordingly
   useEffect(() => {
@@ -344,23 +350,25 @@ const CarouselBlock = ({ slides, variableHeight }) => {
               >
                 {variableHeight ? (
                   <Image
-                    src={s.image}
+                    src={failedImages.has(idx) ? '/img/carousel-placeholder.svg' : s.image}
                     alt={s.alt}
-                    width={800} // adjust as appropriate
+                    width={800}
                     height={600}
                     className="object-contain"
                     priority={idx === 0}
                     ref={(el) => (imgRefs.current[idx] = el)}
                     sizes="100vw"
+                    onError={() => handleImageError(idx)}
                   />
                 ) : (
                   <Image
-                    src={s.image}
+                    src={failedImages.has(idx) ? '/img/carousel-placeholder.svg' : s.image}
                     alt={s.alt}
                     fill
                     className="object-cover"
                     sizes="100vw"
                     priority={idx === 0}
+                    onError={() => handleImageError(idx)}
                   />
                 )}
                 <button

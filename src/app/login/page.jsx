@@ -12,8 +12,8 @@ function LoginErrorBanner() {
   return (
     <div className="rounded-md bg-red-50 p-4 border border-red-200">
       <p className="text-sm text-red-700">
-        Sign-in error: <span className="font-mono">{error}</span>. Try clearing cookies for localhost, and
-        ensure Azure env vars and redirect URI are correct.
+        Sign-in error: <span className="font-mono">{error}</span>. Try clearing cookies for
+        localhost, and ensure Azure env vars and redirect URI are correct.
       </p>
     </div>
   );
@@ -46,7 +46,14 @@ export default function LoginPage() {
       <div className="max-w-md w-full space-y-8">
         <div>
           <div className="mx-auto flex justify-center">
-            <Image src="/img/ssai_logo.png" alt="SSAI Logo" width={200} height={200} priority />
+            <Image
+              unoptimized
+              src="/img/ssai_logo.png"
+              alt="SSAI Logo"
+              width={200}
+              height={200}
+              priority
+            />
           </div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
             {session ? 'You are signed in' : 'Sign in to your account'}

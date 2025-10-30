@@ -38,6 +38,7 @@ export default function AccountingPayroll() {
                   {/* Image at top */}
                   <div className="relative h-48 sm:h-40 w-full">
                     <Image
+                      unoptimized
                       src="/company/accountingandpayroll/payschedule.png"
                       alt="Pay Schedule"
                       fill
@@ -66,6 +67,7 @@ export default function AccountingPayroll() {
                   {/* Image at top */}
                   <div className="relative h-48 sm:h-40 w-full">
                     <Image
+                      unoptimized
                       src="/company/accountingandpayroll/holidayschedule.webp"
                       alt="Holiday Schedule"
                       fill
@@ -113,6 +115,7 @@ export default function AccountingPayroll() {
                     {/* Profile Image */}
                     <div className="flex-shrink-0 relative w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28">
                       <Image
+                        unoptimized
                         src="/img/SaawanBhatt.png"
                         alt="Saawan Bhatt"
                         className="rounded-full object-cover"

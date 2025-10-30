@@ -37,7 +37,7 @@ const MyHr = () => {
   ];
 
   const handleImageError = useCallback((index) => {
-    setFailedImages(prev => new Set([...prev, index]));
+    setFailedImages((prev) => new Set([...prev, index]));
   }, []);
 
   const scrollPrev = useCallback(() => {
@@ -165,6 +165,7 @@ const MyHr = () => {
                   <div className="w-26 h-26 sm:w-20 sm:h-20 rounded-full bg-gray-200 flex-shrink-0 overflow-hidden relative">
                     {/* Image placeholder */}
                     <Image
+                      unoptimized
                       src="/img/myhr/team/CassandraMcIntyre.png"
                       alt="Cassandra McIntyre"
                       fill
@@ -196,6 +197,7 @@ const MyHr = () => {
                   <div className="w-26 h-26 sm:w-20 sm:h-20 rounded-full bg-gray-200 flex-shrink-0 overflow-hidden relative">
                     {/* Image placeholder */}
                     <Image
+                      unoptimized
                       src="/img/myhr/team/JosiePearson.jpg"
                       alt="Cassandra McIntyre"
                       fill
@@ -225,6 +227,7 @@ const MyHr = () => {
                   <div className="w-26 h-26 sm:w-20 sm:h-20 rounded-full bg-gray-200 flex-shrink-0 overflow-hidden relative">
                     {/* Image placeholder */}
                     <Image
+                      unoptimized
                       src="/img/myhr/team/DaciaNewsome.jpg"
                       alt="Cassandra McIntyre"
                       fill
@@ -254,6 +257,7 @@ const MyHr = () => {
                   <div className="w-26 h-26 sm:w-20 sm:h-20 rounded-full bg-gray-200 flex-shrink-0 overflow-hidden relative">
                     {/* Image placeholder */}
                     <Image
+                      unoptimized
                       src="/img/myhr/team/JeanneBarger.jpeg"
                       alt="Cassandra McIntyre"
                       fill
@@ -283,6 +287,7 @@ const MyHr = () => {
                   <div className="w-26 h-26 sm:w-20 sm:h-20 rounded-full bg-gray-200 flex-shrink-0 overflow-hidden relative">
                     {/* Image placeholder */}
                     <Image
+                      unoptimized
                       src="/img/myhr/team/JolonaDavis.jpg"
                       alt="Cassandra McIntyre"
                       fill
@@ -348,7 +353,12 @@ const MyHr = () => {
                         <div key={index} className="flex-[0_0_100%] min-w-0">
                           <div className="relative h-[500px] sm:h-[550px] bg-gray-200">
                             <Image
-                              src={failedImages.has(index) ? '/img/carousel-placeholder.svg' : photo.src}
+                              unoptimized
+                              src={
+                                failedImages.has(index)
+                                  ? '/img/carousel-placeholder.svg'
+                                  : photo.src
+                              }
                               alt={photo.caption}
                               fill
                               className="object-cover"
@@ -524,6 +534,7 @@ const MyHr = () => {
                 <div className="bg-white border border-gray-200 rounded-lg p-6 mb-4 flex-1 flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow">
                   <div className="relative w-full h-52 mb-4">
                     <Image
+                      unoptimized
                       src="/img/myhr/Vendors/lincolnlogo.png"
                       alt="Lincoln Financial Group"
                       fill
@@ -545,6 +556,7 @@ const MyHr = () => {
                 <div className="bg-white border border-gray-200 rounded-lg p-6 mb-4 flex-1 flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow">
                   <div className="relative w-full h-52 mb-4">
                     <Image
+                      unoptimized
                       src="/img/myhr/Vendors/metlifelogo.png"
                       alt="Lincoln Financial Group"
                       fill
@@ -566,6 +578,7 @@ const MyHr = () => {
                 <div className="bg-white border border-gray-200 rounded-lg p-6 mb-4 flex-1 flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow">
                   <div className="relative w-full h-52 mb-4">
                     <Image
+                      unoptimized
                       src="/img/myhr/Vendors/transamericalogo.png"
                       alt="Lincoln Financial Group"
                       fill
@@ -587,6 +600,7 @@ const MyHr = () => {
                 <div className="bg-white border border-gray-200 rounded-lg p-6 mb-4 flex-1 flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow">
                   <div className="relative w-full h-52 mb-4">
                     <Image
+                      unoptimized
                       src="/img/myhr/Vendors/legalresourceslogo.png"
                       alt="Lincoln Financial Group"
                       fill
@@ -611,6 +625,7 @@ const MyHr = () => {
                 <div className="bg-white border border-gray-200 rounded-lg p-6 mb-4 flex-1 flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow">
                   <div className="relative w-full h-52 mb-4">
                     <Image
+                      unoptimized
                       src="/img/myhr/Vendors/bankofamericalogo.png"
                       alt="Lincoln Financial Group"
                       fill
@@ -632,6 +647,7 @@ const MyHr = () => {
                 <div className="bg-white border border-gray-200 rounded-lg p-6 mb-4 flex-1 flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow">
                   <div className="relative w-full h-52 mb-4">
                     <Image
+                      unoptimized
                       src="/img/myhr/Vendors/nasaFCUlogo.png"
                       alt="Lincoln Financial Group"
                       fill
@@ -653,6 +669,7 @@ const MyHr = () => {
                 <div className="bg-white border border-gray-200 rounded-lg p-6 mb-4 flex-1 flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow">
                   <div className="relative w-full h-52 mb-4">
                     <Image
+                      unoptimized
                       src="/img/myhr/Vendors/bhslogo.png"
                       alt="Lincoln Financial Group"
                       fill
@@ -674,6 +691,7 @@ const MyHr = () => {
                 <div className="bg-white border border-gray-200 rounded-lg p-6 mb-4 flex-1 flex flex-col items-center justify-center shadow-sm hover:shadow-md transition-shadow">
                   <div className="relative w-full h-52 mb-4">
                     <Image
+                      unoptimized
                       src="/img/myhr/Vendors/cigna.png"
                       alt="Lincoln Financial Group"
                       fill

@@ -6,10 +6,9 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 
 const SimpleCarousel = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    { loop: true },
-    [Autoplay({ delay: 3000, stopOnInteraction: false })]
-  );
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 3000, stopOnInteraction: false }),
+  ]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [failedImages, setFailedImages] = useState(new Set());
 
@@ -41,7 +40,7 @@ const SimpleCarousel = () => {
   ];
 
   const handleImageError = useCallback((index) => {
-    setFailedImages(prev => new Set([...prev, index]));
+    setFailedImages((prev) => new Set([...prev, index]));
   }, []);
 
   const onSelect = useCallback(() => {
@@ -61,11 +60,9 @@ const SimpleCarousel = () => {
       <div className="embla" ref={emblaRef}>
         <div className="embla__container flex">
           {images.map((src, index) => (
-            <div
-              key={index}
-              className="embla__slide flex-[0_0_100%] relative h-[18rem]"
-            >
+            <div key={index} className="embla__slide flex-[0_0_100%] relative h-[18rem]">
               <Image
+                unoptimized
                 src={failedImages.has(index) ? '/img/carousel-placeholder.svg' : src}
                 alt={`Slide ${index + 1}`}
                 fill
@@ -84,7 +81,7 @@ const SimpleCarousel = () => {
 export default SimpleCarousel;
 
 <style>
-{`.embla {
+  {`.embla {
   overflow: hidden;
   width: 100%;
 }
@@ -106,5 +103,4 @@ export default SimpleCarousel;
   /* Adjust based on desired spacing */
 }
 `}
-
-</style>
+</style>;

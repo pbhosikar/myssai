@@ -25,6 +25,7 @@ import CompanyTravelView from '@/components/pages/CompanyTravelView';
 import SsaiRoundView from '@/components/pages/SsaiRoundView';
 import MyWorkspaceView from '@/components/pages/MyWorkspaceView';
 import SearchView from '@/components/pages/SearchView';
+import FacilitiesView from '@/components/pages/FacilitiesView';
 
 export default function AppRouter() {
   return (
@@ -39,12 +40,24 @@ export default function AppRouter() {
       <Route path="/company/accounting-payroll" element={<CompanyAccountingPayrollView />} />
       <Route path="/company/business-development" element={<CompanyBusinessDevelopmentView />} />
       <Route path="/company/communications" element={<CompanyCommunicationsView />} />
-      <Route path="/company/communications-survey-results" element={<CompanyCommunicationsSurveyResultsView />} />
+      <Route
+        path="/company/communications-survey-results"
+        element={<CompanyCommunicationsSurveyResultsView />}
+      />
       <Route path="/company/employee-faqs" element={<CompanyEmployeeFaqsView />} />
-      <Route path="/company/updated-pto-policy-frequently-asked-questions" element={<CompanyUpdatedPtoPolicyFaqsView />} />
-      <Route path="/company/information-technology" element={<CompanyInformationTechnologyView />} />
+      <Route
+        path="/company/updated-pto-policy-frequently-asked-questions"
+        element={<CompanyUpdatedPtoPolicyFaqsView />}
+      />
+      <Route
+        path="/company/information-technology"
+        element={<CompanyInformationTechnologyView />}
+      />
       <Route path="/company/opportunities" element={<CompanyOpportunitiesView />} />
-      <Route path="/company/quality-management-system" element={<CompanyQualityManagementSystemView />} />
+      <Route
+        path="/company/quality-management-system"
+        element={<CompanyQualityManagementSystemView />}
+      />
       <Route path="/company/company-forms" element={<CompanyFormsView />} />
       <Route path="/company/strategy" element={<CompanyStrategyView />} />
       <Route path="/company/travel" element={<CompanyTravelView />} />
@@ -53,6 +66,7 @@ export default function AppRouter() {
       <Route path="/om-bahethi" element={<OmBahethiView />} />
       <Route path="/my-workspace" element={<MyWorkspaceView />} />
       <Route path="/search" element={<SearchView />} />
+      <Route path="/facilities" element={<FacilitiesView />} />
       <Route path="/login" element={<UnderDevelopmentView />} />
       <Route path="/under-development" element={<UnderDevelopmentView />} />
       {/* Fallback to NotFound for unmatched routes */}

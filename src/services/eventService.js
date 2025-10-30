@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const EVENT_URL = 'http://localhost:3001/events';
+const EVENT_URL = 'https://mystage.ssai.app/events';
 
 // Get all events
 export const getAllEvents = async () => {

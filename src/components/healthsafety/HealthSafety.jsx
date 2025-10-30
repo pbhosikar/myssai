@@ -110,6 +110,7 @@ const HealthSafety = () => {
             {/* Meeting Schedule Image */}
             <div className="relative w-full h-auto mb-6">
               <Image
+                unoptimized
                 src="/img/healthsafety/table.png"
                 alt="Safety Committee Meeting Schedule"
                 width={800}

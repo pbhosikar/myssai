@@ -104,7 +104,7 @@ const KnowledgeTraining = () => {
                       {carouselSlides.map((slide, index) => (
                         <div key={index} className="flex-[0_0_100%] min-w-0">
                           <div className="relative aspect-video bg-gray-900">
-                            <Image 
+                            <Image  unoptimized 
                               src={slide.image}
                               alt={slide.alt}
                               fill

@@ -66,7 +66,6 @@ export default function PhishingEmail() {
               <div className="flex justify-center">
                 <div className="bg-blue-600 rounded-lg w-40 h-40 flex items-center justify-center overflow-hidden">
                   <Image
-                    unoptimized
                     src="/img/company/information_technology/concurimage.png" // Update with your actual image path
                     alt="CONCUR"
                     width={160}
@@ -117,7 +116,6 @@ export default function PhishingEmail() {
                 <div className="flex justify-center">
                   <div className="bg-blue-600 rounded-lg w-40 h-40 flex items-center justify-center overflow-hidden">
                     <Image
-                      unoptimized
                       src="/img/company/information_technology/efrom.png" // Update with your actual image path
                       alt="CONCUR"
                       width={160}
@@ -225,7 +223,6 @@ export default function PhishingEmail() {
                 <div className="flex justify-center">
                   <div className="rounded-lg w-full h-40 flex items-center justify-center overflow-hidden">
                     <Image
-                      unoptimized
                       src="/img/company/information_technology/kyocera.png"
                       alt="CONCUR"
                       width={431}

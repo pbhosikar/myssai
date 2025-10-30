@@ -4,7 +4,6 @@ export default function Opportunitirsbanner() {
   return (
     <div className="relative w-full h-[150px] lg:h-[150px] overflow-hidden">
       <Image
-        unoptimized
         src="/img/company/opportunities/united_states_space_force_cover.jpg"
         alt="Information Technology Banner"
         fill

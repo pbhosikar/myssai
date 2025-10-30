@@ -46,14 +46,7 @@ export default function LoginPage() {
       <div className="max-w-md w-full space-y-8">
         <div>
           <div className="mx-auto flex justify-center">
-            <Image
-              unoptimized
-              src="/img/ssai_logo.png"
-              alt="SSAI Logo"
-              width={200}
-              height={200}
-              priority
-            />
+            <Image src="/img/ssai_logo.png" alt="SSAI Logo" width={200} height={200} priority />
           </div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
             {session ? 'You are signed in' : 'Sign in to your account'}

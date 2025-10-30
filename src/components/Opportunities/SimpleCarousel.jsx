@@ -62,7 +62,6 @@ const SimpleCarousel = () => {
           {images.map((src, index) => (
             <div key={index} className="embla__slide flex-[0_0_100%] relative h-[18rem]">
               <Image
-                unoptimized
                 src={failedImages.has(index) ? '/img/carousel-placeholder.svg' : src}
                 alt={`Slide ${index + 1}`}
                 fill

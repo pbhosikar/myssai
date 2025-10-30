@@ -864,7 +864,7 @@ export default function HomeView() {
               <h2 className="component-heading" style={{ marginBottom: '16px' }}>
                 Company Spotlight
               </h2>
-              <Image unoptimized Carousel slides={spotlightSlides} interval={5000} />
+              <Image Carousel slides={spotlightSlides} interval={5000} />
             </div>
             {/* Social CTA */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mt-8">
@@ -1005,12 +1005,12 @@ export default function HomeView() {
             {/* Celebrating Our Successes Slider */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mt-8">
               <h2 className="component-heading">Celebrating Our Successes</h2>
-              <Image unoptimized Carousel slides={successSlides} interval={5000} />
+              <Image Carousel slides={successSlides} interval={5000} />
             </div>
             {/* Recent Events/Happenings */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
               <h2 className="section-heading">Recent Events/Happenings</h2>
-              <Image unoptimized Carousel slides={recentSlides} interval={5000} />
+              <Image Carousel slides={recentSlides} interval={5000} />
             </div>
           </div>
         </div>

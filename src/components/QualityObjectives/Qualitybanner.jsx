@@ -5,7 +5,6 @@ function Qualitybanner() {
   return (
     <div className="relative w-full h-[150px] lg:h-[150px] overflow-hidden">
       <Image
-        unoptimized
         src="/img/company/management-page/quality-management-system-business-industrial-260nw-2247879747.webp"
         alt="Information Technology Banner"
         fill

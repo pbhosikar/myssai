@@ -350,7 +350,6 @@ const CarouselBlock = ({ slides, variableHeight }) => {
               >
                 {variableHeight ? (
                   <Image
-                    unoptimized
                     src={failedImages.has(idx) ? '/img/carousel-placeholder.svg' : s.image}
                     alt={s.alt}
                     width={800}
@@ -363,7 +362,6 @@ const CarouselBlock = ({ slides, variableHeight }) => {
                   />
                 ) : (
                   <Image
-                    unoptimized
                     src={failedImages.has(idx) ? '/img/carousel-placeholder.svg' : s.image}
                     alt={s.alt}
                     fill
@@ -466,7 +464,7 @@ const MeetTeamSidebar = () => (
       ].map((t, idx) => (
         <div key={idx} className="flex items-center gap-4">
           <div className="w-28 h-28 rounded-full overflow-hidden relative">
-            <Image unoptimized src={t.img} alt={t.name} fill className="object-cover" />
+            <Image src={t.img} alt={t.name} fill className="object-cover" />
           </div>
           <div>
             <h3 className="font-bold text-gray-900 text-lg">{t.name}</h3>
@@ -492,22 +490,22 @@ const SidebarRight = () => (
         href="https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F166110%2Fadmin%2Ffeed%2Fposts%2F"
         aria-label="LinkedIn"
       >
-        <Image unoptimized src="/img/linkedin.png" width={46} height={46} alt="LinkedIn" />
+        <Image src="/img/linkedin.png" width={46} height={46} alt="LinkedIn" />
       </a>
       <a href="https://www.instagram.com/ssaihq/" aria-label="Instagram">
-        <Image unoptimized src="/img/instagram.png" width={46} height={46} alt="Instagram" />
+        <Image src="/img/instagram.png" width={46} height={46} alt="Instagram" />
       </a>
       <a href="https://www.facebook.com/SciSysApp/" aria-label="Facebook">
-        <Image unoptimized src="/img/facebook.png" width={46} height={46} alt="Facebook" />
+        <Image src="/img/facebook.png" width={46} height={46} alt="Facebook" />
       </a>
       <a href="https://twitter.com/ssaihq" aria-label="X">
-        <Image unoptimized src="/img/twitter.png" width={46} height={46} alt="X" />
+        <Image src="/img/twitter.png" width={46} height={46} alt="X" />
       </a>
       <a href="https://www.youtube.com/channel/UCKEH6wLPRh9di7BxiwtpjVw" aria-label="YouTube">
-        <Image unoptimized src="/img/youtube.png" width={46} height={46} alt="YouTube" />
+        <Image src="/img/youtube.png" width={46} height={46} alt="YouTube" />
       </a>
       <a href="https://bsky.app/profile/did:plc:v2y6tqzu75ibekt4bz37fcwg" aria-label="Bluesky">
-        <Image unoptimized src="/img/Bluesky_Logo.png" alt="Bluesky" width={46} height={46} />
+        <Image src="/img/Bluesky_Logo.png" alt="Bluesky" width={46} height={46} />
       </a>
     </div>
     <h2 className="text-2xl font-bold text-gray-900 mb-4 mt-3">On Demand Information</h2>
@@ -591,7 +589,6 @@ const Communications = () => (
     <div className="w-full relative h-52 flex items-center bg-white">
       <div className="absolute inset-0 z-0">
         <Image
-          unoptimized
           src="/company/communications/communicationsback.webp"
           alt="Header BG"
           fill

@@ -8,7 +8,6 @@ const BusinessDevelopment = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            unoptimized
             src="/company/businessdevelopment/businessdevback.webp"
             alt="Business Development Background"
             fill
@@ -50,7 +49,6 @@ const BusinessDevelopment = () => {
                 <div className="flex-shrink-0">
                   <div className="w-14 h-14 sm:w-30 sm:h-30 bg-gray-300 rounded-full overflow-hidden">
                     <Image
-                      unoptimized
                       src="/company/businessdevelopment/Hamza.png"
                       alt="Hamza Benzine"
                       width={64}
@@ -78,7 +76,6 @@ const BusinessDevelopment = () => {
                 <div className="flex-shrink-0">
                   <div className="w-14 h-14 sm:w-30 sm:h-30 bg-gray-300 rounded-full overflow-hidden">
                     <Image
-                      unoptimized
                       src="/company/businessdevelopment/Arrabi.png"
                       alt="Arrabi Nandakumar"
                       width={64}
@@ -106,7 +103,6 @@ const BusinessDevelopment = () => {
                 <div className="flex-shrink-0">
                   <div className="w-14 h-14 sm:w-30 sm:h-30 bg-gray-300 rounded-full overflow-hidden">
                     <Image
-                      unoptimized
                       src="/company/businessdevelopment/carolina.png"
                       alt="Carolina Santiago"
                       width={64}
@@ -134,7 +130,6 @@ const BusinessDevelopment = () => {
                 <div className="flex-shrink-0">
                   <div className="w-14 h-14 sm:w-30 sm:h-30 bg-gray-300 rounded-full overflow-hidden">
                     <Image
-                      unoptimized
                       src="/company/businessdevelopment/scott.png"
                       alt="Scott Irons"
                       width={64}
@@ -160,7 +155,6 @@ const BusinessDevelopment = () => {
                 <div className="flex-shrink-0">
                   <div className="w-14 h-14 sm:w-30 sm:h-30 bg-gray-300 rounded-full overflow-hidden">
                     <Image
-                      unoptimized
                       src="/company/businessdevelopment/gonzalo.jpg"
                       alt="Gonzalo Lassally"
                       width={64}
@@ -198,7 +192,6 @@ const BusinessDevelopment = () => {
                   <div className="w-full sm:w-48 md:w-56 lg:w-64 h-28 sm:h-32 md:h-36 lg:h-40 xl:h-40 bg-gradient-to-br from-purple-900 via-blue-900 to-purple-800  overflow-hidden relative">
                     {/* Background Image for Science Card */}
                     <Image
-                      unoptimized
                       src="/company/businessdevelopment/science.webp" // Add your science background image path here
                       alt="Science Background"
                       fill
@@ -248,7 +241,6 @@ const BusinessDevelopment = () => {
                   <div className="w-full sm:w-48 md:w-56 lg:!w-64 h-28 sm:h-32 md:h-36 lg:h-40 xl:h-40  bg-gradient-to-br from-orange-600 via-yellow-600 to-orange-700  overflow-hidden relative">
                     {/* Background Image for Engineering Card */}
                     <Image
-                      unoptimized
                       src="/company/businessdevelopment/engineering.jpg" // Add your engineering background image path here
                       alt="Engineering Background"
                       fill
@@ -289,7 +281,6 @@ const BusinessDevelopment = () => {
                   <div className="w-full sm:w-48 md:w-56 lg:w-64 h-28 sm:h-32 md:h-36 lg:h-40 xl:h-40 bg-gradient-to-br from-blue-800 via-blue-900 to-indigo-900  overflow-hidden relative">
                     {/* Background Image for IT Card */}
                     <Image
-                      unoptimized
                       src="/company/businessdevelopment/it.webp" // Add your IT background image path here
                       alt="IT Background"
                       fill

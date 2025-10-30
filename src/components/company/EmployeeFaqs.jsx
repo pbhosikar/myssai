@@ -212,7 +212,6 @@ const EmployeeFaqs = () => {
                 <div className="flex items-center justify-center">
                   <div className="ml-6">
                     <Image
-                      unoptimized
                       src="/company/employeefaq/emailsignaturemyssai.png" // Replace with your SSAI logo path
                       alt="SSAI Logo"
                       width={600}

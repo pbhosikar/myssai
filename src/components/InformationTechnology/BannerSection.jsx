@@ -4,7 +4,6 @@ export default function Banner() {
   return (
     <div className="relative w-full lg:h-[325px] overflow-hidden">
       <Image
-        unoptimized
         src="/img/company/information_technology/banner_it.jpg"
         alt="Information Technology Banner"
         fill

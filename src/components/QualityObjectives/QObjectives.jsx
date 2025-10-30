@@ -12,7 +12,6 @@ export default function QObjectives() {
             <div className="flex gap-2 items-start text-start">
               <div className="w-24 h-24 rounded-full overflow-hidden mb-4 bg-gray-200">
                 <Image
-                  unoptimized
                   src="/img/company/management-page/1.jpg"
                   alt="Josie Pearson"
                   width={96}

@@ -104,7 +104,7 @@ const KnowledgeTraining = () => {
                       {carouselSlides.map((slide, index) => (
                         <div key={index} className="flex-[0_0_100%] min-w-0">
                           <div className="relative aspect-video bg-gray-900">
-                            <Image  unoptimized 
+                            <Image   
                               src={slide.image}
                               alt={slide.alt}
                               fill
@@ -126,7 +126,6 @@ const KnowledgeTraining = () => {
                             className="block relative aspect-video bg-gray-900 cursor-pointer"
                           >
                             <Image
-                              unoptimized
                               src={
                                 failedImages.has(index)
                                   ? '/img/carousel-placeholder.svg'
@@ -235,7 +234,6 @@ const KnowledgeTraining = () => {
                   <div className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
                     <div className="relative h-36">
                       <Image
-                        unoptimized
                         src="/img/knowladgetraining/leadership.jpg"
                         alt="Leadership Development"
                         fill
@@ -254,7 +252,6 @@ const KnowledgeTraining = () => {
                   <div className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
                     <div className="relative h-36">
                       <Image
-                        unoptimized
                         src="/img/knowladgetraining/Professional-Development.jpg"
                         alt="Professional Development"
                         fill
@@ -273,7 +270,6 @@ const KnowledgeTraining = () => {
                   <div className="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
                     <div className="relative h-36">
                       <Image
-                        unoptimized
                         src="/img/knowladgetraining/8-steps-to-technical-excellence.png"
                         alt="Technical Excellence"
                         fill
@@ -296,7 +292,6 @@ const KnowledgeTraining = () => {
                 <div className="flex items-start gap-4 mb-4">
                   <div className="w-20 h-20 rounded-full bg-gray-200 flex-shrink-0 overflow-hidden relative">
                     <Image
-                      unoptimized
                       src="/img/knowladgetraining/josie-pearson.jpg"
                       alt="Josie Pearson"
                       fill
@@ -331,7 +326,6 @@ const KnowledgeTraining = () => {
                     className="block relative h-16 cursor-pointer hover:opacity-80 transition-opacity"
                   >
                     <Image
-                      unoptimized
                       src="/img/knowladgetraining/SSAIUniversityLogo.png"
                       alt="SSAI University"
                       fill

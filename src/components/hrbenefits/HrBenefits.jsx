@@ -202,13 +202,7 @@ const HRBenefits = () => {
                     {/* Logo Section */}
                     <div className="relative h-32 flex items-center justify-center bg-gray-50 border-b border-gray-100">
                       {card.logo ? (
-                        <Image
-                          unoptimized
-                          src={card.logo}
-                          alt={card.alt}
-                          fill
-                          className="object-contain p-4"
-                        />
+                        <Image src={card.logo} alt={card.alt} fill className="object-contain p-4" />
                       ) : (
                         <div className="bg-gray-100 rounded flex items-center justify-center h-full w-full">
                           <span className="text-sm text-gray-400">{card.alt} Logo</span>
@@ -247,7 +241,6 @@ const HRBenefits = () => {
                 <div className="flex items-start gap-3 mb-4">
                   <div className="w-16 h-16 rounded-full bg-gray-200 flex-shrink-0 overflow-hidden relative">
                     <Image
-                      unoptimized
                       src="/img/hrbenefits/KathleenJackson.jpg"
                       alt="Kathleen Jackson"
                       fill
@@ -353,7 +346,6 @@ const HRBenefits = () => {
                 <h3 className="text-base font-bold text-gray-900 mb-4">Corporate Discounts</h3>
                 <div className="relative h-24">
                   <Image
-                    unoptimized
                     src="/img/hrbenefits/access.png"
                     alt="Access Perks"
                     fill

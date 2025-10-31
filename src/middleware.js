@@ -13,6 +13,7 @@ export default async function middleware(req) {
   const realIp = req.headers.get('x-real-ip');
   const ua = req.headers.get('user-agent');
 
+  // Log only interesting paths for debugging
   if (pathname?.startsWith('/api/auth') || pathname === '/login') {
     console.log('[middleware-request]', {
       pathname,
@@ -27,17 +28,22 @@ export default async function middleware(req) {
   }
 
   if (isProd) {
-    const authMw = withAuth({ pages: { signIn: '/login' } });
+    const authMw = withAuth({
+      pages: {
+        signIn: '/login',
+      },
+    });
     return authMw(req);
   }
 
-  // In development, skip auth protection to avoid NextAuth configuration errors
+  // In development, skip auth protection to avoid NextAuth config issues
   return NextResponse.next();
 }
 
+// ✅ Auth matcher: protect everything except public/static assets
 export const config = {
   matcher: [
-    '/',
-    '/((?!api/auth|api/health|login|_next/static|_next/image|favicon.ico|img|css|css-assets|webfonts).*)',
+    // Match all routes except static files and public assets
+    '/((?!api/auth|api/health|login|_next|favicon.ico|company/communications|img|css|css-assets|webfonts|.*\\..*).*)',
   ],
 };

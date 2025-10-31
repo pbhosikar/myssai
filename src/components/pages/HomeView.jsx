@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useSession } from 'next-auth/react';
-import Image from 'next/image';
+// Removed next/image usage; using standard img tags within ImageCarousel
 function ImageCarousel({ slides, interval = 5000 }) {
   const [current, setCurrent] = useState(0);
 
@@ -25,6 +25,10 @@ function ImageCarousel({ slides, interval = 5000 }) {
             key={idx}
             src={slide.src}
             alt={slide.alt || ''}
+            onError={(e) => {
+              if (e.currentTarget.src.endsWith('/img/avatar-placeholder.svg')) return;
+              e.currentTarget.src = '/img/avatar-placeholder.svg';
+            }}
             className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-700 ${
               idx === current ? 'opacity-100' : 'opacity-0'
             }`}
@@ -864,7 +868,7 @@ export default function HomeView() {
               <h2 className="component-heading" style={{ marginBottom: '16px' }}>
                 Company Spotlight
               </h2>
-              <Image Carousel slides={spotlightSlides} interval={5000} />
+              <ImageCarousel slides={spotlightSlides} interval={5000} />
             </div>
             {/* Social CTA */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mt-8">
@@ -1005,12 +1009,17 @@ export default function HomeView() {
             {/* Celebrating Our Successes Slider */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mt-8">
               <h2 className="component-heading">Celebrating Our Successes</h2>
-              <Image Carousel slides={successSlides} interval={5000} />
+              <ImageCarousel slides={successSlides} interval={5000} />
             </div>
             {/* Recent Events/Happenings */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
               <h2 className="section-heading">Recent Events/Happenings</h2>
-              <Image Carousel slides={recentSlides} interval={5000} />
+              <ImageCarousel slides={recentSlides} interval={5000} />
+            </div>
+            {/* Company Spotlight Slider */}
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mt-8">
+              <h2 className="component-heading">Company Spotlight</h2>
+              <ImageCarousel slides={spotlightSlides} interval={5000} />
             </div>
           </div>
         </div>

@@ -169,6 +169,7 @@ const MyHr = () => {
                       alt="Cassandra McIntyre"
                       fill
                       className="object-cover"
+                      unoptimized
                     />
                   </div>
                   <div className="flex-1">
@@ -200,6 +201,7 @@ const MyHr = () => {
                       alt="Cassandra McIntyre"
                       fill
                       className="object-cover"
+                      unoptimized
                     />
                   </div>
                   <div className="flex-1">
@@ -229,6 +231,7 @@ const MyHr = () => {
                       alt="Cassandra McIntyre"
                       fill
                       className="object-cover"
+                      unoptimized
                     />
                   </div>
                   <div className="flex-1">
@@ -258,6 +261,7 @@ const MyHr = () => {
                       alt="Cassandra McIntyre"
                       fill
                       className="object-cover"
+                      unoptimized
                     />
                   </div>
                   <div className="flex-1">
@@ -287,6 +291,7 @@ const MyHr = () => {
                       alt="Cassandra McIntyre"
                       fill
                       className="object-cover"
+                      unoptimized
                     />
                   </div>
                   <div className="flex-1">

@@ -1016,11 +1016,6 @@ export default function HomeView() {
               <h2 className="section-heading">Recent Events/Happenings</h2>
               <ImageCarousel slides={recentSlides} interval={5000} />
             </div>
-            {/* Company Spotlight Slider */}
-            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mt-8">
-              <h2 className="component-heading">Company Spotlight</h2>
-              <ImageCarousel slides={spotlightSlides} interval={5000} />
-            </div>
           </div>
         </div>
       </div>
